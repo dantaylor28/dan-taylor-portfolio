@@ -1,5 +1,5 @@
 ---
-name: User Story Template
+name: User Story
 about: 'A template to create my user story issues '
 title: "[USER STORY]"
 labels: ''
