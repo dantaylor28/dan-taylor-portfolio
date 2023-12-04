@@ -4,8 +4,22 @@ import Image from "next/image";
 import React from "react";
 import HeroImg from "@/public/hero_img.png";
 import { motion } from "framer-motion";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export default function Introduction() {
+    const [text] = useTypewriter({
+        words: [
+            "Dan Taylor",
+            "a Software Developer",
+            "an Adventurer",
+            "a Foodie",
+            "Dan Taylor",
+        ],
+        loop: 1,
+        typeSpeed: 115,
+        deleteSpeed: 60,
+    })
+
   return (
     <section className="mb-28 max-w-[50rem] text-center px-4 sm:mb-0">
       <div className="flex items-center justify-center">
@@ -29,6 +43,10 @@ export default function Introduction() {
           </motion.div>
         </div>
       </div>
+
+      <h1>
+        Hi, I'm <span>{text}</span>
+      </h1>
     </section>
   );
 }
