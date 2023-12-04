@@ -9,11 +9,11 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 export default function Introduction() {
     const [text] = useTypewriter({
         words: [
-            "Dan Taylor",
-            "a Software Developer",
-            "an Adventurer",
-            "a Foodie",
-            "Dan Taylor",
+            "Dan Taylor✌️",
+            "a Software Developer💻",
+            "an Adventurer🧳",
+            "a Foodie🍴",
+            "Dan Taylor✌️",
         ],
         loop: 1,
         typeSpeed: 115,
@@ -44,8 +44,9 @@ export default function Introduction() {
         </div>
       </div>
 
-      <h1>
-        Hi, I'm <span>{text}</span>
+      <h1 className="mt-8 mb-10 px-4 text-2xl sm:text-4xl">
+        Hi, I'm <span className="text-cyan-800">{text}</span>
+        <Cursor cursorStyle="_" cursorColor="#155e75"/>
       </h1>
     </section>
   );
