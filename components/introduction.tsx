@@ -50,7 +50,16 @@ export default function Introduction() {
         Hi, I'm <span className="text-cyan-800">{text}</span>
         <Cursor cursorStyle="_" cursorColor="#155e75"/>
       </motion.h1>
-      <div>hi</div>
+
+      <h2>
+        <span className="font-bold">Hey, I'm Dan</span>. I'm a junior{" "}
+        <span className="font-bold">full-stack developer</span> with a passion
+        for <span className="font-bold">technological innovation</span> and
+        development. I enjoy creating{" "}
+        <span className="italic">modern websites & applications</span>. My focus
+        is currently on gaining a deeper understanding of {" "}
+        <span className="italic">React & other JS frameworks</span>.
+      </h2>
     </section>
   );
 }
