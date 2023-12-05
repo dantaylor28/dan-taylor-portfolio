@@ -44,10 +44,13 @@ export default function Introduction() {
         </div>
       </div>
 
-      <h1 className="mt-8 mb-10 px-4 text-2xl sm:text-4xl">
+      <motion.h1 className="mt-8 mb-10 px-4 text-2xl sm:text-4xl"
+      initial={{opacity: 0, y: 100}}
+      animate={{opacity: 1, y: 0}}>
         Hi, I'm <span className="text-cyan-800">{text}</span>
         <Cursor cursorStyle="_" cursorColor="#155e75"/>
-      </h1>
+      </motion.h1>
+      <div>hi</div>
     </section>
   );
 }
