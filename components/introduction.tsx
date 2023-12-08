@@ -5,6 +5,7 @@ import React from "react";
 import HeroImg from "@/public/hero_img.png";
 import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Link from "next/link";
 
 export default function Introduction() {
   const [text] = useTypewriter({
@@ -73,6 +74,18 @@ export default function Introduction() {
         My focus is currently on gaining a deeper understanding of{" "}
         <span className="italic">React & other JS frameworks</span>.
       </motion.h2>
+
+      <div>
+        <Link
+          href="#contactme"
+          className="px-5 py-2.5 relative rounded group overflow-hidden font-medium bg-purple-100 text-purple-600 inline-block"
+        >
+          <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-purple-600 group-hover:w-full opacity-90"></span>
+          <span className="relative group-hover:text-white group-hover:duration-500">
+            Get In Touch
+          </span>
+        </Link>
+      </div>
     </section>
   );
 }
