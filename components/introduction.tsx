@@ -123,10 +123,11 @@ export default function Introduction() {
           }}
         >
           <a
-            href="#"
+            href="https://github.com/dantaylor28"
+            target="_blank"
             className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] hover:bg-cyan-600 duration-300"
           >
-            < FaSquareGithub className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
+            <FaSquareGithub className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
           </a>
         </motion.div>
 
@@ -139,7 +140,8 @@ export default function Introduction() {
           }}
         >
           <a
-            href="#"
+            href="https://www.linkedin.com/in/dan-m-taylor/"
+            target="_blank"
             className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] hover:bg-cyan-600 duration-300"
           >
             <FaLinkedin className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
