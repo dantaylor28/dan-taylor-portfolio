@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Link from "next/link";
 import { BsArrowRight, BsDownload } from "react-icons/bs";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 
 export default function Introduction() {
   const [text] = useTypewriter({
@@ -126,7 +126,23 @@ export default function Introduction() {
             href="#"
             className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] hover:bg-cyan-600 duration-300"
           >
-            <FaGithubSquare className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
+            < FaSquareGithub className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
+          </a>
+        </motion.div>
+
+        <motion.div
+          className="active:scale-110"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.8,
+          }}
+        >
+          <a
+            href="#"
+            className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] hover:bg-cyan-600 duration-300"
+          >
+            <FaLinkedin className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
           </a>
         </motion.div>
       </div>
