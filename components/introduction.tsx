@@ -77,24 +77,39 @@ export default function Introduction() {
       </motion.h2>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
-        <Link
-          href="#contactme"
-          className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-800 text-cyan-50 flex items-center gap-2 active:scale-105"
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.5,
+          }}
         >
-          <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90"></span>
-          <span className="relative group-hover:text-white group-hover:duration-500">
-            Get In Touch
-          </span>
-          <BsArrowRight className="group-hover:text-white group-hover:translate-x-1 transition" />
-        </Link>
+          <Link
+            href="#contactme"
+            className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-800 text-cyan-50 flex items-center gap-2 active:scale-105"
+          >
+            <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90"></span>
+            <span className="relative group-hover:text-white group-hover:duration-500">
+              Get In Touch
+            </span>
+            <BsArrowRight className="group-hover:text-white group-hover:translate-x-1 transition" />
+          </Link>
+        </motion.div>
 
-        <a className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-50 text-cyan-800 flex items-center gap-2 active:scale-105 border border-black/10">
+        <motion.a
+          className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-50 text-cyan-800 flex items-center gap-2 active:scale-105 border border-black/10"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.6,
+          }}
+        >
           <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90"></span>
           <span className="relative group-hover:text-white group-hover:duration-500">
             Download CV
           </span>
           <BsDownload className="group-hover:text-white group-hover:translate-y-1 transition" />
-        </a>
+        </motion.a>
       </div>
     </section>
   );
