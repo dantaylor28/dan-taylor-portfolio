@@ -6,7 +6,7 @@ import HeroImg from "@/public/hero_img.png";
 import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsDownload } from "react-icons/bs";
 
 export default function Introduction() {
   const [text] = useTypewriter({
@@ -79,7 +79,7 @@ export default function Introduction() {
       <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
         <Link
           href="#contactme"
-          className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-800 text-cyan-50 flex items-center gap-2"
+          className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-800 text-cyan-50 flex items-center gap-2 active:scale-105"
         >
           <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90"></span>
           <span className="relative group-hover:text-white group-hover:duration-500">
@@ -87,6 +87,14 @@ export default function Introduction() {
           </span>
           <BsArrowRight className="group-hover:text-white group-hover:translate-x-1 transition" />
         </Link>
+
+        <a className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-50 text-cyan-800 flex items-center gap-2 active:scale-105 border border-black/10">
+          <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90"></span>
+          <span className="relative group-hover:text-white group-hover:duration-500">
+            Download CV
+          </span>
+          <BsDownload className="group-hover:text-white group-hover:translate-y-1 transition" />
+        </a>
       </div>
     </section>
   );
