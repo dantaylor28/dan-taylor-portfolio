@@ -103,7 +103,7 @@ export default function Introduction() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.6,
+              delay: 0.575,
             }}
           >
             <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90"></span>
@@ -119,7 +119,7 @@ export default function Introduction() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.7,
+            delay: 0.65,
           }}
         >
           <a
@@ -136,7 +136,7 @@ export default function Introduction() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.8,
+            delay: 0.725,
           }}
         >
           <a
