@@ -115,7 +115,6 @@ export default function Introduction() {
         </div>
 
         <motion.div
-          className="active:scale-110"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -125,14 +124,13 @@ export default function Introduction() {
           <a
             href="https://github.com/dantaylor28"
             target="_blank"
-            className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] hover:bg-cyan-600 duration-300"
+            className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] active:scale-110 hover:bg-cyan-600 duration-300"
           >
             <FaSquareGithub className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
           </a>
         </motion.div>
 
         <motion.div
-          className="active:scale-110"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -142,7 +140,7 @@ export default function Introduction() {
           <a
             href="https://www.linkedin.com/in/dan-m-taylor/"
             target="_blank"
-            className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] hover:bg-cyan-600 duration-300"
+            className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] active:scale-110 hover:bg-cyan-600 duration-300"
           >
             <FaLinkedin className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
           </a>
