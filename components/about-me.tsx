@@ -1,10 +1,11 @@
 import React from "react";
+import PageHeading from "./page-heading";
 
 export default function AboutMe() {
   return (
-    <div className="flex w-[100%] justify-center items-center bg-cyan-600 mt-10 border-t-2 border-cyan-50">
+    <div className="flex w-[100%] justify-center items-center bg-cyan-800 mt-10 border-t-2 border-cyan-50">
       <section className="my-28 max-w-[50rem] text-center text-cyan-50 px-4 leading-8">
-        <h2 className="text-3xl font-medium capitalize mb-8">About Me</h2>
+        <PageHeading>about me</PageHeading>
         <p className="mb-3 font-light">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos odio,
           enim autem nihil itaque a non quia iusto cupiditate vitae fuga! Quos
