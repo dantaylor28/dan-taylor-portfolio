@@ -5,7 +5,11 @@ export default function AboutMe() {
   return (
     <div className="flex w-[100%] justify-center items-center bg-cyan-800 mt-10 border-t-2 border-cyan-50">
       <section className="my-28 max-w-[50rem] text-center text-cyan-50 px-4 leading-8">
-        <PageHeading>about me</PageHeading>
+        <div className="flex items-center py-4 mb-8">
+          <div className="flex-grow h-px bg-cyan-50 opacity-40"></div>
+          <PageHeading>about me</PageHeading>
+          <div className="flex-grow h-px bg-cyan-50 opacity-40"></div>
+        </div>
         <p className="mb-3 font-light">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos odio,
           enim autem nihil itaque a non quia iusto cupiditate vitae fuga! Quos
