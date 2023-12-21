@@ -3,7 +3,7 @@ import PageHeading from "./page-heading";
 
 export default function AboutMe() {
   return (
-    <div className="flex w-[100%] justify-center items-center bg-cyan-800 mt-10 border-t-2 border-cyan-50">
+    <div className="flex w-[100%] justify-center items-center bg-cyan-800 mt-10 border-y-2 border-cyan-50">
       <section className="my-28 max-w-[50rem] text-center text-cyan-50 px-4 leading-8">
         <div className="flex items-center py-4 mb-8">
           <div className="flex-grow h-px bg-cyan-50 opacity-40"></div>
