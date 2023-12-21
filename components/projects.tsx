@@ -20,9 +20,9 @@ export default function Projects() {
             className="md:w-[28.5rem] md:h-[32rem] rounded-sm" />
           </div>
 
-          <div className="flex flex-col items-start justify-center text-left md:w-1/2">
-            <h3>project title</h3>
-            <p>
+          <div className="flex flex-col items-start justify-center text-left pl-[8rem] md:w-1/2">
+            <h3 className="text-3xl font-normal capitalize mb-10">project title</h3>
+            <p className="font-light">
               project description Lorem ipsum dolor, sit amet consectetur
               adipisicing elit. Magnam ratibutone enim qui rerum architecto quod
               reiciendis, iusto et maiores placeat ut odit mollitia. Aspernatur
