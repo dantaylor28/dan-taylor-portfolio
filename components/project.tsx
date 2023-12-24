@@ -27,7 +27,15 @@ export default function Project({
         <h3 className="text-3xl font-normal capitalize mb-10 pl-5 md:pl-0">
           {title}
         </h3>
-        <p className="font-extralight mb-12 pl-5 md:pl-0">{description}</p>
+        <p className="font-extralight pl-5 md:pl-0">{description}</p>
+        <ul className="flex flex-wrap gap-2 mt-4 mb-14 pl-5 md:pl-0">
+            {tags.map((tag, index) => (
+                <li className="bg-cyan-800/90 px-4 py-[1px] text-[0.7rem] uppercase text-white rounded-3xl tracking-wider"
+                key={index}>
+                    {tag}
+                </li>
+            ))}
+        </ul>
 
         <div className="flex items-center justify-center gap-8 capitalize font-normal">
           <a className="group bg-cyan-50 text-cyan-800 flex items-center gap-2 hover:bg-cyan-600 hover:text-cyan-50 duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer">
