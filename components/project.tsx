@@ -10,6 +10,8 @@ export default function Project({
   description,
   image,
   tags,
+  liveUrl,
+  repoUrl
 }: ProjectProps) {
   return (
     <div className="group/margin flex flex-col md:flex-row md:h-[35rem] overflow-hidden py-16 sm:p-0 border-b border-black/20 sm:border-none sm:mt-16 sm:mb-32 md:odd:flex-row-reverse ">
@@ -37,12 +39,12 @@ export default function Project({
         </ul>
 
         <div className="flex items-center justify-center gap-8 capitalize font-normal">
-          <a className="group bg-cyan-50 text-cyan-800 flex items-center gap-2 hover:bg-cyan-600 hover:text-cyan-50 duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer">
+          <a href={liveUrl} target="_blank" className="group bg-cyan-50 text-cyan-800 flex items-center gap-2 hover:bg-cyan-600 hover:text-cyan-50 duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer">
             live site
             <BsBoxArrowUpRight className="group-hover:text-cyan-50 group-hover:-translate-y-1 group-hover:translate-x-1 transition" />
           </a>
 
-          <a className="group bg-cyan-50 text-cyan-800 flex items-center gap-2 hover:bg-cyan-600 hover:text-cyan-50 duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer">
+          <a href={repoUrl} target="_blank" className="group bg-cyan-50 text-cyan-800 flex items-center gap-2 hover:bg-cyan-600 hover:text-cyan-50 duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer">
             github link
             <BsGithub className="group-hover:text-cyan-50 group-hover:translate-x-1 transition" />
           </a>
