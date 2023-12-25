@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import ProjectImg from "../public/project_img.png";
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import { projectData } from "@/lib/data";
 
@@ -19,7 +18,7 @@ export default function Project({
           src={image}
           alt="project I coded"
           quality={95}
-          className="md:w-[20.5rem] md:h-[24rem] lg:w-[28.5rem] lg:h-[32rem] rounded-sm shadow-2xl group-hover:scale-105 "
+          className="md:w-[20.5rem] md:h-[24rem] lg:w-[28.5rem] lg:h-[32rem] rounded-sm shadow-2xl md:group-hover:scale-105 "
         />
       </div>
     
