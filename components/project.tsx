@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import { projectData } from "@/lib/data";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 type ProjectProps = (typeof projectData)[number];
 
@@ -21,12 +21,14 @@ export default function Project({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   return (
     <motion.div
       ref={ref}
       style={{
-        opacity: scrollYProgress,
-        scale: scrollYProgress,
+        opacity: opacityProgress,
+        scale: scaleProgress,
       }}
       className="group/margin flex flex-col md:flex-row md:h-[35rem] overflow-hidden py-16 sm:p-0 border-b border-black/20 sm:border-none sm:mt-16 sm:mb-32 md:odd:flex-row-reverse "
     >
