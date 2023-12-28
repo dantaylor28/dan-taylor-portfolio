@@ -24,7 +24,7 @@ export default function Introduction() {
   });
 
   return (
-    <section className="mb-8 max-w-[50rem] text-center px-4 sm:mb-0">
+    <section id="home" className="mb-8 max-w-[50rem] text-center px-4 sm:mb-0 scroll-mt-[100rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
