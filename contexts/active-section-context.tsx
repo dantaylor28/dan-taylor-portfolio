@@ -3,7 +3,13 @@ import React, { useState } from "react";
 
 type SectionName = (typeof links)[number]["name"];
 
-export default function ActiveSectionContextProvider() {
+type ActiveSectionContextProviderProps = {
+  children: React.ReactNode;
+};
+
+export default function ActiveSectionContextProvider({
+  children,
+}: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>("Home");
-  return <div>ActiveSectionContextProvider</div>;
+  return children;
 }

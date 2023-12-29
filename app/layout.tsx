@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import ActiveSectionContextProvider from "@/contexts/active-section-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${inter.className} bg-slate-100 text-slate-950 relative pt-28 sm:pt-36`}>
+      <body
+        className={`${inter.className} bg-slate-100 text-slate-950 relative pt-28 sm:pt-36`}
+      >
         <div
           className="bg-[#ffedd5] absolute -z-10 top-[-6rem] right-[4rem] h-[31.25rem] w-[31.25rem]
         rounded-full blur-[10rem] sm:w-[68.75rem]"
@@ -31,8 +34,11 @@ export default function RootLayout({
           className="bg-[#f7fee7] absolute -z-10 top-[30rem] left-[-35rem] h-[31.25rem] w-[50rem]
         rounded-full blur-[10rem] sm:w-[79.25rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem]"
         ></div>
-        <Header />
-        {children}
+
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
