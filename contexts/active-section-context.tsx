@@ -1,7 +1,9 @@
-import React from 'react'
+import { links } from "@/lib/data";
+import React, { useState } from "react";
+
+type SectionName = (typeof links)[number]["name"];
 
 export default function ActiveSectionContextProvider() {
-  return (
-    <div>ActiveSectionContextProvider</div>
-  )
+  const [activeSection, setActiveSection] = useState<SectionName>("Home");
+  return <div>ActiveSectionContextProvider</div>;
 }

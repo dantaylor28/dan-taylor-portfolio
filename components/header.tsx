@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState("Home");
   return (
     <header className="relative z-[999]">
       <motion.div
