@@ -28,13 +28,13 @@ export default function Introduction() {
   const { ref, inView } = useInView({
     threshold: 0.75,
   });
-  const { setActiveSection } = useActiveSectionContext();
+  const { setActiveSection, lastHeaderClick } = useActiveSectionContext();
 
   useEffect(() => {
-    if (inView) {
+    if (inView && Date.now() - lastHeaderClick > 1000) {
       setActiveSection("Home");
     }
-  }, [inView]);
+  }, [inView, lastHeaderClick]);
 
   return (
     <section

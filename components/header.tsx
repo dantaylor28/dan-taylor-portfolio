@@ -8,7 +8,8 @@ import clsx from "clsx";
 import { useActiveSectionContext } from "@/contexts/active-section-context";
 
 export default function Header() {
-  const {activeSection, setActiveSection} = useActiveSectionContext()
+  const { activeSection, setActiveSection, setLastHeaderClick } =
+    useActiveSectionContext();
 
   return (
     <header className="relative z-[999]">
@@ -45,7 +46,10 @@ export default function Header() {
             >
               <Link
                 href={link.hashtag}
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setLastHeaderClick(Date.now());
+                }}
                 className={clsx(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
                   { "text-gray-950": activeSection === link.name }
@@ -55,13 +59,14 @@ export default function Header() {
 
                 {link.name === activeSection && (
                   <motion.span
-                  layoutId="activeSection"
-                  transition={{
-                    type: "spring",
-                    stiffness: 300,
-                    damping: 30
-                  }}
-                  className="bg-gray-100 rounded-full -z-10 absolute inset-0"></motion.span>
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 300,
+                      damping: 30,
+                    }}
+                    className="bg-gray-100 rounded-full -z-10 absolute inset-0"
+                  ></motion.span>
                 )}
               </Link>
             </motion.li>

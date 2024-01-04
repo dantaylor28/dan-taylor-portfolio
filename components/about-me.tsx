@@ -9,13 +9,13 @@ export default function AboutMe() {
   const { ref, inView } = useInView({
     threshold: 0.75,
   });
-  const { setActiveSection } = useActiveSectionContext();
+  const { setActiveSection, lastHeaderClick } = useActiveSectionContext();
 
   useEffect(() => {
-    if (inView) {
+    if (inView && Date.now() - lastHeaderClick > 1000) {
       setActiveSection("About Me");
     }
-  }, [inView]);
+  }, [inView, lastHeaderClick]);
 
   return (
     <div
