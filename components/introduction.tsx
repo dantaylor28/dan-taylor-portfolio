@@ -1,13 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import HeroImg from "@/public/hero_img.png";
 import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Link from "next/link";
 import { BsArrowRight, BsDownload } from "react-icons/bs";
 import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/contexts/active-section-context";
 
 export default function Introduction() {
   const [text] = useTypewriter({
@@ -23,8 +25,21 @@ export default function Introduction() {
     deleteSpeed: 60,
   });
 
+  const { ref, inView } = useInView();
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView]);
+
   return (
-    <section id="home" className="mb-8 max-w-[50rem] text-center px-4 sm:mb-0 scroll-mt-[100rem]">
+    <section
+      id="home"
+      className="mb-8 max-w-[50rem] text-center px-4 sm:mb-0 scroll-mt-[100rem]"
+      ref={ref}
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div

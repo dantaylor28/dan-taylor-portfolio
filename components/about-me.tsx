@@ -1,9 +1,26 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import PageHeading from "./page-heading";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/contexts/active-section-context";
 
 export default function AboutMe() {
+  const { ref, inView } = useInView();
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("About Me");
+    }
+  }, [inView]);
+
   return (
-    <div id="aboutme" className="flex w-[100%] justify-center items-center bg-cyan-800 mt-10 border-y-2 border-cyan-50 scroll-mt-20">
+    <div
+      id="aboutme"
+      className="flex w-[100%] justify-center items-center bg-cyan-800 mt-10 border-y-2 border-cyan-50 scroll-mt-20"
+      ref={ref}
+    >
       <section className="my-28 max-w-[50rem] text-center text-cyan-50 px-4 leading-8">
         <div className="flex items-center py-4 mb-8">
           <div className="flex-grow h-px bg-cyan-50 opacity-40"></div>
