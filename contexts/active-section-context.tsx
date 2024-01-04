@@ -12,6 +12,8 @@ type ActiveSectionContextProviderProps = {
 type ActiveSectionContextType = {
   activeSection: SectionName;
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+  lastHeaderClick: number;
+  setLastHeaderClick: React.Dispatch<React.SetStateAction<number>>;
 };
 
 const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
@@ -22,11 +24,15 @@ export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>("Home");
+  const [lastHeaderClick, setLastHeaderClick] = useState(0);
+
   return (
     <ActiveSectionContext.Provider
       value={{
         activeSection,
         setActiveSection,
+        lastHeaderClick,
+        setLastHeaderClick,
       }}
     >
       {children}
