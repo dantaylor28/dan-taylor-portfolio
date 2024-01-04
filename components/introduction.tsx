@@ -25,7 +25,9 @@ export default function Introduction() {
     deleteSpeed: 60,
   });
 
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.75,
+  });
   const { setActiveSection } = useActiveSectionContext();
 
   useEffect(() => {
