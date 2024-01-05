@@ -65,7 +65,7 @@ export default function Header() {
                       stiffness: 300,
                       damping: 30,
                     }}
-                    className="bg-gray-100 rounded-full -z-10 absolute inset-0"
+                    className="bg-cyan-600/20 rounded-full -z-10 absolute inset-0"
                   ></motion.span>
                 )}
               </Link>
