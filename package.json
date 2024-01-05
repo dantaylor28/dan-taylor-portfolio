@@ -19,6 +19,8 @@
     "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {
+    "@iconify-json/logos": "^1.1.42",
+    "@iconify/tailwind": "^0.1.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
