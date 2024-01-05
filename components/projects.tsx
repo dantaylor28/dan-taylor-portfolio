@@ -15,7 +15,7 @@ export default function Projects() {
       className="flex w-[100%] justify-center items-center scroll-mt-20"
       ref={ref}
     >
-      <section className="my-16 text-center px-4 leading-8 max-w-[80rem]">
+      <section className="mt-16 text-center px-4 leading-8 max-w-[80rem]">
         <div className="flex items-center py-4 mb-8">
           <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40"></div>
           <PageHeading>my projects</PageHeading>
