@@ -1,15 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import HeroImg from "@/public/hero_img.png";
 import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Link from "next/link";
 import { BsArrowRight, BsDownload } from "react-icons/bs";
 import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
-import { useInView } from "react-intersection-observer";
-import { useActiveSectionContext } from "@/contexts/active-section-context";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Introduction() {
   const [text] = useTypewriter({
@@ -25,16 +24,7 @@ export default function Introduction() {
     deleteSpeed: 60,
   });
 
-  const { ref, inView } = useInView({
-    threshold: 0.75,
-  });
-  const { setActiveSection, lastHeaderClick } = useActiveSectionContext();
-
-  useEffect(() => {
-    if (inView && Date.now() - lastHeaderClick > 1000) {
-      setActiveSection("Home");
-    }
-  }, [inView, lastHeaderClick]);
+  const { ref } = useSectionInView("Home");
 
   return (
     <section

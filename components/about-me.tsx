@@ -1,21 +1,11 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import PageHeading from "./page-heading";
-import { useInView } from "react-intersection-observer";
-import { useActiveSectionContext } from "@/contexts/active-section-context";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function AboutMe() {
-  const { ref, inView } = useInView({
-    threshold: 0.75,
-  });
-  const { setActiveSection, lastHeaderClick } = useActiveSectionContext();
-
-  useEffect(() => {
-    if (inView && Date.now() - lastHeaderClick > 1000) {
-      setActiveSection("About Me");
-    }
-  }, [inView, lastHeaderClick]);
+  const { ref } = useSectionInView("About Me");
 
   return (
     <div
