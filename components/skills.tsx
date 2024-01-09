@@ -1,5 +1,6 @@
 import React from "react";
 import PageHeading from "./page-heading";
+import { Tooltip } from "./tooltip";
 
 export default function Skills() {
   return (
@@ -9,9 +10,11 @@ export default function Skills() {
     >
       <PageHeading>technical skills</PageHeading>
       <div className="flex flex-wrap gap-8 mt-20 justify-center">
-        <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg">
-          <span className="icon-[logos--react] text-[2.2rem]"></span>
-        </div>
+        <Tooltip text="React.js">
+          <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg hover:scale-105">
+            <span className="icon-[logos--react] text-[2.2rem]"></span>
+          </div>
+        </Tooltip>
 
         <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg">
           <span className="icon-[logos--nextjs-icon] text-[2.4rem]"></span>
