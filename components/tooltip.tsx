@@ -6,7 +6,7 @@ export const Tooltip = ({
   text,
   children,
 }: {
-  text: string;
+  text: ReactNode;
   children: ReactNode;
 }) => {
   const [display, setDisplay] = useState(false);
