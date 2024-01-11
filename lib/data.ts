@@ -59,52 +59,6 @@ export const projectData = [
   },
 ] as const;
 
-// export const skillIcons = [
-//   "icon-[logos--react] text-[2.2rem]",
-//   "icon-[logos--nextjs-icon] text-[2.4rem]",
-//   "icon-[logos--html-5] text-[2.3rem]",
-//   "icon-[logos--css-3] text-[2.3rem]",
-//   "icon-[logos--python] text-[2.3rem]",
-//   "icon-[logos--docker-icon] text-[2rem]",
-//   "icon-[logos--django-icon] text-[2rem]",
-//   "icon-[logos--bootstrap] text-[2rem]",
-//   "icon-[logos--nodejs-icon] text-[2.4rem]",
-//   "icon-[logos--typescript-icon] text-[2rem]",
-//   "icon-[logos--tailwindcss-icon] text-[1.7rem]",
-//   "icon-[logos--git-icon] text-[2.5rem]",
-//   "icon-[logos--postgresql] text-[2.2rem]",
-//   "icon-[logos--mongodb-icon] text-[2.5rem]",
-//   "icon-[logos--mysql-icon] text-[2.1rem]",
-//   "icon-[logos--visual-studio-code] text-[2.2rem]",
-//   "icon-[logos--heroku-icon] text-[2rem]",
-//   "icon-[logos--prettier] text-[2rem]",
-//   "icon-[logos--eslint] text-[2.2rem]",
-//   "icon-[logos--xcode] text-[2.3rem]",
-// ] as const;
-
-// export const languages = [
-//   "React.js",
-//   "Next.js",
-//   "HTML5",
-//   "CSS3",
-//   "Python",
-//   "Docker",
-//   "Django",
-//   "Bootstrap",
-//   "Node.js",
-//   "Typescript",
-//   "TailwindCSS",
-//   "Git",
-//   "PostgreSQL",
-//   "MongoDB",
-//   "MySQL",
-//   "VSCode",
-//   "Heroku",
-//   "Prettier",
-//   "ESLint",
-//   "Xcode",
-// ] as const;
-
 export const skillsData = [
   {
     icon: "icon-[logos--react] text-[2.2rem]",
@@ -125,5 +79,65 @@ export const skillsData = [
   {
     icon: "icon-[logos--python] text-[2.3rem]",
     language: "Python",
+  },
+  {
+    icon: "icon-[logos--docker-icon] text-[2rem]",
+    language: "Docker",
+  },
+  {
+    icon: "icon-[logos--django-icon] text-[2rem]",
+    language: "Django",
+  },
+  {
+    icon: "icon-[logos--bootstrap] text-[2rem]",
+    language: "Bootstrap",
+  },
+  {
+    icon: "icon-[logos--nodejs-icon] text-[2.4rem]",
+    language: "Node.js",
+  },
+  {
+    icon: "icon-[logos--typescript-icon] text-[2rem]",
+    language: "Typescript",
+  },
+  {
+    icon: "icon-[logos--tailwindcss-icon] text-[1.7rem]",
+    language: "TailwindCSS",
+  },
+  {
+    icon: "icon-[logos--git-icon] text-[2.5rem]",
+    language: "Git",
+  },
+  {
+    icon: "icon-[logos--postgresql] text-[2.2rem]",
+    language: "PostgreSQL",
+  },
+  {
+    icon: "icon-[logos--mongodb-icon] text-[2.5rem]",
+    language: "MongoDB",
+  },
+  {
+    icon: "icon-[logos--mysql-icon] text-[2.1rem]",
+    language: "MySQL",
+  },
+  {
+    icon: "icon-[logos--visual-studio-code] text-[2.2rem]",
+    language: "VSCode",
+  },
+  {
+    icon: "icon-[logos--heroku-icon] text-[2rem]",
+    language: "Heroku",
+  },
+  {
+    icon: "icon-[logos--prettier] text-[2rem]",
+    language: "Prettier",
+  },
+  {
+    icon: "icon-[logos--eslint] text-[2.2rem]",
+    language: "ESLint",
+  },
+  {
+    icon: "icon-[logos--xcode] text-[2.3rem]",
+    language: "Xcode",
   },
 ] as const;
