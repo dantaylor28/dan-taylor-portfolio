@@ -59,85 +59,37 @@ export const projectData = [
   },
 ] as const;
 
-export const skillsData = [
-  {
-    icon: "icon-[logos--react] text-[2.2rem]",
-    language: "React.js",
-  },
-  {
-    icon: "icon-[logos--nextjs-icon] text-[2.4rem]",
-    language: "Next.js",
-  },
-  {
-    icon: "icon-[logos--html-5] text-[2.3rem]",
-    language: "HTML5",
-  },
-  {
-    icon: "icon-[logos--css-3] text-[2.3rem]",
-    language: "CSS3",
-  },
-  {
-    icon: "icon-[logos--python] text-[2.3rem]",
-    language: "Python",
-  },
-  {
-    icon: "icon-[logos--docker-icon] text-[2rem]",
-    language: "Docker",
-  },
-  {
-    icon: "icon-[logos--django-icon] text-[2rem]",
-    language: "Django",
-  },
-  {
-    icon: "icon-[logos--bootstrap] text-[2rem]",
-    language: "Bootstrap",
-  },
-  {
-    icon: "icon-[logos--nodejs-icon] text-[2.4rem]",
-    language: "Node.js",
-  },
-  {
-    icon: "icon-[logos--typescript-icon] text-[2rem]",
-    language: "Typescript",
-  },
+export const frontendSkills = [
+  { icon: "icon-[logos--react] text-[2.2rem]", language: "React.js" },
+  { icon: "icon-[logos--nextjs-icon] text-[2.4rem]", language: "Next.js" },
+  { icon: "icon-[logos--javascript] text-[2rem]", language: "Javascript" },
+  { icon: "icon-[logos--typescript-icon] text-[2rem]", language: "Typescript" },
+  { icon: "icon-[logos--html-5] text-[2.3rem]", language: "HTML5" },
+  { icon: "icon-[logos--css-3] text-[2.3rem]", language: "CSS3" },
+  { icon: "icon-[logos--python] text-[2.3rem]", language: "Python" },
+  { icon: "icon-[logos--django-icon] text-[2rem]", language: "Django" },
+  { icon: "icon-[logos--bootstrap] text-[2rem]", language: "Bootstrap" },
   {
     icon: "icon-[logos--tailwindcss-icon] text-[1.7rem]",
     language: "TailwindCSS",
   },
-  {
-    icon: "icon-[logos--git-icon] text-[2.5rem]",
-    language: "Git",
-  },
-  {
-    icon: "icon-[logos--postgresql] text-[2.2rem]",
-    language: "PostgreSQL",
-  },
-  {
-    icon: "icon-[logos--mongodb-icon] text-[2.5rem]",
-    language: "MongoDB",
-  },
-  {
-    icon: "icon-[logos--mysql-icon] text-[2.1rem]",
-    language: "MySQL",
-  },
+] as const;
+
+export const backendSkills = [
+  { icon: "icon-[logos--nodejs-icon] text-[2.4rem]", language: "Node.js" },
+  { icon: "icon-[logos--postgresql] text-[2.2rem]", language: "PostgreSQL" },
+  { icon: "icon-[logos--mysql-icon] text-[2.1rem]", language: "MySQL" },
+  { icon: "icon-[logos--mongodb-icon] text-[2.5rem]", language: "MongoDB" },
+  { icon: "icon-[logos--docker-icon] text-[2rem]", language: "Docker" },
+  { icon: "icon-[logos--git-icon] text-[2.5rem]", language: "Git" },
+  { icon: "icon-[logos--github-icon] text-[2.4rem]", language: "Github" },
   {
     icon: "icon-[logos--visual-studio-code] text-[2.2rem]",
     language: "VSCode",
   },
-  {
-    icon: "icon-[logos--heroku-icon] text-[2rem]",
-    language: "Heroku",
-  },
-  {
-    icon: "icon-[logos--prettier] text-[2rem]",
-    language: "Prettier",
-  },
-  {
-    icon: "icon-[logos--eslint] text-[2.2rem]",
-    language: "ESLint",
-  },
-  {
-    icon: "icon-[logos--xcode] text-[2.3rem]",
-    language: "Xcode",
-  },
+  { icon: "icon-[logos--heroku-icon] text-[2rem]", language: "Heroku" },
+  { icon: "icon-[logos--vercel-icon] text-[1.8rem]", language: "Vercel" },
+  { icon: "icon-[logos--prettier] text-[2rem]", language: "Prettier" },
+  { icon: "icon-[logos--eslint] text-[2.2rem]", language: "ESLint" },
+  { icon: "icon-[logos--xcode] text-[2.3rem]", language: "Xcode" },
 ] as const;
