@@ -16,7 +16,7 @@ const Skills = () => {
       <h2 className="text-lg capitalize font-light mt-10 mb-10">
         frontend development
       </h2>
-      <div className="flex justify-center">
+      <div className="flex justify-center items items-center">
         <div className="flex flex-wrap gap-8 justify-center max-w-[30rem]">
           {frontendSkills.map((skill, index) => (
             <div
@@ -46,42 +46,67 @@ const Skills = () => {
           ))}
         </div>
         <ul className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left">
-            <li className="flex items-center mb-5 ml-3"><IoMdCheckboxOutline className="mr-3 text-lg" />Create attractive & fully responsive web pages.</li>
-            <li className="flex items-center mb-5 ml-3"><IoMdCheckboxOutline className="mr-3 text-lg" />Use testing libraries to fully test my web application.</li>
-            <li className="flex items-center ml-3"><IoMdCheckboxOutline className="mr-3 text-lg" />Troubleshoot problems with performance or user experience.</li>
+          <li className="flex items-center mb-5 ml-3">
+            <IoMdCheckboxOutline className="mr-3 text-lg" />
+            Create attractive & fully responsive web pages.
+          </li>
+          <li className="flex items-center mb-5 ml-3">
+            <IoMdCheckboxOutline className="mr-3 text-lg" />
+            Use testing libraries to fully test my web application.
+          </li>
+          <li className="flex items-center ml-3">
+            <IoMdCheckboxOutline className="mr-3 text-lg" />
+            Troubleshoot problems with performance or user experience.
+          </li>
         </ul>
       </div>
 
-      <h2 className="text-lg capitalize font-light mt-16 mb-5">
+      <h2 className="text-lg capitalize font-light mt-16 mb-10">
         backend development
       </h2>
-      <div className="flex flex-wrap gap-8 justify-center">
-        {backendSkills.map((skill, index) => (
-          <div
-            className="relative flex flex-col items-center group"
-            key={index}
-          >
-            <span
-              className="flex justify-center"
-              onMouseEnter={() => setDisplay(true)}
-              onMouseLeave={() => setDisplay(false)}
-            >
-              <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg hover:scale-105">
-                <span className={skill.icon}></span>
-              </div>
-            </span>
+      <div className="flex justify-center items-center">
+        <ul className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left">
+          <li className="flex items-center mb-5 ml-3">
+            <IoMdCheckboxOutline className="mr-3 text-lg" />
+            Create attractive & fully responsive web pages.
+          </li>
+          <li className="flex items-center mb-5 ml-3">
+            <IoMdCheckboxOutline className="mr-3 text-lg" />
+            Use testing libraries to fully test my web application.
+          </li>
+          <li className="flex items-center ml-3">
+            <IoMdCheckboxOutline className="mr-3 text-lg" />
+            Troubleshoot problems with performance or user experience.
+          </li>
+        </ul>
+        <div className="flex flex-wrap gap-8 justify-center max-w-[30rem]">
+          {backendSkills.map((skill, index) => (
             <div
-              className={`absolute bottom-full flex flex-col items-center group-hover:flex ${
-                !display ? "hidden" : "hidden"
-              }`}
+              className="relative flex flex-col items-center group"
+              key={index}
             >
-              <span className="relative z-10 p-3 text-s leading-none text-white bg-cyan-800 shadow-lg rounded-md transition">
-                {skill.language}
+              <span
+                className="flex justify-center"
+                onMouseEnter={() => setDisplay(true)}
+                onMouseLeave={() => setDisplay(false)}
+              >
+                <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg hover:scale-105">
+                  <span className={skill.icon}></span>
+                </div>
               </span>
-              <div className="w-3 h-3 -mt-2 rotate-45 bg-cyan-800" />
+              <div
+                className={`absolute bottom-full flex flex-col items-center group-hover:flex ${
+                  !display ? "hidden" : "hidden"
+                }`}
+              >
+                <span className="relative z-10 p-3 text-s leading-none text-white bg-cyan-800 shadow-lg rounded-md transition">
+                  {skill.language}
+                </span>
+                <div className="w-3 h-3 -mt-2 rotate-45 bg-cyan-800" />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       <h2 className="mt-12">delete below here later</h2>
