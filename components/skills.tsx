@@ -42,11 +42,13 @@ const Skills = () => {
         <PageHeading>what i do</PageHeading>
         <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40"></div>
       </div>
+
       <h2 className="text-lg capitalize font-light mt-10 mb-10">
         frontend development
       </h2>
-      <div className="flex justify-center items items-center">
-        <div className="flex flex-wrap gap-8 justify-center max-w-[30rem]">
+
+      <div className="flex flex-col md:flex-row justify-center items-center">
+        <div className="flex flex-wrap gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
           {frontendSkills.map((skill, index) => (
             <div
               className="relative flex flex-col items-center group"
@@ -74,6 +76,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
+
         <ul className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left">
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 text-lg" />
@@ -93,7 +96,7 @@ const Skills = () => {
       <h2 className="text-lg capitalize font-light mt-16 mb-10">
         backend development
       </h2>
-      <div className="flex justify-center items-center">
+      <div className="flex flex-col-reverse md:flex-row justify-center items-center">
         <ul className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left">
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 text-lg" />
@@ -108,7 +111,7 @@ const Skills = () => {
             Troubleshoot problems with performance or user experience.
           </li>
         </ul>
-        <div className="flex flex-wrap gap-8 justify-center max-w-[30rem]">
+        <div className="flex flex-wrap gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
           {backendSkills.map((skill, index) => (
             <div
               className="relative flex flex-col items-center group"
