@@ -35,9 +35,13 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="scroll-mt-28 text-center max-w-[60rem] mb-28"
+      className="scroll-mt-28 text-center max-w-[60rem] mb-28 px-4 md:p-0"
     >
-      <PageHeading>what i do</PageHeading>
+      <div className="flex items-center py-4 mb-8">
+        <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40"></div>
+        <PageHeading>what i do</PageHeading>
+        <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40"></div>
+      </div>
       <h2 className="text-lg capitalize font-light mt-10 mb-10">
         frontend development
       </h2>
