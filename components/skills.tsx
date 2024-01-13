@@ -1,3 +1,28 @@
+// The only way iconify icons render on my skills section is listing them here, albeit commented out
+// icon-[logos--react] text-[2.2rem]
+// icon-[logos--nextjs-icon] text-[2.4rem]
+// icon-[logos--javascript] text-[2rem]
+// icon-[logos--typescript-icon] text-[2rem]
+// icon-[logos--html-5] text-[2.3rem]
+// icon-[logos--css-3] text-[2.3rem]
+// icon-[logos--python] text-[2.3rem]
+// icon-[logos--django-icon] text-[2rem]
+// icon-[logos--bootstrap] text-[2rem]
+// icon-[logos--tailwindcss-icon] text-[1.7rem]
+// icon-[logos--nodejs-icon] text-[2.4rem]
+// icon-[logos--postgresql] text-[2.2rem]
+// icon-[logos--mysql-icon] text-[2.1rem]
+// icon-[logos--mongodb-icon] text-[2.5rem]
+// icon-[logos--docker-icon] text-[2rem]
+// icon-[logos--git-icon] text-[2.5rem]
+// icon-[logos--github-icon] text-[2.4rem]
+// icon-[logos--visual-studio-code] text-[2.2rem]
+// icon-[logos--heroku-icon] text-[2rem]
+// icon-[logos--vercel-icon] text-[1.8rem]
+// icon-[logos--prettier] text-[2rem]
+// icon-[logos--eslint] text-[2.2rem]
+// icon-[logos--xcode] text-[2.3rem]
+
 "use client";
 
 import React, { useState } from "react";
@@ -107,20 +132,6 @@ const Skills = () => {
             </div>
           ))}
         </div>
-      </div>
-
-      <h2 className="mt-12">delete below here later</h2>
-      <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg hover:scale-105">
-        <span className="icon-[logos--javascript] text-[2rem]"></span>
-      </div>
-      <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg hover:scale-105">
-        <span className="icon-[logos--typescript-icon] text-[2rem]"></span>
-      </div>
-      <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg hover:scale-105">
-        <span className="icon-[logos--github-icon] text-[2.4rem]"></span>
-      </div>
-      <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg hover:scale-105">
-        <span className="icon-[logos--vercel-icon] text-[1.8rem]"></span>
       </div>
     </section>
   );
