@@ -29,13 +29,16 @@ import React, { useState } from "react";
 import PageHeading from "./page-heading";
 import { frontendSkills, backendSkills } from "@/lib/data";
 import { IoMdCheckboxOutline } from "react-icons/io";
+import { useSectionInView } from "@/lib/hooks";
 
 const Skills = () => {
   const [display, setDisplay] = useState(false);
+  const { ref } = useSectionInView("Skills", 0.6);
   return (
     <section
       id="skills"
       className="scroll-mt-28 text-center max-w-[60rem] mb-28 px-4 md:p-0"
+      ref={ref}
     >
       <div className="flex items-center py-4 mb-8">
         <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40"></div>
