@@ -30,6 +30,21 @@ import PageHeading from "./page-heading";
 import { frontendSkills, backendSkills } from "@/lib/data";
 import { IoMdCheckboxOutline } from "react-icons/io";
 import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    x: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.1 * index,
+    },
+  }),
+};
 
 const Skills = () => {
   const [display, setDisplay] = useState(false);
@@ -53,9 +68,17 @@ const Skills = () => {
       <div className="flex flex-col md:flex-row justify-center items-center">
         <div className="flex flex-wrap gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
           {frontendSkills.map((skill, index) => (
-            <div
+            <motion.div
               className="relative flex flex-col items-center group"
               key={index}
+              variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+                margin: "-200px",
+              }}
+              custom={index}
             >
               <span
                 className="flex justify-center"
@@ -76,7 +99,7 @@ const Skills = () => {
                 </span>
                 <div className="w-3 h-3 -mt-2 rotate-45 bg-cyan-800" />
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
