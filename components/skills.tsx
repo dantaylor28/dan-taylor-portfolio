@@ -46,7 +46,7 @@ const fadeInAnimationIconVariants = {
   }),
 };
 
-const fadeInAnimationTextVariants = {
+const fadeInAnimationFeVariants = {
   initial: {
     opacity: 0,
     x: 200,
@@ -56,6 +56,17 @@ const fadeInAnimationTextVariants = {
     x: 0,
   },
 };
+
+const fadeInAnimationBeVariants = {
+    initial: {
+      opacity: 0,
+      x: -200,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+    },
+  };
 
 const fadeInAnimationVariants = {
   initial: {
@@ -136,7 +147,7 @@ const Skills = () => {
 
         <motion.ul
           className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left"
-          variants={fadeInAnimationTextVariants}
+          variants={fadeInAnimationFeVariants}
           initial="initial"
           whileInView="animate"
           viewport={{
@@ -172,7 +183,16 @@ const Skills = () => {
         backend development
       </motion.h2>
       <div className="flex flex-col-reverse md:flex-row justify-center items-center">
-        <ul className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left">
+        <motion.ul
+          className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left"
+          variants={fadeInAnimationBeVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+            margin: "-100px",
+          }}
+        >
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 text-lg" />
             Create attractive & fully responsive web pages.
@@ -185,7 +205,7 @@ const Skills = () => {
             <IoMdCheckboxOutline className="mr-3 text-lg" />
             Troubleshoot problems with performance or user experience.
           </li>
-        </ul>
+        </motion.ul>
         <div className="flex flex-wrap gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
           {backendSkills.map((skill, index) => (
             <div
