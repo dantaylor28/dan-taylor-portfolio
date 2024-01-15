@@ -32,18 +32,40 @@ import { IoMdCheckboxOutline } from "react-icons/io";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
-const fadeInAnimationVariants = {
+const fadeInAnimationIconVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.12 * index,
+    },
+  }),
+};
+
+const fadeInAnimationTextVariants = {
   initial: {
     opacity: 0,
     x: 100,
   },
-  animate: (index: number) => ({
+  animate: {
     opacity: 1,
     x: 0,
-    transition: {
-      delay: 0.1 * index,
-    },
-  }),
+  },
+};
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    scale: 0,
+  },
+  animate: {
+    opacity: 1,
+    scale: 1,
+  },
 };
 
 const Skills = () => {
@@ -52,7 +74,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="scroll-mt-28 text-center max-w-[60rem] mb-28 px-4 md:p-0"
+      className="scroll-mt-28 text-center max-w-[60rem] mb-28 px-4 md:p-0 overflow-x-hidden"
       ref={ref}
     >
       <div className="flex items-center py-4 mb-8">
@@ -61,9 +83,18 @@ const Skills = () => {
         <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40"></div>
       </div>
 
-      <h2 className="text-lg capitalize font-light mt-10 mb-10">
+      <motion.h2
+        className="text-lg capitalize font-light mt-10 mb-10"
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+          margin: "-100px",
+        }}
+      >
         frontend development
-      </h2>
+      </motion.h2>
 
       <div className="flex flex-col md:flex-row justify-center items-center">
         <div className="flex flex-wrap gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
@@ -71,12 +102,12 @@ const Skills = () => {
             <motion.div
               className="relative flex flex-col items-center group"
               key={index}
-              variants={fadeInAnimationVariants}
+              variants={fadeInAnimationIconVariants}
               initial="initial"
               whileInView="animate"
               viewport={{
                 once: true,
-                margin: "-200px",
+                margin: "-100px",
               }}
               custom={index}
             >
@@ -103,7 +134,16 @@ const Skills = () => {
           ))}
         </div>
 
-        <ul className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left">
+        <motion.ul
+          className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left"
+          variants={fadeInAnimationTextVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+            margin: "-200px",
+          }}
+        >
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 text-lg" />
             Create attractive & fully responsive web pages.
@@ -116,7 +156,7 @@ const Skills = () => {
             <IoMdCheckboxOutline className="mr-3 text-lg" />
             Troubleshoot problems with performance or user experience.
           </li>
-        </ul>
+        </motion.ul>
       </div>
 
       <h2 className="text-lg capitalize font-light mt-16 mb-10">
