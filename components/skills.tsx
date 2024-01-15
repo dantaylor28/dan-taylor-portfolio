@@ -206,7 +206,7 @@ const Skills = () => {
             Troubleshoot problems with performance or user experience.
           </li>
         </motion.ul>
-        <div className="flex flex-wrap gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
+        <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8  justify-center max-w-[30rem] mb-10 md:mb-0">
           {backendSkills.map((skill, index) => (
             <motion.div
               className="relative flex flex-col items-center group"
