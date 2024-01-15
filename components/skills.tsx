@@ -49,7 +49,7 @@ const fadeInAnimationIconVariants = {
 const fadeInAnimationTextVariants = {
   initial: {
     opacity: 0,
-    x: 100,
+    x: 200,
   },
   animate: {
     opacity: 1,
@@ -74,7 +74,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="scroll-mt-28 text-center max-w-[60rem] mb-28 px-4 md:p-0"
+      className="scroll-mt-28 text-center max-w-[60rem] mb-28 px-4 md:p-0 overflow-x-hidden"
       ref={ref}
     >
       <div className="flex items-center py-4 mb-8">
@@ -141,7 +141,7 @@ const Skills = () => {
           whileInView="animate"
           viewport={{
             once: true,
-            margin: "-200px",
+            margin: "-100px",
           }}
         >
           <li className="flex items-center mb-5 ml-3">
@@ -159,9 +159,18 @@ const Skills = () => {
         </motion.ul>
       </div>
 
-      <h2 className="text-lg capitalize font-light mt-16 mb-10">
+      <motion.h2
+        className="text-lg capitalize font-light mt-16 mb-10"
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+          margin: "-100px",
+        }}
+      >
         backend development
-      </h2>
+      </motion.h2>
       <div className="flex flex-col-reverse md:flex-row justify-center items-center">
         <ul className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left">
           <li className="flex items-center mb-5 ml-3">
