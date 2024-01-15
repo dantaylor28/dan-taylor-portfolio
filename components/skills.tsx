@@ -58,15 +58,15 @@ const fadeInAnimationFeVariants = {
 };
 
 const fadeInAnimationBeVariants = {
-    initial: {
-      opacity: 0,
-      x: -200,
-    },
-    animate: {
-      opacity: 1,
-      x: 0,
-    },
-  };
+  initial: {
+    opacity: 0,
+    x: -200,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+  },
+};
 
 const fadeInAnimationVariants = {
   initial: {
@@ -85,7 +85,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="scroll-mt-28 text-center max-w-[60rem] mb-28 px-4 md:p-0 overflow-x-hidden"
+      className="scroll-mt-28 text-center max-w-[60rem] mb-10 px-4 md:p-0 overflow-x-hidden"
       ref={ref}
     >
       <div className="flex items-center py-4 mb-8">
@@ -182,7 +182,7 @@ const Skills = () => {
       >
         backend development
       </motion.h2>
-      <div className="flex flex-col-reverse md:flex-row justify-center items-center">
+      <div className="flex flex-col-reverse md:flex-row justify-center items-center mb-28">
         <motion.ul
           className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left"
           variants={fadeInAnimationBeVariants}
@@ -208,9 +208,17 @@ const Skills = () => {
         </motion.ul>
         <div className="flex flex-wrap gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
           {backendSkills.map((skill, index) => (
-            <div
+            <motion.div
               className="relative flex flex-col items-center group"
               key={index}
+              variants={fadeInAnimationIconVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+                margin: "-100px",
+              }}
+              custom={index}
             >
               <span
                 className="flex justify-center"
@@ -231,7 +239,7 @@ const Skills = () => {
                 </span>
                 <div className="w-3 h-3 -mt-2 rotate-45 bg-cyan-800" />
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
