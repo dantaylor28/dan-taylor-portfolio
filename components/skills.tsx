@@ -74,7 +74,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="scroll-mt-28 text-center max-w-[60rem] mb-28 px-4 md:p-0 overflow-x-hidden"
+      className="scroll-mt-28 text-center max-w-[60rem] mb-28 px-4 md:p-0"
       ref={ref}
     >
       <div className="flex items-center py-4 mb-8">
@@ -97,7 +97,7 @@ const Skills = () => {
       </motion.h2>
 
       <div className="flex flex-col md:flex-row justify-center items-center">
-        <div className="flex flex-wrap gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
+        <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
           {frontendSkills.map((skill, index) => (
             <motion.div
               className="relative flex flex-col items-center group"
