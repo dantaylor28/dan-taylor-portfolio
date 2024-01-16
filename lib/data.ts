@@ -93,3 +93,54 @@ export const backendSkills = [
   { icon: "icon-[logos--eslint] text-[2.2rem]", language: "ESLint" },
   { icon: "icon-[logos--xcode] text-[2.3rem]", language: "Xcode" },
 ] as const;
+
+export const experienceData = [
+  {
+    title: "Looking for job",
+    description: "I am now searching for my first opportunity to work within an exciting development team.",
+    location: "Göteborg, Sweden",
+    date: "2024",
+  },
+  {
+    title: "Superdry, Gothenburg",
+    description: "I am currently working at the clothing store Superdry, where I am responsible for all operational & logistical duties in store.",
+    location: "Gothenburg, Sweden",
+    date: "April 2017 - Current",
+  },
+  {
+    title: "Graduated from bootcamp",
+    description: "After 8 months of study, I graduated from Code Institute with a certificate in full-stack web development.",
+    location: "Göteborg, Sweden",
+    date: "2023",
+  },
+  {
+    title: "Moved to Stockholm",
+    description: "Spent 6 months living in Stockholm with a new job before moving back to Gothenburg in February.",
+    location: "Stockholm, Sweden",
+    date: "September - Februrary 2022",
+  },
+  {
+    title: "Hello, world!",
+    description: "The day I wrote my first line of HTML code, after discovering the plethora of free learning material online.",
+    location: "Stockholm, Sweden",
+    date: "September 2021",
+  },
+  {
+    title: "Moved to Sweden",
+    description: "Packed up my life and made the move to snowy Sweden",
+    location: "✈️",
+    date: "March 2017",
+  },
+  {
+    title: "Travelling the world",
+    description: "Backpacked my way through 17 countries over a 9 month period starting in Bangkok and ending in the Caribbean.",
+    location: "All over",
+    date: "2016",
+  },
+  {
+    title: "Co-operative Food, England",
+    description: "I worked as a team leader for a supermarket chain, with responsibilities for various departments and supporting the senior management team.",
+    location: "Wolverhmapton, England",
+    date: "October 2012 - February 2017",
+  },
+]
