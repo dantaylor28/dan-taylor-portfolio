@@ -1,4 +1,5 @@
 import AboutMe from "@/components/about-me";
+import Experience from "@/components/experience";
 import Introduction from "@/components/introduction";
 import PageScroll from "@/components/page-scroll";
 import Projects from "@/components/projects";
@@ -11,5 +12,6 @@ export default function Home() {
     <AboutMe />
     <Projects />
     <Skills />
+    <Experience />
   </main>;
 }
