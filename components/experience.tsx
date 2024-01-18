@@ -11,7 +11,7 @@ import ExperienceElement from "./experience-element";
 export default function experience() {
   const { ref } = useSectionInView("Experience", 0.2);
   return (
-    <section id="experience" ref={ref}>
+    <section id="experience" ref={ref} className="scroll-mt-28 text-center">
       <PageHeading>my experience</PageHeading>
       <VerticalTimeline>
         {experienceData.map((item, index) => (

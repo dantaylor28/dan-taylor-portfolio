@@ -16,7 +16,20 @@ export default function ExperienceElement({ item }: ExperienceElementProps) {
   });
   return (
     <div ref={ref} className="vertical-timeline-element">
-      <VerticalTimelineElement visible={inView}>
+      <VerticalTimelineElement
+        visible={inView}
+        contentStyle={{
+          background: "#ecfeff",
+          border: "1px solid rgba(21,94,117, 0.1)",
+          boxShadow: "none",
+          borderRadius: "0.4rem",
+          textAlign: "left",
+          padding: "1.3rem 2rem",
+        }}
+        contentArrowStyle={{
+          borderRight: "0.5rem solid rgba(21,94,117, 0.8)"
+        }}
+      >
         <h1>{item.title}</h1>
         <p>{item.location}</p>
         <p>{item.description}</p>
