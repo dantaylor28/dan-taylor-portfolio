@@ -1,5 +1,15 @@
 import { useInView } from "react-intersection-observer";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import { Icon } from "@iconify/react";
+
+export const BriefcaseIcon = <Icon icon="noto:briefcase" />;
+export const GraduationIcon = <Icon icon="noto:graduation-cap" />;
+export const CoatIcon = <Icon icon="noto:coat" />;
+export const BoxIcon = <Icon icon="noto:package" />;
+export const LaptopIcon = <Icon icon="fluent-emoji:laptop" />;
+export const FlagIcon = <Icon icon="twemoji:flag-sweden" />;
+export const PlaneIcon = <Icon icon="emojione:airplane" />;
+export const ShopIcon = <Icon icon="noto:shopping-cart" />;
 
 type ExperienceElementProps = {
   item: {
@@ -7,6 +17,7 @@ type ExperienceElementProps = {
     location: string;
     description: string;
     date: string;
+    icon: React.ReactNode;
   };
 };
 
@@ -32,8 +43,17 @@ export default function ExperienceElement({ item }: ExperienceElementProps) {
         }}
         date={item.date}
         dateClassName="border-y border-black/10 mx-5"
+        icon={item.icon}
+        iconStyle={{
+          fontSize: "2rem",
+          background: "white",
+          border: "1px solid rgba(21, 94, 117, 0.2)",
+          boxShadow: "none",
+        }}
       >
-        <h1 className="font-medium capitalize text-lg text-cyan-900">{item.title}</h1>
+        <h1 className="font-medium capitalize text-lg text-cyan-900">
+          {item.title}
+        </h1>
         <p className="!mt-0 !font-light text-gray-600">{item.location}</p>
         <p className="!font-normal text-gray-700">{item.description}</p>
       </VerticalTimelineElement>

@@ -1,6 +1,17 @@
+import React from "react";
 import ProjectImg from "../public/project_img.png";
 import DrfApi from "../public/drf_api.png";
 import FoodBlog from "../public/food_blog.png";
+import {
+  BoxIcon,
+  BriefcaseIcon,
+  CoatIcon,
+  FlagIcon,
+  GraduationIcon,
+  LaptopIcon,
+  PlaneIcon,
+  ShopIcon,
+} from "@/components/experience-element";
 
 export const links = [
   {
@@ -101,6 +112,7 @@ export const experienceData = [
       "I am now searching for my first opportunity to work within an exciting development team.",
     location: "Göteborg, Sweden",
     date: "2024",
+    icon: BriefcaseIcon,
   },
   {
     title: "Superdry, Gothenburg",
@@ -108,6 +120,7 @@ export const experienceData = [
       "I am currently working at the clothing store Superdry, where I am responsible for all operational & logistical duties in store.",
     location: "Gothenburg, Sweden",
     date: "April 2017 - Current",
+    icon: CoatIcon,
   },
   {
     title: "Graduated from bootcamp",
@@ -115,6 +128,7 @@ export const experienceData = [
       "After 8 months of study, I graduated from Code Institute with a certificate in full-stack web development.",
     location: "Göteborg, Sweden",
     date: "2023",
+    icon: GraduationIcon,
   },
   {
     title: "Moved to Stockholm",
@@ -122,6 +136,7 @@ export const experienceData = [
       "Spent 6 months living in Stockholm with a new job before moving back to Gothenburg in February.",
     location: "Stockholm, Sweden",
     date: "September - Februrary 2022",
+    icon: BoxIcon,
   },
   {
     title: "Hello, world!",
@@ -129,12 +144,14 @@ export const experienceData = [
       "The day I wrote my first line of HTML code, after discovering the plethora of free learning material online.",
     location: "Stockholm, Sweden",
     date: "September 2021",
+    icon: LaptopIcon,
   },
   {
     title: "Moved to Sweden",
     description: "Packed up my life and made the move to snowy Sweden",
     location: "✈️",
     date: "March 2017",
+    icon: FlagIcon,
   },
   {
     title: "Travelling the world",
@@ -142,6 +159,7 @@ export const experienceData = [
       "Backpacked my way through 17 countries over a 9 month period starting in Bangkok and ending in the Caribbean.",
     location: "All over",
     date: "2016",
+    icon: PlaneIcon,
   },
   {
     title: "Co-operative Food, England",
@@ -149,5 +167,6 @@ export const experienceData = [
       "I worked as a team leader for a supermarket chain, with responsibilities for various departments and supporting the senior management team.",
     location: "Wolverhmapton, England",
     date: "October 2012 - February 2017",
+    icon: ShopIcon,
   },
 ] as const;
