@@ -33,9 +33,9 @@ export default function ExperienceElement({ item }: ExperienceElementProps) {
         date={item.date}
         dateClassName="border-y border-black/10 mx-5"
       >
-        <h1>{item.title}</h1>
-        <p>{item.location}</p>
-        <p>{item.description}</p>
+        <h1 className="font-medium capitalize text-lg text-cyan-900">{item.title}</h1>
+        <p className="!mt-0 !font-light text-gray-600">{item.location}</p>
+        <p className="!font-normal text-gray-700">{item.description}</p>
       </VerticalTimelineElement>
     </div>
   );
