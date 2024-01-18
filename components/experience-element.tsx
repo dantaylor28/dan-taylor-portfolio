@@ -6,6 +6,7 @@ type ExperienceElementProps = {
     title: string;
     location: string;
     description: string;
+    date: string;
   };
 };
 
@@ -27,8 +28,10 @@ export default function ExperienceElement({ item }: ExperienceElementProps) {
           padding: "1.3rem 2rem",
         }}
         contentArrowStyle={{
-          borderRight: "0.5rem solid rgba(21,94,117, 0.8)"
+          borderRight: "0.5rem solid rgba(21,94,117, 0.8)",
         }}
+        date={item.date}
+        dateClassName="border-y border-black/10 mx-5"
       >
         <h1>{item.title}</h1>
         <p>{item.location}</p>
