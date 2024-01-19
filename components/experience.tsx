@@ -13,7 +13,7 @@ export default function experience() {
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 text-center">
       <PageHeading>my experience</PageHeading>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline lineColor="" className="!mt-12">
         {experienceData.map((item, index) => (
           <ExperienceElement key={index} item={item} />
         ))}

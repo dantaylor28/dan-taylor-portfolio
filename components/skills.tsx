@@ -182,7 +182,7 @@ const Skills = () => {
       >
         backend development
       </motion.h2>
-      <div className="flex flex-col-reverse md:flex-row justify-center items-center mb-28">
+      <div className="flex flex-col-reverse md:flex-row justify-center items-center mb-10 md:mb-28">
         <motion.ul
           className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left"
           variants={fadeInAnimationBeVariants}

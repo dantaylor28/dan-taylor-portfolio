@@ -42,7 +42,7 @@ export default function ExperienceElement({ item }: ExperienceElementProps) {
           borderRight: "0.5rem solid rgba(21,94,117, 0.8)",
         }}
         date={item.date}
-        dateClassName="border-y border-black/10 mx-5"
+        dateClassName="xl:border-y xl:border-black/10 xl:mx-5"
         icon={item.icon}
         iconStyle={{
           fontSize: "2rem",

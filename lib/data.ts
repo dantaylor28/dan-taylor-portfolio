@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectImg from "../public/project_img.png";
 import DrfApi from "../public/drf_api.png";
 import FoodBlog from "../public/food_blog.png";
