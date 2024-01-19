@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 html {
-  --line-color: #155e75;
+  --line-color: rgba(21,94,117, 0.8);
 }

@@ -49,6 +49,7 @@ export default function ExperienceElement({ item }: ExperienceElementProps) {
           background: "white",
           border: "1px solid rgba(21, 94, 117, 0.2)",
           boxShadow: "none",
+          color: "#64748b"
         }}
       >
         <h1 className="font-medium capitalize text-lg text-cyan-900">
