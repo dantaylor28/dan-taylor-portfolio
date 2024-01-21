@@ -9,6 +9,7 @@ import Link from "next/link";
 import { BsArrowRight, BsDownload } from "react-icons/bs";
 import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/contexts/active-section-context";
 
 export default function Introduction() {
   const [text] = useTypewriter({
@@ -25,6 +26,7 @@ export default function Introduction() {
   });
 
   const { ref } = useSectionInView("Home");
+  const { setActiveSection, setLastHeaderClick } = useActiveSectionContext();
 
   return (
     <section
@@ -95,6 +97,10 @@ export default function Introduction() {
           <Link
             href="#contactme"
             className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-800 text-cyan-50 flex items-center gap-2 active:scale-105"
+            onClick={() => {
+              setActiveSection("Contact Me");
+              setLastHeaderClick(Date.now());
+            }}
           >
             <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90"></span>
             <span className="relative group-hover:text-white group-hover:duration-500">
