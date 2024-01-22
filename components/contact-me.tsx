@@ -17,11 +17,6 @@ export default function ContactMe() {
 
       <form
         action={async (FormData) => {
-          console.log("Running on client");
-          console.log(FormData.get("name"));
-          console.log(FormData.get("email"));
-          console.log(FormData.get("message"));
-
           await sendEmailData(FormData);
         }}
         className="mt-10 flex flex-col"
