@@ -9,15 +9,15 @@ export default function ContactMe() {
   return (
     <section
       id="contactme"
-      className="min-w-[30rem] mb-28 h-[50rem]"
+      className="min-w-[30rem] mb-28 scroll-mt-28 h-[50rem]"
       ref={ref}
     >
       <PageHeading>contact me</PageHeading>
 
       <form action="" className="mt-10 flex flex-col">
-        <input type="name" className="mb-5" placeholder="Name" />
-        <input type="email" className="mb-5" placeholder="Email" />
-        <textarea className="mb-5" placeholder="Message" />
+        <input type="name" className="mb-5" placeholder="Name" required maxLength={300}/>
+        <input type="email" className="mb-5" placeholder="Email" required maxLength={500}/>
+        <textarea className="mb-5" placeholder="Message" required maxLength={5000}/>
         <button type="submit">Send Message</button>
       </form>
     </section>
