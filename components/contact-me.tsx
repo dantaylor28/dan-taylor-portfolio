@@ -3,6 +3,7 @@
 import React from "react";
 import PageHeading from "./page-heading";
 import { useSectionInView } from "@/lib/hooks";
+import { sendEmailData } from "@/actions/sendEmailData";
 
 export default function ContactMe() {
   const { ref } = useSectionInView("Contact Me", 0.5);
@@ -15,10 +16,13 @@ export default function ContactMe() {
       <PageHeading>contact me</PageHeading>
 
       <form
-        action={(FormData) => {
+        action={async (FormData) => {
+          console.log("Running on client");
           console.log(FormData.get("name"));
           console.log(FormData.get("email"));
           console.log(FormData.get("message"));
+
+          await sendEmailData(FormData);
         }}
         className="mt-10 flex flex-col"
       >
