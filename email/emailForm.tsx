@@ -27,14 +27,22 @@ export default function EmailForm({ name, message, email }: EmailFormProps) {
       </Head>
       <Preview>New message from your contact form</Preview>
       <Tailwind>
-        <Body>
+        <Body className="bg-cyan-950">
           <Container>
-            <Section>
-              <Heading>You received the following message:</Heading>
-              <Text>{message}</Text>
-              <Hr />
-              <Text>Message received from: {name}</Text>
-              <Text>Email Address: {email}</Text>
+            <Section className="bg-slate-200 border border-black/10 rounded-md my-10 px-10 py-5 ">
+              <Heading as="h1" className="font-semibold leading-tight text-cyan-950 capitalize">
+                You received the following message:
+              </Heading>
+              <Text className="text-lg font-normal">{message}</Text>
+              <Hr className="decoration-inherit"/>
+              <Text className="text-xs font-light capitalize">
+                message received from:{" "}
+                <span className="font-normal">{name}</span>
+              </Text>
+              <Text className="text-xs font-light capitalize">
+                email address:{" "}
+                <span className="font-normal">{email}</span>
+              </Text>
             </Section>
           </Container>
         </Body>
