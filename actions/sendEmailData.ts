@@ -21,11 +21,11 @@ export const sendEmailData = async (formData: FormData) => {
     };
   }
 
-  resend.emails.send({
-    from: "onboarding@resend.dev",
+  await resend.emails.send({
+    from: `${name} <onboarding@resend.dev>`,
     to: "dan.taylor1493@gmail.com",
     subject: "Message from portfolio site",
-    text: message,
-    reply_to: email,
+    text: message as string,
+    reply_to: email as string,
   });
 };
