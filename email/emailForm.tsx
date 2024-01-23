@@ -33,7 +33,7 @@ export default function EmailForm({ name, message, email }: EmailFormProps) {
               <Heading>You received the following message:</Heading>
               <Text>{message}</Text>
               <Hr />
-              <Text>Message recieved from: {name}</Text>
+              <Text>Message received from: {name}</Text>
               <Text>Email Address: {email}</Text>
             </Section>
           </Container>
