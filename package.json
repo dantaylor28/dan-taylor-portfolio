@@ -20,7 +20,7 @@
     "react-intersection-observer": "^9.5.3",
     "react-simple-typewriter": "^5.0.1",
     "react-vertical-timeline-component": "^3.6.0",
-    "resend": "^3.0.0"
+    "resend": "^0.16.0"
   },
   "devDependencies": {
     "@iconify-json/logos": "^1.1.42",
