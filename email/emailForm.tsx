@@ -39,8 +39,8 @@ export default function EmailForm({ name, message, email }: EmailFormProps) {
                 message received from:{" "}
                 <span className="font-normal">{name}</span>
               </Text>
-              <Text className="text-xs font-light capitalize">
-                email address:{" "}
+              <Text className="text-xs font-light">
+                Email Address:{" "}
                 <span className="font-normal">{email}</span>
               </Text>
             </Section>

@@ -16,8 +16,14 @@ export default function ContactMe() {
       <PageHeading>contact me</PageHeading>
 
       <form
-        action={async (FormData) => {
-          await sendEmailData(FormData);
+        action={async (formData) => {
+          const { data, error } = await sendEmailData(formData);
+
+          if (error) {
+            alert(error);
+            return;
+          }
+          alert("Email sent successfully!");
         }}
         className="mt-10 flex flex-col"
       >
