@@ -4,6 +4,7 @@ import React from "react";
 import PageHeading from "./page-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmailData } from "@/actions/sendEmailData";
+import toast from "react-hot-toast";
 
 export default function ContactMe() {
   const { ref } = useSectionInView("Contact Me", 0.5);
@@ -20,10 +21,10 @@ export default function ContactMe() {
           const { data, error } = await sendEmailData(formData);
 
           if (error) {
-            alert(error);
+            toast.error(error);
             return;
           }
-          alert("Email sent successfully!");
+          toast.success("Message sent successfully!");
         }}
         className="mt-10 flex flex-col"
       >
