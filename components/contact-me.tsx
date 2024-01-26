@@ -64,26 +64,24 @@ export default function ContactMe() {
       ref={ref}
       className="scroll-mt-28 flex w-[100%] justify-center items-center bg-cyan-800"
     >
-      <section className="text-center my-28 text-cyan-50 w-[min(100%,50rem)]">
+      <section className="text-center my-28 px-4 text-cyan-50 w-[min(100%,55rem)]">
         <PageHeading>get in touch</PageHeading>
         <p className="mt-10">
           Fill in the below form with any questions/requests
         </p>
         <p>
           Alternatively you can reach me here{" "}
-          <span className="font-semibold underline">
-            dan.taylor1493@gmail.com
-          </span>
+          <span className="font-semibold">dan.taylor1493@gmail.com</span>
         </p>
         <form
           action=""
           className="flex flex-col items-center justify-center mt-10"
         >
-          <div className="flex items-center justify-center gap-10">
+          <div className="flex items-center justify-center gap-10 flex-col md:flex-row">
             <input
               type="name"
               name="name"
-              className="h-12 w-[20rem] px-4 rounded-md bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30"
+              className="h-12 w-[20rem] px-4 rounded-md bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30 min-[400px]:w-[23rem] sm:w-[32.5rem] md:w-[20rem] lg:w-[23rem]"
               placeholder="Name"
               required
               maxLength={300}
@@ -91,7 +89,7 @@ export default function ContactMe() {
             <input
               type="email"
               name="email"
-              className="h-12 w-[20rem] px-4 rounded-md bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30"
+              className="h-12 w-[20rem] px-4 rounded-md bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30 min-[400px]:w-[23rem] sm:w-[32.5rem] md:w-[20rem] lg:w-[23rem]"
               placeholder="Email"
               required
               maxLength={500}
@@ -99,7 +97,7 @@ export default function ContactMe() {
           </div>
           <textarea
             name="message"
-            className="my-10 h-52 w-[42.5rem] rounded-md py-4 px-4 bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30"
+            className="my-10 h-52 w-[20rem] rounded-md py-4 px-4 bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30 min-[400px]:w-[23rem] sm:w-[32.5rem] md:w-[42.5rem] lg:w-[48.5rem]"
             placeholder="Ask Me Anything"
             required
             maxLength={5000}
@@ -109,7 +107,7 @@ export default function ContactMe() {
             className="group bg-cyan-50 text-cyan-800 px-5 py-3 rounded-full flex items-center gap-2 hover:bg-cyan-500 hover:text-white transition duration-300 hover:scale-105"
           >
             Send
-            <PiPaperPlaneTilt className="group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300"/>
+            <PiPaperPlaneTilt className="group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300" />
           </button>
         </form>
       </section>
