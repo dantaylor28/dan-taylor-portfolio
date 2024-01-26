@@ -93,6 +93,13 @@ export default function ContactMe() {
               maxLength={500}
             />
           </div>
+          <textarea
+            name="message"
+            className="my-10 h-52 w-[42.5rem] rounded-md py-4 px-4 bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30"
+            placeholder="Message"
+            required
+            maxLength={5000}
+          />
         </form>
       </section>
     </div>
