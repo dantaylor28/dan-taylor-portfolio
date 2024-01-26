@@ -6,6 +6,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmailData } from "@/actions/sendEmailData";
 import toast from "react-hot-toast";
 import { PiPaperPlaneTilt } from "react-icons/pi";
+import { motion } from "framer-motion";
 
 export default function ContactMe() {
   const { ref } = useSectionInView("Contact Me", 0.5);
@@ -16,8 +17,37 @@ export default function ContactMe() {
       className="scroll-mt-28 flex w-[100%] justify-center items-center bg-cyan-800"
     >
       <section className="text-center my-28 px-4 text-cyan-50 w-[min(100%,55rem)]">
-        <PageHeading>get in touch</PageHeading>
-        <p className="mt-5">
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: 100,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          viewport={{
+            once: true,
+            margin: "-200px",
+          }}
+        >
+          <PageHeading>get in touch</PageHeading>
+        </motion.div>
+        <motion.p
+          className="mt-5"
+          initial={{
+            opacity: 0,
+            x: 100,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          viewport={{
+            once: true,
+            margin: "-200px",
+          }}
+        >
           You can reach me directly at{" "}
           <a
             href="mailto:dan.taylor1493@gmail.com"
@@ -26,8 +56,8 @@ export default function ContactMe() {
             dan.taylor1493@gmail.com
           </a>{" "}
           or through the following form.
-        </p>
-        <form
+        </motion.p>
+        <motion.form
           action={async (formData) => {
             const { data, error } = await sendEmailData(formData);
 
@@ -38,6 +68,15 @@ export default function ContactMe() {
             toast.success("Message sent successfully!");
           }}
           className="flex flex-col items-center justify-center mt-10 sm:mt-16"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{
+            once: true,
+            margin: "-250px",
+          }}
+          transition={{
+            duration: 0.3,
+          }}
         >
           <div className="flex items-center justify-center gap-10 flex-col md:flex-row">
             <input
@@ -71,7 +110,7 @@ export default function ContactMe() {
             Send
             <PiPaperPlaneTilt className="group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300" />
           </button>
-        </form>
+        </motion.form>
       </section>
     </div>
   );
