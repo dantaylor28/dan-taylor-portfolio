@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #ecfeff !important;
+}
+
 html {
   --line-color: rgba(21,94,117, 0.8);
 }
