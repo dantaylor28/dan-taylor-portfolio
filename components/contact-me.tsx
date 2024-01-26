@@ -5,8 +5,8 @@ import PageHeading from "./page-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmailData } from "@/actions/sendEmailData";
 import toast from "react-hot-toast";
-import { PiPaperPlaneTilt } from "react-icons/pi";
 import { motion } from "framer-motion";
+import SubmitBtn from "./submit-btn";
 
 export default function ContactMe() {
   const { ref } = useSectionInView("Contact Me", 0.5);
@@ -72,7 +72,7 @@ export default function ContactMe() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{
             once: true,
-            margin: "-250px",
+            margin: "-200px",
           }}
           transition={{
             duration: 0.3,
@@ -103,13 +103,7 @@ export default function ContactMe() {
             required
             maxLength={5000}
           />
-          <button
-            type="submit"
-            className="group bg-cyan-50 text-cyan-800 px-5 py-3 rounded-full flex items-center gap-2 hover:bg-cyan-500 hover:text-white transition duration-300 hover:scale-105"
-          >
-            Send
-            <PiPaperPlaneTilt className="group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-300" />
-          </button>
+          <SubmitBtn />
         </motion.form>
       </section>
     </div>
