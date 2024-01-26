@@ -66,16 +66,14 @@ export default function ContactMe() {
     >
       <section className="text-center my-28 px-4 text-cyan-50 w-[min(100%,55rem)]">
         <PageHeading>get in touch</PageHeading>
-        <p className="mt-10">
-          Fill in the below form with any questions/requests
-        </p>
-        <p>
-          Alternatively you can reach me here{" "}
-          <span className="font-semibold">dan.taylor1493@gmail.com</span>
+        <p className="mt-5">
+          You can reach me directly at{" "}
+          <a href="mailto:dan.taylor1493@gmail.com" className="underline font-semibold">dan.taylor1493@gmail.com</a>{" "}
+          or through the following form.
         </p>
         <form
           action=""
-          className="flex flex-col items-center justify-center mt-10"
+          className="flex flex-col items-center justify-center mt-10 sm:mt-16"
         >
           <div className="flex items-center justify-center gap-10 flex-col md:flex-row">
             <input
