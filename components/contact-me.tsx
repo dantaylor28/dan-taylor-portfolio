@@ -63,15 +63,37 @@ export default function ContactMe() {
       ref={ref}
       className="scroll-mt-28 flex w-[100%] justify-center items-center bg-cyan-800"
     >
-      <section className="text-center my-28 text-cyan-50">
+      <section className="text-center my-28 text-cyan-50 w-[min(100%,50rem)]">
         <PageHeading>get in touch</PageHeading>
-        <p className="mt-10">Fill in the below form with any questions/requests</p>
+        <p className="mt-10">
+          Fill in the below form with any questions/requests
+        </p>
         <p>
           Alternatively you can reach me here{" "}
           <span className="font-semibold underline">
             dan.taylor1493@gmail.com
           </span>
         </p>
+        <form action="" className="mt-10">
+          <div className="flex items-center justify-center gap-10">
+            <input
+              type="name"
+              name="name"
+              className="h-12 w-[20rem] px-4 rounded-md bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30"
+              placeholder="Name"
+              required
+              maxLength={300}
+            />
+            <input
+              type="email"
+              name="email"
+              className="h-12 w-[20rem] px-4 rounded-md bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30"
+              placeholder="Email"
+              required
+              maxLength={500}
+            />
+          </div>
+        </form>
       </section>
     </div>
   );
