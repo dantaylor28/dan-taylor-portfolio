@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsMoonStars } from "react-icons/bs";
 import { BsSun } from "react-icons/bs";
 import { motion } from "framer-motion";
@@ -9,6 +9,14 @@ type Theme = "light" | "dark";
 
 export default function ColorTheme() {
   const [theme, setTheme] = useState<Theme>("light");
+
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem("theme") as Theme | null;
+
+    if (localTheme) {
+      setTheme(localTheme);
+    }
+  }, []);
   return (
     <div className="fixed bottom-5 right-5 overflow-hidden flex w-fit items-center rounded-full bg-white shadow-2xl">
       <button
@@ -17,6 +25,7 @@ export default function ColorTheme() {
         }`}
         onClick={() => {
           setTheme("dark");
+          window.localStorage.setItem("theme", "dark");
         }}
       >
         <BsMoonStars className="relative z-10 text-md" />
@@ -28,6 +37,7 @@ export default function ColorTheme() {
         }`}
         onClick={() => {
           setTheme("light");
+          window.localStorage.setItem("theme", "light");
         }}
       >
         <BsSun className="relative z-10 text-md" />
