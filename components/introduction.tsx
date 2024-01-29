@@ -51,21 +51,21 @@ export default function Introduction() {
               height="252"
               quality={99}
               priority={true}
-              className="h-56 w-56 sm:h-72 sm:w-72 rounded-full object-cover border-[0.05rem] border-white shadow-xl"
+              className="h-56 w-56 sm:h-72 sm:w-72 rounded-full object-cover border-[0.05rem] border-white shadow-xl dark:border-cyan-800"
             />
           </motion.div>
         </div>
       </div>
 
       <motion.h1
-        className="mt-8 mb-10 px-4 text-[28px] sm:text-4xl"
+        className="mt-8 mb-10 px-4 text-[28px] sm:text-4xl dark:text-cyan-800"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.3,
         }}
       >
-        Hi, I'm <span className="text-cyan-800">{text}</span>
+        Hi, I'm <span className="text-cyan-800 dark:text-cyan-50">{text}</span>
         <Cursor cursorStyle="_" cursorColor="#155e75" />
       </motion.h1>
 
