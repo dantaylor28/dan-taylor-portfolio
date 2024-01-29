@@ -96,13 +96,13 @@ export default function Introduction() {
         >
           <Link
             href="#contactme"
-            className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-800 text-cyan-50 flex items-center gap-2 active:scale-105"
+            className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-800 text-cyan-50 flex items-center gap-2 active:scale-105 dark:bg-cyan-950 dark:border dark:border-cyan-800"
             onClick={() => {
               setActiveSection("Contact Me");
               setLastHeaderClick(Date.now());
             }}
           >
-            <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90"></span>
+            <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90 dark:bg-cyan-800"></span>
             <span className="relative group-hover:text-white group-hover:duration-500">
               Get In Touch
             </span>
@@ -112,14 +112,14 @@ export default function Introduction() {
 
         <div className="active:scale-105">
           <motion.a
-            className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-50 text-cyan-800 flex items-center gap-2 border border-black/10 cursor-pointer"
+            className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-50 text-cyan-800 flex items-center gap-2 border border-black/10 cursor-pointer dark:bg-cyan-100/90 dark:border-cyan-800"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
               delay: 0.575,
             }}
           >
-            <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90"></span>
+            <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90 dark:bg-cyan-800"></span>
             <span className="relative group-hover:text-white group-hover:duration-500">
               Download CV
             </span>
@@ -137,7 +137,7 @@ export default function Introduction() {
           <a
             href="https://github.com/dantaylor28"
             target="_blank"
-            className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] active:scale-110 hover:bg-cyan-600 duration-300"
+            className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] active:scale-110 hover:bg-cyan-600 duration-300 dark:bg-cyan-100/90 dark:border-cyan-800 dark:hover:bg-cyan-800"
           >
             <FaSquareGithub className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
           </a>
@@ -153,7 +153,7 @@ export default function Introduction() {
           <a
             href="https://www.linkedin.com/in/dan-m-taylor/"
             target="_blank"
-            className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] active:scale-110 hover:bg-cyan-600 duration-300"
+            className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] active:scale-110 hover:bg-cyan-600 duration-300 dark:bg-cyan-100/90 dark:border-cyan-800 dark:hover:bg-cyan-800"
           >
             <FaLinkedin className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
           </a>
