@@ -15,6 +15,8 @@ export default function ColorTheme() {
 
     if (localTheme) {
       setTheme(localTheme);
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
     }
   }, []);
   return (
