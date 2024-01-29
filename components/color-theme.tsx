@@ -15,8 +15,13 @@ export default function ColorTheme() {
 
     if (localTheme) {
       setTheme(localTheme);
+
+      if (localTheme === "dark") {
+        document.documentElement.classList.add("dark");
+      }
     } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
+      document.documentElement.classList.add("dark");
     }
   }, []);
   return (
@@ -28,6 +33,7 @@ export default function ColorTheme() {
         onClick={() => {
           setTheme("dark");
           window.localStorage.setItem("theme", "dark");
+          document.documentElement.classList.add("dark");
         }}
       >
         <BsMoonStars className="relative z-10 text-md" />
@@ -40,6 +46,7 @@ export default function ColorTheme() {
         onClick={() => {
           setTheme("light");
           window.localStorage.setItem("theme", "light");
+          document.documentElement.classList.remove("dark");
         }}
       >
         <BsSun className="relative z-10 text-md" />

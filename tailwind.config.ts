@@ -29,5 +29,6 @@ const config: Config = {
     // Iconify Plugin
     addDynamicIconSelectors(),
   ],
+  darkMode: "class",
 };
 export default config;
