@@ -17,7 +17,7 @@ export default function Header() {
         className="fixed top-0 left-1/2 h-[4.5rem] w-full
         rounded-none border border-white border-opacity-40
         bg-white bg-opacity-80 shadow-lg shadow-black/[0.03]
-        backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[40rem] sm:rounded-full"
+        backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[40rem] sm:rounded-full dark:bg-slate-950 dark:bg-opacity-80 dark:border-cyan-800"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
         transition={{
@@ -51,8 +51,8 @@ export default function Header() {
                   setLastHeaderClick(Date.now());
                 }}
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
-                  { "text-gray-950": activeSection === link.name }
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:hover:text-white",
+                  { "text-gray-950 dark:text-white": activeSection === link.name }
                 )}
               >
                 {link.name}
@@ -65,7 +65,7 @@ export default function Header() {
                       stiffness: 300,
                       damping: 30,
                     }}
-                    className="bg-cyan-600/20 rounded-full -z-10 absolute inset-0"
+                    className="bg-cyan-600/20 rounded-full -z-10 absolute inset-0 dark:bg-cyan-800/25"
                   ></motion.span>
                 )}
               </Link>
