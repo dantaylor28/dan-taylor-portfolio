@@ -17,9 +17,9 @@ export default function Projects() {
     >
       <section className="mt-16 text-center px-4 leading-8 max-w-[80rem]">
         <div className="flex items-center py-4 mb-8">
-          <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40"></div>
+          <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40 dark:bg-cyan-50"></div>
           <PageHeading>my projects</PageHeading>
-          <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40"></div>
+          <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40 dark:bg-cyan-50"></div>
         </div>
 
         {projectData.map((project, index) => (

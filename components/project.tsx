@@ -41,7 +41,7 @@ export default function Project({
         />
       </div>
 
-      <div className="flex flex-col md:items-start justify-center text-left md:ml-10 lg:ml-32 md:w-1/2 mt-10 md:mt-0 md:border-y border-black/20 group-odd/margin:ml-0 md:group-odd/margin:mr-10 lg:group-odd/margin:mr-32">
+      <div className="flex flex-col md:items-start justify-center text-left md:ml-10 lg:ml-32 md:w-1/2 mt-10 md:mt-0 md:border-y border-black/20 group-odd/margin:ml-0 md:group-odd/margin:mr-10 lg:group-odd/margin:mr-32 dark:border-cyan-50/20">
         <h3 className="text-3xl font-normal capitalize mb-10 pl-5 md:pl-0">
           {title}
         </h3>
@@ -49,7 +49,7 @@ export default function Project({
         <ul className="flex flex-wrap gap-2 mt-4 mb-14 pl-5 md:pl-0">
           {tags.map((tag, index) => (
             <li
-              className="bg-cyan-800/90 px-4 py-[1px] text-[0.7rem] uppercase text-white rounded-3xl tracking-wider"
+              className="bg-cyan-800/90 px-4 py-[1px] text-[0.7rem] uppercase text-white rounded-3xl tracking-wider dark:bg-cyan-950/90"
               key={index}
             >
               {tag}
@@ -61,19 +61,19 @@ export default function Project({
           <a
             href={liveUrl}
             target="_blank"
-            className="group bg-cyan-50 text-cyan-800 flex items-center gap-2 hover:bg-cyan-600 hover:text-cyan-50 duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer"
+            className="group bg-cyan-50 text-cyan-800 flex items-center gap-2 hover:bg-cyan-600 hover:text-cyan-50 duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer dark:bg-cyan-100/90 dark:border-cyan-800 dark:hover:bg-cyan-800/70 dark:text-cyan-950 dark:hover:text-white"
           >
             live site
-            <BsBoxArrowUpRight className="group-hover:text-cyan-50 group-hover:-translate-y-1 group-hover:translate-x-1 transition" />
+            <BsBoxArrowUpRight className="group-hover:text-cyan-50 group-hover:-translate-y-1 group-hover:translate-x-1 transition dark:group-hover:text-white" />
           </a>
 
           <a
             href={repoUrl}
             target="_blank"
-            className="group bg-cyan-50 text-cyan-800 flex items-center gap-2 hover:bg-cyan-600 hover:text-cyan-50 duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer"
+            className="group bg-cyan-50 text-cyan-800 flex items-center gap-2 hover:bg-cyan-600 hover:text-cyan-50 duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer dark:bg-cyan-950 dark:hover:bg-cyan-800/70 dark:text-cyan-50 dark:hover:text-white"
           >
             github link
-            <BsGithub className="group-hover:text-cyan-50 group-hover:translate-x-1 transition" />
+            <BsGithub className="group-hover:text-cyan-50 group-hover:translate-x-1 transition dark:group-hover:text-white" />
           </a>
         </div>
       </div>
