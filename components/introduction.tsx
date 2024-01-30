@@ -66,7 +66,7 @@ export default function Introduction() {
         }}
       >
         Hi, I'm <span className="text-cyan-800 dark:text-cyan-50">{text}</span>
-        <Cursor cursorStyle="_" cursorColor="#155e75" />
+        <Cursor cursorStyle="_" cursorColor="#ecfeff" />
       </motion.h1>
 
       <motion.h2
