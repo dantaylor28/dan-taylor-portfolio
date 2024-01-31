@@ -14,7 +14,7 @@ export default function ContactMe() {
     <div
       id="contactme"
       ref={ref}
-      className="scroll-mt-28 flex w-[100%] justify-center items-center bg-cyan-800"
+      className="scroll-mt-28 flex w-[100%] justify-center items-center bg-cyan-800 dark:bg-gradient-to-b from-slate-950 to-cyan-950"
     >
       <section className="text-center my-28 px-4 text-cyan-50 w-[min(100%,55rem)]">
         <motion.div
@@ -82,7 +82,7 @@ export default function ContactMe() {
             <input
               type="name"
               name="name"
-              className="h-12 w-[20rem] px-4 rounded-md bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30 min-[400px]:w-[23rem] sm:w-[32.5rem] md:w-[20rem] lg:w-[23rem]"
+              className="h-12 w-[20rem] px-4 rounded-md bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30 min-[400px]:w-[23rem] sm:w-[32.5rem] md:w-[20rem] lg:w-[23rem] dark:bg-cyan-950 dark:text-white"
               placeholder="Name"
               required
               maxLength={300}
@@ -90,7 +90,7 @@ export default function ContactMe() {
             <input
               type="email"
               name="email"
-              className="h-12 w-[20rem] px-4 rounded-md bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30 min-[400px]:w-[23rem] sm:w-[32.5rem] md:w-[20rem] lg:w-[23rem]"
+              className="h-12 w-[20rem] px-4 rounded-md bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30 min-[400px]:w-[23rem] sm:w-[32.5rem] md:w-[20rem] lg:w-[23rem] dark:bg-cyan-950 dark:text-white"
               placeholder="Email"
               required
               maxLength={500}
@@ -98,7 +98,7 @@ export default function ContactMe() {
           </div>
           <textarea
             name="message"
-            className="my-10 h-52 w-[20rem] rounded-md py-4 px-4 bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30 min-[400px]:w-[23rem] sm:w-[32.5rem] md:w-[42.5rem] lg:w-[48.5rem]"
+            className="my-10 h-52 w-[20rem] rounded-md py-4 px-4 bg-cyan-700 text-cyan-50 outline-none focus:outline-white/30 min-[400px]:w-[23rem] sm:w-[32.5rem] md:w-[42.5rem] lg:w-[48.5rem] dark:bg-cyan-950 dark:text-white"
             placeholder="Ask Me Anything"
             required
             maxLength={5000}
