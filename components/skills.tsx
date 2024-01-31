@@ -127,7 +127,7 @@ const Skills = () => {
                 onMouseEnter={() => setDisplay(true)}
                 onMouseLeave={() => setDisplay(false)}
               >
-                <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg hover:scale-105 dark:bg-cyan-50/20 dark:border-white/10">
+                <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg hover:scale-105 dark:bg-cyan-50/20 dark:border-white/10 dark:shadow-cyan-300/20 dark:shadow-lg">
                   <span className={skill.icon}></span>
                 </div>
               </span>
