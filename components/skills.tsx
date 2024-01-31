@@ -136,17 +136,17 @@ const Skills = () => {
                   !display ? "hidden" : "hidden"
                 }`}
               >
-                <span className="relative z-10 p-3 text-s leading-none text-white bg-cyan-800 shadow-lg rounded-md transition">
+                <span className="relative z-10 p-3 text-s leading-none text-white bg-cyan-800 shadow-lg rounded-md transition dark:bg-cyan-950 dark:border dark:border-white/10">
                   {skill.language}
                 </span>
-                <div className="w-3 h-3 -mt-2 rotate-45 bg-cyan-800" />
+                <div className="w-3 h-3 -mt-2 rotate-45 bg-cyan-800 dark:bg-cyan-950" />
               </div>
             </motion.div>
           ))}
         </div>
 
         <motion.ul
-          className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left"
+          className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left dark:bg-cyan-950 dark:text-white dark:border-white/10"
           variants={fadeInAnimationFeVariants}
           initial="initial"
           whileInView="animate"
