@@ -184,7 +184,7 @@ const Skills = () => {
       </motion.h2>
       <div className="flex flex-col-reverse md:flex-row justify-center items-center mb-10 md:mb-28">
         <motion.ul
-          className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left"
+          className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left dark:bg-cyan-950 dark:text-white dark:border-white/10"
           variants={fadeInAnimationBeVariants}
           initial="initial"
           whileInView="animate"
@@ -206,7 +206,7 @@ const Skills = () => {
             Troubleshoot problems with performance or user experience.
           </li>
         </motion.ul>
-        <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8  justify-center max-w-[30rem] mb-10 md:mb-0">
+        <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
           {backendSkills.map((skill, index) => (
             <motion.div
               className="relative flex flex-col items-center group"
@@ -225,7 +225,7 @@ const Skills = () => {
                 onMouseEnter={() => setDisplay(true)}
                 onMouseLeave={() => setDisplay(false)}
               >
-                <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg hover:scale-105">
+                <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg hover:scale-105 dark:bg-cyan-50/20 dark:border-white/10 dark:shadow-cyan-300/20 dark:shadow-lg">
                   <span className={skill.icon}></span>
                 </div>
               </span>
@@ -234,10 +234,10 @@ const Skills = () => {
                   !display ? "hidden" : "hidden"
                 }`}
               >
-                <span className="relative z-10 p-3 text-s leading-none text-white bg-cyan-800 shadow-lg rounded-md transition">
+                <span className="relative z-10 p-3 text-s leading-none text-white bg-cyan-800 shadow-lg rounded-md transition dark:bg-cyan-950 dark:border dark:border-white/10">
                   {skill.language}
                 </span>
-                <div className="w-3 h-3 -mt-2 rotate-45 bg-cyan-800" />
+                <div className="w-3 h-3 -mt-2 rotate-45 bg-cyan-800 dark:bg-cyan-950" />
               </div>
             </motion.div>
           ))}
