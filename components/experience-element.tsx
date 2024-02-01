@@ -1,15 +1,5 @@
 import { useInView } from "react-intersection-observer";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
-import { Icon } from "@iconify/react";
-
-export const BriefcaseIcon = <Icon icon="noto:briefcase" />;
-export const GraduationIcon = <Icon icon="noto:graduation-cap" />;
-export const CoatIcon = <Icon icon="noto:coat" />;
-export const BoxIcon = <Icon icon="noto:package" />;
-export const LaptopIcon = <Icon icon="fluent-emoji:laptop" />;
-export const FlagIcon = <Icon icon="twemoji:flag-sweden" />;
-export const PlaneIcon = <Icon icon="emojione:airplane" />;
-export const ShopIcon = <Icon icon="noto:shopping-cart" />;
 
 type ExperienceElementProps = {
   item: {
