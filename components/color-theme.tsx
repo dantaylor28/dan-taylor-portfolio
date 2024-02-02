@@ -10,6 +10,18 @@ type Theme = "light" | "dark";
 export default function ColorTheme() {
   const [theme, setTheme] = useState<Theme>("light");
 
+  const switchTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+      window.localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
+    } else {
+      setTheme("light")
+      window.localStorage.setItem("theme", "light");
+      document.documentElement.classList.remove("dark");
+    }
+  };
+
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme") as Theme | null;
 
@@ -30,11 +42,7 @@ export default function ColorTheme() {
         className={`text-xs sm:text-sm font-light flex items-center gap-2 px-3 transition-colors relative z-10 ${
           theme === "dark" ? "text-white" : "text-slate-950"
         }`}
-        onClick={() => {
-          setTheme("dark");
-          window.localStorage.setItem("theme", "dark");
-          document.documentElement.classList.add("dark");
-        }}
+        onClick={switchTheme}
       >
         <BsMoonStars className="relative z-10 text-md" />
         <span className="relative z-10">Dark</span>
@@ -43,11 +51,7 @@ export default function ColorTheme() {
         className={`text-xs sm:text-sm font-light flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-2 md:py-2 transition-colors relative z-10 ${
           theme === "light" ? "text-white" : "text-slate-950"
         }`}
-        onClick={() => {
-          setTheme("light");
-          window.localStorage.setItem("theme", "light");
-          document.documentElement.classList.remove("dark");
-        }}
+        onClick={switchTheme}
       >
         <BsSun className="relative z-10 text-md" />
         <span className="relative z-10">Light</span>
