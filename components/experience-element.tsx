@@ -23,32 +23,32 @@ export default function ExperienceElement({ item }: ExperienceElementProps) {
       <VerticalTimelineElement
         visible={inView}
         contentStyle={{
-          background: "#ecfeff",
-          border: "1px solid rgba(21,94,117, 0.1)",
+          background: theme === "light" ? "#ecfeff" : "#083344",
+          border: theme === "light" ? "1px solid rgba(21,94,117, 0.1)" : "1px solid rgba(255, 255, 255, 0.1)",
           boxShadow: "none",
           borderRadius: "0.4rem",
           textAlign: "left",
           padding: "1.3rem 2rem",
         }}
         contentArrowStyle={{
-          borderRight: "0.5rem solid rgba(21,94,117, 0.8)",
+          borderRight: theme === "light" ? "0.5rem solid rgba(21,94,117, 0.8)" : "0.5rem solid rgba(255, 255, 255, 0.8)",
         }}
         date={item.date}
-        dateClassName="xl:border-y xl:border-black/10 xl:mx-5"
+        dateClassName="xl:border-y xl:border-black/10 xl:mx-5 dark:xl:border-white/20 dark:text-white"
         icon={item.icon}
         iconStyle={{
           fontSize: "2rem",
-          background: "white",
-          border: "1px solid rgba(21, 94, 117, 0.2)",
+          background: theme === "light" ? "white" : "#0f172a",
+          border: theme === "light" ? "1px solid rgba(21, 94, 117, 0.2)" : "1px solid rgba(255, 255, 255, 0.2)",
           boxShadow: "none",
-          color: "#64748b",
+          color: theme === "light" ? "#64748b" : "rgba(255, 255, 255, 0.8)",
         }}
       >
-        <h1 className="font-medium capitalize text-lg text-cyan-900">
+        <h1 className="font-medium capitalize text-lg text-cyan-900 dark:text-white">
           {item.title}
         </h1>
-        <p className="!mt-0 !font-light text-gray-600">{item.location}</p>
-        <p className="!font-normal text-gray-700">{item.description}</p>
+        <p className="!mt-0 !font-light text-gray-600 dark:text-white/50">{item.location}</p>
+        <p className="!font-normal text-gray-700 dark:text-white/80">{item.description}</p>
       </VerticalTimelineElement>
     </div>
   );
