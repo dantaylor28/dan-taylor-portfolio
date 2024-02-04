@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState, useEffect, createContext, useContext } from "react";
 
 type Theme = "light" | "dark";
 
@@ -8,12 +8,12 @@ type ColorThemeContextProviderProps = {
   children: React.ReactNode;
 };
 
-type ThemeContextType = {
+type ColorThemeContextType = {
   theme: Theme;
   switchTheme: () => void;
 };
 
-const ColorThemeContext = createContext<ThemeContextType | null>(null);
+const ColorThemeContext = createContext<ColorThemeContextType | null>(null);
 
 export default function ColorThemeContextProvider({
   children,
@@ -56,4 +56,15 @@ export default function ColorThemeContextProvider({
       {children}
     </ColorThemeContext.Provider>
   );
+}
+
+export function useTheme() {
+  const context = useContext(ColorThemeContext);
+
+  if (context === null) {
+    throw new Error(
+      "useTheme must be used within a ColorThemeContextProvider."
+    );
+  }
+  return context;
 }

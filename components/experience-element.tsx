@@ -1,3 +1,4 @@
+import { useTheme } from "@/contexts/color-theme-context";
 import { useInView } from "react-intersection-observer";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
@@ -16,6 +17,7 @@ export default function ExperienceElement({ item }: ExperienceElementProps) {
     triggerOnce: true,
     threshold: 0.75,
   });
+  const { theme } = useTheme();
   return (
     <div ref={ref} className="vertical-timeline-element">
       <VerticalTimelineElement
@@ -39,7 +41,7 @@ export default function ExperienceElement({ item }: ExperienceElementProps) {
           background: "white",
           border: "1px solid rgba(21, 94, 117, 0.2)",
           boxShadow: "none",
-          color: "#64748b"
+          color: "#64748b",
         }}
       >
         <h1 className="font-medium capitalize text-lg text-cyan-900">

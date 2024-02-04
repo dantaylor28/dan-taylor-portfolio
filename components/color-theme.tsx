@@ -4,8 +4,10 @@ import React from "react";
 import { BsMoonStars } from "react-icons/bs";
 import { BsSun } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { useTheme } from "@/contexts/color-theme-context";
 
 export default function ColorTheme() {
+  const { theme, switchTheme } = useTheme();
   return (
     <div className="fixed bottom-5 right-5 overflow-hidden flex w-fit items-center rounded-full bg-white shadow-2xl">
       <button
