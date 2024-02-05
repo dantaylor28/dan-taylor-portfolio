@@ -96,7 +96,7 @@ export default function Introduction() {
         >
           <Link
             href="#contactme"
-            className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-800 text-cyan-50 flex items-center gap-2 active:scale-105 dark:bg-cyan-950 dark:border dark:border-cyan-800"
+            className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-800 text-cyan-50 flex items-center gap-2 active:scale-105 dark:bg-cyan-950 dark:border dark:border-white/20"
             onClick={() => {
               setActiveSection("Contact Me");
               setLastHeaderClick(Date.now());
