@@ -21,7 +21,7 @@ export default function ScrollToTopContextProvider({
 
   useEffect(() => {
     const toggleVisibility = () => {
-      window.scrollY > 300 ? setIsVisible(true) : setIsVisible(false);
+      window.scrollY > 75 ? setIsVisible(true) : setIsVisible(false);
     };
     window.addEventListener("scroll", toggleVisibility);
 
@@ -40,7 +40,7 @@ export default function ScrollToTopContextProvider({
 
   const scrollDown = () => {
     window.scrollTo({
-      top: 600,
+      top: 800,
       behavior: "smooth",
     });
   };

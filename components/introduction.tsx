@@ -10,7 +10,7 @@ import { BsArrowRight, BsDownload } from "react-icons/bs";
 import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/contexts/active-section-context";
-import { FaArrowCircleDown } from "react-icons/fa";
+import { HiChevronDown } from "react-icons/hi2";
 import { useScroll } from "@/contexts/scroll-to-top-context";
 
 export default function Introduction() {
@@ -163,17 +163,17 @@ export default function Introduction() {
         </motion.div>
       </div>
       <motion.div
-        className={`hidden sm:flex sm:justify-center sm:items-center mt-8`}
-        initial={{ opacity: 0, y: 100 }}
+        className={`hidden sm:flex sm:justify-center sm:items-center mt-8 mb-8`}
+        initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.725,
         }}
       >
         <a onClick={scrollDown}>
-          <FaArrowCircleDown
-            className={`${
-              isVisible ? "opacity-0" : ""
+          <HiChevronDown
+            className={`fixed bottom-3 z-10 animate-pulse h-12 w-12 text-cyan-600 dark:text-cyan-50 cursor-pointer ${
+              isVisible ? "!opacity-0" : ""
             }`}
           />
         </a>
