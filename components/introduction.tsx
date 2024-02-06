@@ -11,6 +11,7 @@ import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/contexts/active-section-context";
 import { IoIosArrowDown } from "react-icons/io";
+import { useScroll } from "@/contexts/scroll-to-top-context";
 
 export default function Introduction() {
   const [text] = useTypewriter({
@@ -28,6 +29,7 @@ export default function Introduction() {
 
   const { ref } = useSectionInView("Home");
   const { setActiveSection, setLastHeaderClick } = useActiveSectionContext();
+  const { isVisible, scrollDown } = useScroll();
 
   return (
     <section
@@ -161,16 +163,20 @@ export default function Introduction() {
         </motion.div>
       </div>
       <motion.div
-        className="hidden sm:flex sm:justify-center sm:items-center mt-8"
+        className={`hidden sm:flex sm:justify-center sm:items-center mt-8`}
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.725,
         }}
       >
-        <Link href="#aboutme">
-          <IoIosArrowDown className="text-slate-400 h-12 w-12 animate-pulse hover:text-slate-500" />
-        </Link>
+        <a onClick={scrollDown}>
+          <IoIosArrowDown
+            className={`text-slate-400 h-12 w-12 hover:text-slate-500 ${
+              isVisible ? "opacity-0" : ""
+            }`}
+          />
+        </a>
       </motion.div>
     </section>
   );

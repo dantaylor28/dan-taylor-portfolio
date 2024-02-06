@@ -6,6 +6,7 @@ import ActiveSectionContextProvider from "@/contexts/active-section-context";
 import { Toaster } from "react-hot-toast";
 import ColorTheme from "@/components/color-theme";
 import ColorThemeContextProvider from "@/contexts/color-theme-context";
+import ScrollToTopContextProvider from "@/contexts/scroll-to-top-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,14 +39,16 @@ export default function RootLayout({
         rounded-full blur-[10rem] sm:w-[79.25rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-slate-950"
         ></div>
 
-        <ColorThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Toaster position="top-right" />
-            <ColorTheme />
-          </ActiveSectionContextProvider>
-        </ColorThemeContextProvider>
+        <ScrollToTopContextProvider>
+          <ColorThemeContextProvider>
+            <ActiveSectionContextProvider>
+              <Header />
+              {children}
+              <Toaster position="top-right" />
+              <ColorTheme />
+            </ActiveSectionContextProvider>
+          </ColorThemeContextProvider>
+        </ScrollToTopContextProvider>
       </body>
     </html>
   );
