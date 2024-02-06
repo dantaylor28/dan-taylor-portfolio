@@ -10,7 +10,7 @@ import { BsArrowRight, BsDownload } from "react-icons/bs";
 import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/contexts/active-section-context";
-import { IoIosArrowDown } from "react-icons/io";
+import { FaArrowCircleDown } from "react-icons/fa";
 import { useScroll } from "@/contexts/scroll-to-top-context";
 
 export default function Introduction() {
@@ -171,8 +171,8 @@ export default function Introduction() {
         }}
       >
         <a onClick={scrollDown}>
-          <IoIosArrowDown
-            className={`text-slate-400 h-12 w-12 hover:text-slate-500 ${
+          <FaArrowCircleDown
+            className={`${
               isVisible ? "opacity-0" : ""
             }`}
           />
