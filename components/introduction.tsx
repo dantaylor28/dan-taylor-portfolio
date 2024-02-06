@@ -173,7 +173,7 @@ export default function Introduction() {
         <a onClick={scrollDown}>
           <HiChevronDown
             className={`fixed bottom-3 z-10 animate-pulse h-12 w-12 text-cyan-600 dark:text-cyan-50 cursor-pointer ${
-              isVisible ? "!opacity-0" : ""
+              isVisible ? "!opacity-0 pointer-events-none" : ""
             }`}
           />
         </a>

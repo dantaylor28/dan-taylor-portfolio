@@ -9,7 +9,7 @@ import { useTheme } from "@/contexts/color-theme-context";
 export default function ColorTheme() {
   const { theme, switchTheme } = useTheme();
   return (
-    <div className="fixed bottom-5 right-5 overflow-hidden flex w-fit items-center rounded-full bg-white shadow-2xl">
+    <div className="fixed bottom-5 left-5 overflow-hidden flex w-fit items-center rounded-full bg-white shadow-2xl">
       <button
         className={`text-xs sm:text-sm font-light flex items-center gap-2 px-3 transition-colors relative z-10 ${
           theme === "dark" ? "text-white" : "text-slate-950"
