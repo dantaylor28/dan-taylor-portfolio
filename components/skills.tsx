@@ -157,15 +157,15 @@ const Skills = () => {
         >
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 text-lg" />
-            Create attractive & fully responsive web pages.
+            Develop & maintain visually appealing, user-friendly applications using clean, efficient code.
           </li>
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 text-lg" />
-            Use testing libraries to fully test my web application.
+            Build fully responsive designs to ensure optimal viewing experience across different screen sizes and devices.
           </li>
           <li className="flex items-center ml-3">
             <IoMdCheckboxOutline className="mr-3 text-lg" />
-            Troubleshoot problems with performance or user experience.
+            Troubleshoot any problems with performance or user experience and debug issues when they arise.
           </li>
         </motion.ul>
       </div>

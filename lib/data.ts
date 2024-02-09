@@ -54,7 +54,7 @@ export const projectData = [
   {
     title: "Harry Potter Quiz",
     description:
-      "An interactive quiz game, developed using vanilla Javascript, HTML and custom CSS. Some of the game's main features include sounds effects, a timeline counter and smooth page transitions while you answer 20 Harry Potter themes questions.",
+      "An interactive quiz game, developed using vanilla Javascript, HTML and custom CSS. Some of the game's main features include sound effects, a timeline counter and smooth page transitions while you answer 20 Harry Potter themed questions.",
     image: JsQuiz,
     tags: ["Javascript", "HTML", "CSS"],
     liveUrl: "https://dantaylor28.github.io/harry_potter_quiz/",
