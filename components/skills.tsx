@@ -108,7 +108,7 @@ const Skills = () => {
       </motion.h2>
 
       <div className="flex flex-col md:flex-row justify-center items-center">
-        <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
+        <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-10 md:mb-0 lg:min-w-[480px]">
           {frontendSkills.map((skill, index) => (
             <motion.div
               className="relative flex flex-col items-center group"
@@ -195,15 +195,15 @@ const Skills = () => {
         >
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 text-lg" />
-            Create attractive & fully responsive web pages.
+            Develop & maintain visually appealing, user-friendly applications using clean, efficient code.
           </li>
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 text-lg" />
-            Use testing libraries to fully test my web application.
+            Build fully responsive designs to ensure optimal viewing experience across different screen sizes and devices.
           </li>
           <li className="flex items-center ml-3">
             <IoMdCheckboxOutline className="mr-3 text-lg" />
-            Troubleshoot problems with performance or user experience.
+            Troubleshoot any problems with performance or user experience and debug issues when they arise.
           </li>
         </motion.ul>
         <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
