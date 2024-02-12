@@ -19,24 +19,25 @@ export default function AboutMe() {
           <PageHeading>about me</PageHeading>
           <div className="flex-grow h-px bg-cyan-50 opacity-40"></div>
         </div>
-        <p className="font-light">
-        <span className="font-semibold">Hey, I'm Dan</span>. I'm a junior{" "}
-        <span className="font-semibold">full-stack developer</span> with a
-        passion for <span className="italic">technological innovation</span> and
-        development. I enjoy creating{" "}
-        <span className="font-semibold">modern websites & applications</span>.
-        My focus is currently on gaining a deeper understanding of{" "}
-        <span className="italic">React & other JS frameworks</span>.
-        </p>
-        <p className="mb-3 font-light">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos odio,
-          enim autem nihil itaque a non quia iusto cupiditate vitae fuga! Quos
-          ad ipsam consequuntur repellat nulla vitae animi quis! Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Quis labore corporis
-          pariatur aspernatur adipisci inventore, ratione recusandae deleniti,
-          veritatis consequuntur fugit provident commodi expedita ipsa
-          voluptates odio quo rem harum?
-        </p>
+        <p className="font-light mb-5">
+          Hey, I'm Dan. I'm a junior full-stack developer with a passion for
+          technological innovation and development. I enjoy creating modern websites
+          and applications.</p>
+          <p className="font-light mb-5">
+          After spending the last 10 years working in various customer service and
+          management roles, I decided to make a change and delve into the world of
+          software development. I joined a 12 month long coding bootcamp where I
+          began learning the fundamentals of full-stack development, covering languages
+          including Javascript, Python HTML & CSS. I learnt version control systems
+          including Git and Github, and completed projects using Agile methodologies and
+          practises.
+          </p>
+          <p className="mb-3 font-light">
+          Since graduating I have continued on this learning journey, delving deeper
+          into frontend development. I am currently working alot with React, Next.js
+          and Typescript while attempting to take in as much information as possible
+          in this ever-changing technology sector. 
+          </p>
       </section>
     </div>
   );
