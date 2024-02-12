@@ -19,6 +19,15 @@ export default function AboutMe() {
           <PageHeading>about me</PageHeading>
           <div className="flex-grow h-px bg-cyan-50 opacity-40"></div>
         </div>
+        <p className="font-light">
+        <span className="font-semibold">Hey, I'm Dan</span>. I'm a junior{" "}
+        <span className="font-semibold">full-stack developer</span> with a
+        passion for <span className="italic">technological innovation</span> and
+        development. I enjoy creating{" "}
+        <span className="font-semibold">modern websites & applications</span>.
+        My focus is currently on gaining a deeper understanding of{" "}
+        <span className="italic">React & other JS frameworks</span>.
+        </p>
         <p className="mb-3 font-light">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos odio,
           enim autem nihil itaque a non quia iusto cupiditate vitae fuga! Quos
@@ -27,12 +36,6 @@ export default function AboutMe() {
           pariatur aspernatur adipisci inventore, ratione recusandae deleniti,
           veritatis consequuntur fugit provident commodi expedita ipsa
           voluptates odio quo rem harum?
-        </p>
-        <p className="font-light">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
-          expedita, consectetur explicabo corporis tempora odio beatae
-          repudiandae quos aliquid eaque magni nam voluptatum, accusamus, iure
-          repellat excepturi ab minus perferendis.
         </p>
       </section>
     </div>

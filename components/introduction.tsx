@@ -34,7 +34,7 @@ export default function Introduction() {
   return (
     <section
       id="home"
-      className="mb-8 max-w-[50rem] text-center px-4 sm:mb-0 scroll-mt-[100rem]"
+      className="mb-24 max-w-[50rem] text-center px-4 sm:mb-20 md:mb-16 lg:mb-0 scroll-mt-[100rem]"
       ref={ref}
     >
       <div className="flex items-center justify-center">
@@ -61,7 +61,7 @@ export default function Introduction() {
       </div>
 
       <motion.h1
-        className="mt-8 mb-10 px-4 text-[28px] sm:text-4xl dark:text-cyan-800"
+        className="mt-8 mb-10 px-4 text-[28px] sm:text-[40px] dark:text-cyan-800"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -80,13 +80,7 @@ export default function Introduction() {
           delay: 0.4,
         }}
       >
-        <span className="font-semibold">Hey, I'm Dan</span>. I'm a junior{" "}
-        <span className="font-semibold">full-stack developer</span> with a
-        passion for <span className="italic">technological innovation</span> and
-        development. I enjoy creating{" "}
-        <span className="font-semibold">modern websites & applications</span>.
-        My focus is currently on gaining a deeper understanding of{" "}
-        <span className="italic">React & other JS frameworks</span>.
+        I'm a <span className="font-semibold">Full-Stack Software Developer</span> with a passion for all things tech, based out of Gothenburg, Sweden. 🇸🇪
       </motion.h2>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
@@ -163,7 +157,7 @@ export default function Introduction() {
         </motion.div>
       </div>
       <motion.div
-        className={`hidden sm:flex sm:justify-center sm:items-center mt-8 mb-8`}
+        className={`hidden sm:flex sm:justify-center sm:items-center mt-8 mb-10`}
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
