@@ -20,7 +20,7 @@ export default function AboutMe() {
           <div className="flex-grow h-px bg-cyan-50 opacity-40"></div>
         </div>
         <p className="font-light mb-5">
-          Hey, I'm Dan. I'm a junior full-stack developer with a passion for
+          Hey, I&apos;m Dan. I&apos;m a junior full-stack developer with a passion for
           technological innovation and development. I enjoy creating modern websites
           and applications.</p>
           <p className="font-light mb-5">

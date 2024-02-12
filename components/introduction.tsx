@@ -68,7 +68,7 @@ export default function Introduction() {
           delay: 0.3,
         }}
       >
-        Hi, I'm <span className="text-cyan-800 dark:text-cyan-50">{text}</span>
+        Hi, I&apos;m <span className="text-cyan-800 dark:text-cyan-50">{text}</span>
         <Cursor cursorStyle="_" cursorColor="#ecfeff" />
       </motion.h1>
 
@@ -80,7 +80,7 @@ export default function Introduction() {
           delay: 0.4,
         }}
       >
-        I'm a <span className="font-semibold">Full-Stack Software Developer</span> with a passion for all things tech, based out of Gothenburg, Sweden. 🇸🇪
+        I&apos;m a <span className="font-semibold">Full-Stack Software Developer</span> with a passion for all things tech, based out of Gothenburg, Sweden. 🇸🇪
       </motion.h2>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
