@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectImg from "../public/project_img.png";
-import DrfApi from "../public/drf_api.png";
 import FoodBlog from "../public/food_blog.png";
 import JsQuiz from "../public/js_quiz.png"
 import {
@@ -108,20 +107,12 @@ export const backendSkills = [
 
 export const experienceData = [
   {
-    title: "Looking for job",
+    title: "Open For Opportunities",
     description:
-      "I am now searching for my first opportunity to work within an exciting development team.",
+      "I am now looking to join an exciting development team, to work alongside and gain more real world experience.",
     location: "Göteborg, Sweden",
     date: "2024",
     icon: React.createElement(PiBriefcaseLight),
-  },
-  {
-    title: "Superdry, Gothenburg",
-    description:
-      "I am currently working at the clothing store Superdry, where I am responsible for all operational & logistical duties in store.",
-    location: "Gothenburg, Sweden",
-    date: "April 2017 - Current",
-    icon: React.createElement(PiCoatHangerLight),
   },
   {
     title: "Graduated from bootcamp",
@@ -130,6 +121,14 @@ export const experienceData = [
     location: "Göteborg, Sweden",
     date: "2023",
     icon: React.createElement(PiGraduationCapLight),
+  },
+  {
+    title: "Superdry, Gothenburg",
+    description:
+      "I am currently working at the clothing store Superdry, where I am responsible for all operational & logistical duties in store.",
+    location: "Gothenburg, Sweden",
+    date: "April 2017 - Current",
+    icon: React.createElement(PiCoatHangerLight),
   },
   {
     title: "Moved to Stockholm",
