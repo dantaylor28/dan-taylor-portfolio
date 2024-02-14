@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectImg from "../public/project_img.png";
 import FoodBlog from "../public/food_blog.png";
-import JsQuiz from "../public/js_quiz.png"
+import JsQuiz from "../public/js_quiz.png";
 import {
   PiBriefcaseLight,
   PiCoatHangerLight,
@@ -115,49 +115,42 @@ export const experienceData = [
     icon: React.createElement(PiBriefcaseLight),
   },
   {
-    title: "Graduated from bootcamp",
+    title: "Graduated From Bootcamp",
     description:
-      "After 8 months of study, I graduated from Code Institute with a certificate in full-stack web development.",
-    location: "Göteborg, Sweden",
+      "After a year of study, I graduated from Code Institute with a certificate in Full-Stack Web Development.",
+    location: "Dublin, Ireland",
     date: "2023",
     icon: React.createElement(PiGraduationCapLight),
   },
   {
-    title: "Superdry, Gothenburg",
+    title: "Sales & Operational Keyholder | Superdry",
     description:
-      "I am currently working at the clothing store Superdry, where I am responsible for all operational & logistical duties in store.",
-    location: "Gothenburg, Sweden",
+      "Here I am responsible for all operational duties in store, alongside providing great customer service & helping the team to achieve store sales targets and KPIs.",
+    location: "Göteborg, Sweden",
     date: "April 2017 - Current",
     icon: React.createElement(PiCoatHangerLight),
   },
   {
-    title: "Moved to Stockholm",
+    title: "Hello, World!",
     description:
-      "Spent 6 months living in Stockholm with a new job before moving back to Gothenburg in February.",
-    location: "Stockholm, Sweden",
-    date: "September - Februrary 2022",
-    icon: React.createElement(PiTruckLight),
-  },
-  {
-    title: "Hello, world!",
-    description:
-      "The day I wrote my first line of HTML code, after discovering the plethora of free learning material online.",
+      "After discovering the wealth of online learning material, this is when I wrote my first ever line of HTML code.",
     location: "Stockholm, Sweden",
     date: "September 2021",
     icon: React.createElement(PiCodeLight),
   },
   {
     title: "Moved to Sweden",
-    description: "Packed up my life and made the move to snowy Sweden",
-    location: "✈️",
+    description: 
+      "The day I packed up my life in the UK and made the move to my new home in Gothenburg, Sweden.",
+    location: "UK -> Sweden",
     date: "March 2017",
     icon: React.createElement(PiAirplaneTiltLight),
   },
   {
-    title: "Travelling the world",
+    title: "Career Break To Travel",
     description:
-      "Backpacked my way through 17 countries over a 9 month period starting in Bangkok and ending in the Caribbean.",
-    location: "All over",
+      "Backpacked my way through 19 countries, starting in Thailand and ending 9 months later in the Caribbean.",
+    location: "SE Asia -> Europe -> Central America",
     date: "2016",
     icon: React.createElement(PiMapPinLineLight),
   },
