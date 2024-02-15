@@ -159,7 +159,7 @@ export const experienceData = [
     description:
       "Led the team responsible for store & delivery logistics, while helping to create an inspiring work environment & encouraging open communication with my positive attitude & passion.",
     location: "Wolverhampton, England",
-    date: "October 2012 - February 2017",
+    date: "2012 - 2017",
     icon: React.createElement(PiShoppingCartLight),
   },
 ] as const;
