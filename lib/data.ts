@@ -109,7 +109,7 @@ export const experienceData = [
   {
     title: "Open For Opportunities",
     description:
-      "I am now looking to join an exciting development team, to work alongside and gain more real world experience.",
+      "I am now looking to join an exciting development team to work alongside, and gain more real world experience.",
     location: "Göteborg, Sweden",
     date: "2024",
     icon: React.createElement(PiBriefcaseLight),
@@ -155,9 +155,9 @@ export const experienceData = [
     icon: React.createElement(PiMapPinLineLight),
   },
   {
-    title: "Co-operative Food, England",
+    title: "Team Leader | Co-Operative",
     description:
-      "I worked as a team leader for a supermarket chain, with responsibilities for various departments and supporting the senior management team.",
+      "Led the team responsible for store & delivery logistics, while helping to create an inspiring work environment & encouraging open communication with my positive attitude & passion.",
     location: "Wolverhampton, England",
     date: "October 2012 - February 2017",
     icon: React.createElement(PiShoppingCartLight),
