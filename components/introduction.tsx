@@ -115,6 +115,8 @@ export default function Introduction() {
             transition={{
               delay: 0.575,
             }}
+            href="/Dan_Taylor_CV.pdf"
+            target="_blank"
           >
             <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90 dark:bg-cyan-800"></span>
             <span className="relative group-hover:text-white group-hover:duration-500">
