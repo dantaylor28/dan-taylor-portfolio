@@ -12,6 +12,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/contexts/active-section-context";
 import { HiChevronDown } from "react-icons/hi2";
 import { useScroll } from "@/contexts/scroll-to-top-context";
+import BackgroundStyle from "./background-style";
 
 export default function Introduction() {
   const [text] = useTypewriter({
@@ -33,6 +34,7 @@ export default function Introduction() {
 
   return (
     <div>
+      <BackgroundStyle />
       <section
         id="home"
         className="mb-24 max-w-[50rem] text-center px-4 sm:mb-20 md:mb-16 lg:mb-0 scroll-mt-[100rem] h-screen"
