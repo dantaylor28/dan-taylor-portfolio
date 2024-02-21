@@ -32,58 +32,63 @@ export default function Introduction() {
   const { isVisible, scrollDown } = useScroll();
 
   return (
-    <section
-      id="home"
-      className="mb-24 max-w-[50rem] text-center px-4 sm:mb-20 md:mb-16 lg:mb-0 scroll-mt-[100rem]"
-      ref={ref}
-    >
-      <div className="flex items-center justify-center">
-        <div className="relative">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.3,
-            }}
-          >
-            <Image
-              src={HeroImg}
-              alt="Dan portrait"
-              width="252"
-              height="252"
-              quality={99}
-              priority={true}
-              className="h-56 w-56 sm:h-72 sm:w-72 rounded-full object-cover border-[0.05rem] border-white shadow-xl dark:border-cyan-800"
-            />
-          </motion.div>
+    <div>
+      <section
+        id="home"
+        className="mb-24 max-w-[50rem] text-center px-4 sm:mb-20 md:mb-16 lg:mb-0 scroll-mt-[100rem] h-screen"
+        ref={ref}
+      >
+        <div className="flex items-center justify-center">
+          <div className="relative">
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                type: "tween",
+                duration: 0.3,
+              }}
+            >
+              <Image
+                src={HeroImg}
+                alt="Dan portrait"
+                width="252"
+                height="252"
+                quality={99}
+                priority={true}
+                className="h-56 w-56 sm:h-72 sm:w-72 rounded-full object-cover border-[0.05rem] border-white shadow-xl dark:border-cyan-800"
+              />
+            </motion.div>
+          </div>
         </div>
-      </div>
 
-      <motion.h1
-        className="mt-8 mb-10 px-4 text-[28px] sm:text-[40px] dark:text-cyan-800"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-        }}
-      >
-        Hi, I&apos;m <span className="text-cyan-800 dark:text-cyan-50">{text}</span>
-        <Cursor cursorStyle="_" cursorColor="#ecfeff" />
-      </motion.h1>
+        <motion.h1
+          className="mt-8 mb-10 px-4 text-[28px] sm:text-[40px] dark:text-cyan-800"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+          }}
+        >
+          Hi, I&apos;m{" "}
+          <span className="text-cyan-800 dark:text-cyan-50">{text}</span>
+          <Cursor cursorStyle="_" cursorColor="#ecfeff" />
+        </motion.h1>
 
-      <motion.h2
-        className="!leading-[1.5] text-[18px] font-light mb-10 sm:text-[20px]"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.4,
-        }}
-      >
-        I&apos;m a <span className="font-semibold">Full-Stack Software Developer</span> with a passion for all things tech, based out of Gothenburg, Sweden. 🇸🇪
-      </motion.h2>
+        <motion.h2
+          className="!leading-[1.5] text-[18px] font-light mb-10 sm:text-[20px]"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.4,
+          }}
+        >
+          I&apos;m a{" "}
+          <span className="font-semibold">Full-Stack Software Developer</span>{" "}
+          with a passion for all things tech, based out of Gothenburg, Sweden.
+          🇸🇪
+        </motion.h2>
 
-      {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
+        {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -158,22 +163,23 @@ export default function Introduction() {
           </a>
         </motion.div>
       </div> */}
-      <motion.div
-        className={`hidden sm:flex sm:justify-center sm:items-center mt-8 mb-10`}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-          delay: 0.725,
-        }}
-      >
-        <a onClick={scrollDown}>
-          <HiChevronDown
-            className={`fixed bottom-3 z-10 animate-pulse h-12 w-12 text-cyan-600 dark:text-cyan-50 cursor-pointer ${
-              isVisible ? "!opacity-0 pointer-events-none" : ""
-            }`}
-          />
-        </a>
-      </motion.div>
-    </section>
+        {/* <motion.div
+          className={`hidden sm:flex sm:justify-center sm:items-center mt-8 mb-10`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            delay: 0.725,
+          }}
+        >
+          <a onClick={scrollDown}>
+            <HiChevronDown
+              className={`fixed bottom-3 z-10 animate-pulse h-12 w-12 text-cyan-600 dark:text-cyan-50 cursor-pointer ${
+                isVisible ? "!opacity-0 pointer-events-none" : ""
+              }`}
+            />
+          </a>
+        </motion.div> */}
+      </section>
+    </div>
   );
 }
