@@ -83,7 +83,7 @@ export default function Introduction() {
         I&apos;m a <span className="font-semibold">Full-Stack Software Developer</span> with a passion for all things tech, based out of Gothenburg, Sweden. 🇸🇪
       </motion.h2>
 
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
+      {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -157,11 +157,11 @@ export default function Introduction() {
             <FaLinkedin className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
           </a>
         </motion.div>
-      </div>
+      </div> */}
       <motion.div
         className={`hidden sm:flex sm:justify-center sm:items-center mt-8 mb-10`}
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{
           delay: 0.725,
         }}
