@@ -9,6 +9,7 @@ import Skills from "@/components/skills";
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
+    {/* <main className="h-screen snap-y snap-mandatory overflow-scroll z-0"> */}
       <Introduction />
       <AboutMe />
       <Projects />

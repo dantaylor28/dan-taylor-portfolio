@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-slate-100 text-slate-950 relative pt-28 sm:pt-36 dark:bg-slate-950 dark:text-slate-50`}
       >
-        {/* <div
+        <div
           className="bg-[#ffedd5] absolute -z-10 top-[-6rem] right-[4rem] h-[31.25rem] w-[31.25rem]
         rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-slate-950"
         ></div>
@@ -37,7 +37,16 @@ export default function RootLayout({
         <div
           className="bg-[#f7fee7] absolute -z-10 top-[30rem] left-[-35rem] h-[31.25rem] w-[50rem]
         rounded-full blur-[10rem] sm:w-[79.25rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-slate-950"
-        ></div> */}
+        ></div>
+        {/* <div className="relative">
+          <div className="absolute top-52 left-[750px] flex justify-center items-center -z-10">
+            <div className="absolute border border-red-500 h-[200px] w-[200px] rounded-full mt-52 animate-ping -z-10" />
+            <div className="absolute border border-red-500 h-[300px] w-[300px] rounded-full mt-52 -z-10" />
+            <div className="absolute border border-red-500 h-[500px] w-[500px] rounded-full mt-52 -z-10" />
+            <div className="absolute border border-yellow-300 opacity-20 h-[650px] w-[650px] rounded-full mt-52 animate-pulse -z-10" />
+            <div className="absolute border border-red-500 h-[800px] w-[800px] rounded-full mt-52 -z-10" />
+          </div>
+        </div> */}
 
         <ScrollToTopContextProvider>
           <ColorThemeContextProvider>
