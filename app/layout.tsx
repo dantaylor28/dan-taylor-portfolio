@@ -7,6 +7,7 @@ import { Toaster } from "react-hot-toast";
 import ColorTheme from "@/components/color-theme";
 import ColorThemeContextProvider from "@/contexts/color-theme-context";
 import ScrollToTopContextProvider from "@/contexts/scroll-to-top-context";
+import BackgroundStyle from "@/components/background-style";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,42 +23,34 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="en" className="!scroll-smooth overflow-x-hidden">
       <body
-        className={`${inter.className} bg-slate-100 text-slate-950 relative pt-28 sm:pt-36 dark:bg-slate-950 dark:text-slate-50`}
+        className={`${inter.className} bg-slate-100 text-slate-950 relative pt-28 sm:pt-36 dark:bg-slate-950 dark:text-slate-50 overflow-x-hidden`}
       >
-        <div
-          className="bg-[#ffedd5] absolute -z-10 top-[-6rem] right-[4rem] h-[31.25rem] w-[31.25rem]
+          <div
+            className="bg-[#ffedd5] absolute -z-10 top-[-6rem] right-[4rem] h-[31.25rem] w-[31.25rem]
         rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-slate-950"
-        ></div>
-        <div
-          className="bg-[#fee2e2] absolute -z-10 top-[-1rem] left-[-35rem] h-[31.25rem] w-[50rem]
-        rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-cyan-950"
-        ></div>
-        <div
-          className="bg-[#f7fee7] absolute -z-10 top-[30rem] left-[-35rem] h-[31.25rem] w-[50rem]
+          ></div>
+          <div
+            className="bg-[#e5e5e5] absolute -z-10 top-[-1rem] left-[-35rem] h-[31.25rem] w-[50rem]
+        rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-slate-900"
+          ></div>
+          <div
+            className="bg-[#f7fee7] absolute -z-10 top-[30rem] left-[-35rem] h-[31.25rem] w-[50rem]
         rounded-full blur-[10rem] sm:w-[79.25rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-slate-950"
-        ></div>
-        {/* <div className="relative">
-          <div className="absolute top-52 left-[750px] flex justify-center items-center -z-10">
-            <div className="absolute border border-red-500 h-[200px] w-[200px] rounded-full mt-52 animate-ping -z-10" />
-            <div className="absolute border border-red-500 h-[300px] w-[300px] rounded-full mt-52 -z-10" />
-            <div className="absolute border border-red-500 h-[500px] w-[500px] rounded-full mt-52 -z-10" />
-            <div className="absolute border border-yellow-300 opacity-20 h-[650px] w-[650px] rounded-full mt-52 animate-pulse -z-10" />
-            <div className="absolute border border-red-500 h-[800px] w-[800px] rounded-full mt-52 -z-10" />
-          </div>
-        </div> */}
+          ></div>
+          <BackgroundStyle />
 
-        <ScrollToTopContextProvider>
-          <ColorThemeContextProvider>
-            <ActiveSectionContextProvider>
-              <Header />
-              {children}
-              <Toaster position="top-right" />
-              <ColorTheme />
-            </ActiveSectionContextProvider>
-          </ColorThemeContextProvider>
-        </ScrollToTopContextProvider>
+          <ScrollToTopContextProvider>
+            <ColorThemeContextProvider>
+              <ActiveSectionContextProvider>
+                <Header />
+                {children}
+                <Toaster position="top-right" />
+                <ColorTheme />
+              </ActiveSectionContextProvider>
+            </ColorThemeContextProvider>
+          </ScrollToTopContextProvider>
       </body>
     </html>
   );

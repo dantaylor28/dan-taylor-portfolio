@@ -12,7 +12,6 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/contexts/active-section-context";
 import { HiChevronDown } from "react-icons/hi2";
 import { useScroll } from "@/contexts/scroll-to-top-context";
-import BackgroundStyle from "./background-style";
 
 export default function Introduction() {
   const [text] = useTypewriter({
@@ -33,24 +32,7 @@ export default function Introduction() {
   const { isVisible, scrollDown } = useScroll();
 
   return (
-    // <section className="snap-center">
-    //   <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-    //     <BackgroundStyle />
-    //     <motion.h1
-    //       initial={{ opacity: 0, y: 100 }}
-    //       animate={{ opacity: 1, y: 0 }}
-    //       transition={{
-    //         delay: 0.3,
-    //       }}
-    //     >
-    //       Hi, I&apos;m <span>{text}</span>
-    //       <Cursor cursorStyle="_" cursorColor="#ecfeff" />
-    //     </motion.h1>
-    //   </div>
-    // </section>
-
     <div className="flex flex-col items-center justify-center">
-      <BackgroundStyle />
       <section
         id="home"
         className="flex flex-col mb-24 max-w-[50rem] text-center px-4 sm:mb-20 md:mb-16 lg:mb-0 scroll-mt-[100rem]"
