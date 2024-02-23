@@ -62,7 +62,7 @@ export default function Introduction() {
         </div>
 
         <motion.h1
-          className="mt-8 mb-10 px-4 text-[28px] sm:text-[40px] dark:text-cyan-800"
+          className="mt-8 mb-10 px-4 text-[28px] z-10 sm:text-[40px] dark:text-cyan-800"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -75,7 +75,7 @@ export default function Introduction() {
         </motion.h1>
 
         <motion.h2
-          className="!leading-[1.5] text-[18px] font-light mb-10 sm:text-[20px]"
+          className="!leading-[1.5] text-[18px] font-light mb-10 z-10 sm:text-[20px]"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -132,6 +132,7 @@ export default function Introduction() {
           </div>
 
           <motion.div
+            className="z-10"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -148,6 +149,7 @@ export default function Introduction() {
           </motion.div>
 
           <motion.div
+            className="z-10"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
