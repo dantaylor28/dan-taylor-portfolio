@@ -33,11 +33,11 @@ export default function Introduction() {
   const { isVisible, scrollDown } = useScroll();
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center sm:mt-10">
       <BackgroundStyle />
       <section
         id="home"
-        className="flex flex-col mb-24 max-w-[50rem] text-center px-4 sm:mb-20 md:mb-16 lg:mb-0 scroll-mt-[100rem]"
+        className="flex flex-col max-w-[50rem] text-center px-4 md:mb-16 mb-0 scroll-mt-[100rem] h-screen"
         ref={ref}
       >
         <div className="flex items-center justify-center">
