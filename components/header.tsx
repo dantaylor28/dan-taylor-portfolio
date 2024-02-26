@@ -22,6 +22,8 @@ export default function Header() {
         animate={{ y: 0, x: "-50%", opacity: 1 }}
         transition={{
           type: "tween",
+          delay: 0.5,
+          duration: 1,
         }}
       ></motion.div>
       <nav
@@ -40,7 +42,7 @@ export default function Header() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{
                 type: "tween",
-                delay: 0.3,
+                delay: 1.3,
                 duration: 0.4,
               }}
             >
