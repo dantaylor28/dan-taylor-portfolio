@@ -9,7 +9,22 @@ import { useTheme } from "@/contexts/color-theme-context";
 export default function ColorTheme() {
   const { theme, switchTheme } = useTheme();
   return (
-    <div className="fixed bottom-5 left-5 overflow-hidden flex w-fit items-center rounded-full bg-white shadow-2xl">
+    <motion.div
+      initial={{
+        opacity: 0,
+        x: -500,
+        scale: 0.5,
+      }}
+      animate={{
+        opacity: 1,
+        x: 0,
+        scale: 1,
+      }}
+      transition={{
+        duration: 1.5,
+      }}
+      className="fixed bottom-5 left-5 overflow-hidden flex w-fit items-center rounded-full bg-white shadow-2xl"
+    >
       <button
         className={`text-xs sm:text-sm font-light flex items-center gap-2 px-3 transition-colors relative z-10 ${
           theme === "dark" ? "text-white" : "text-slate-950"
@@ -39,6 +54,6 @@ export default function ColorTheme() {
           className="h-full w-1/2 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-700"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
