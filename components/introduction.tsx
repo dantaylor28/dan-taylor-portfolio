@@ -48,6 +48,7 @@ export default function Introduction() {
               transition={{
                 type: "tween",
                 duration: 0.3,
+                delay: 1.5,
               }}
             >
               <Image
@@ -68,7 +69,7 @@ export default function Introduction() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
+            delay: 1.8,
           }}
         >
           Hi, I&apos;m{" "}
@@ -81,7 +82,7 @@ export default function Introduction() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.4,
+            delay: 1.9,
           }}
         >
           I&apos;m a{" "}
@@ -95,7 +96,7 @@ export default function Introduction() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.5,
+              delay: 2,
             }}
           >
             <Link
@@ -120,7 +121,7 @@ export default function Introduction() {
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.575,
+                delay: 2.075,
               }}
               href="/Dan_Taylor_CV.pdf"
               target="_blank"
@@ -138,7 +139,7 @@ export default function Introduction() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.65,
+              delay: 2.15,
             }}
           >
             <a
@@ -155,7 +156,7 @@ export default function Introduction() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.725,
+              delay: 2.225,
             }}
           >
             <a
