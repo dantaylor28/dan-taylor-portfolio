@@ -47,7 +47,7 @@ export default function Introduction() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{
                 type: "tween",
-                duration: 0.3,
+                duration: 0.6,
                 delay: 1.5,
               }}
             >
@@ -66,10 +66,11 @@ export default function Introduction() {
 
         <motion.h1
           className="mt-8 mb-5 px-4 text-[28px] z-10 sm:text-[36px] dark:text-cyan-800"
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 0, y: 200 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
             delay: 1.8,
+            duration: 0.3,
           }}
         >
           Hi, I&apos;m{" "}
@@ -79,10 +80,11 @@ export default function Introduction() {
 
         <motion.h2
           className="!leading-[1.5] text-[18px] font-light mb-7 z-10 sm:text-[20px] sm:max-w-xl"
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 0, y: 200 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
             delay: 1.9,
+            duration: 0.3,
           }}
         >
           I&apos;m a{" "}
@@ -93,10 +95,11 @@ export default function Introduction() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
           <motion.div
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
               delay: 2,
+              duration: 0.3,
             }}
           >
             <Link
@@ -118,10 +121,11 @@ export default function Introduction() {
           <div className="active:scale-105">
             <motion.a
               className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-50 text-cyan-800 flex items-center gap-2 border border-black/10 cursor-pointer dark:bg-cyan-100/90 dark:border-cyan-800"
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0, y: 200 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 delay: 2.075,
+                duration: 0.2,
               }}
               href="/Dan_Taylor_CV.pdf"
               target="_blank"
@@ -136,10 +140,11 @@ export default function Introduction() {
 
           <motion.div
             className="z-10"
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
               delay: 2.15,
+              duration: 0.2,
             }}
           >
             <a
@@ -153,10 +158,11 @@ export default function Introduction() {
 
           <motion.div
             className="z-10"
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
               delay: 2.225,
+              duration: 0.2,
             }}
           >
             <a
@@ -173,7 +179,8 @@ export default function Introduction() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
-            delay: 0.725,
+            delay: 2.225,
+            duration: 0.2,
           }}
         >
           <a onClick={scrollDown}>
