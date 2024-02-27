@@ -103,6 +103,9 @@ const Skills = () => {
           once: true,
           margin: "-100px",
         }}
+        transition={{
+          duration: 0.5,
+        }}
       >
         frontend development
       </motion.h2>
@@ -152,20 +155,26 @@ const Skills = () => {
           whileInView="animate"
           viewport={{
             once: true,
-            margin: "-100px",
+            margin: "-200px",
+          }}
+          transition={{
+            duration: 1,
           }}
         >
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Develop & maintain visually appealing, user-friendly applications using clean, efficient code.
+            Develop & maintain visually appealing, user-friendly applications
+            using clean, efficient code.
           </li>
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Build fully responsive designs to ensure optimal viewing experience across different screen sizes and devices.
+            Build fully responsive designs to ensure optimal viewing experience
+            across different screen sizes and devices.
           </li>
           <li className="flex items-center ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Troubleshoot any problems with performance or user experience and debug issues when they arise.
+            Troubleshoot any problems with performance or user experience and
+            debug issues when they arise.
           </li>
         </motion.ul>
       </div>
@@ -179,6 +188,9 @@ const Skills = () => {
           once: true,
           margin: "-100px",
         }}
+        transition={{
+          duration: 0.5,
+        }}
       >
         backend development
       </motion.h2>
@@ -190,20 +202,26 @@ const Skills = () => {
           whileInView="animate"
           viewport={{
             once: true,
-            margin: "-100px",
+            margin: "-200px",
+          }}
+          transition={{
+            duration: 1,
           }}
         >
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Create & maintain RESTful & GraphQL APIs to facilitate communication between front and backend of applications.
+            Create & maintain RESTful & GraphQL APIs to facilitate communication
+            between front and backend of applications.
           </li>
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Write server-side code to build and maintain the functionality of web applications, APIs & databases.
+            Write server-side code to build and maintain the functionality of
+            web applications, APIs & databases.
           </li>
           <li className="flex items-center ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Use version control systems such as Git to manage and track any changes to the codebase.
+            Use version control systems such as Git to manage and track any
+            changes to the codebase.
           </li>
         </motion.ul>
         <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
