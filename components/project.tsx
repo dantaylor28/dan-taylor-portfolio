@@ -70,7 +70,7 @@ export default function Project({
           <a
             href={repoUrl}
             target="_blank"
-            className="group bg-cyan-50 text-cyan-800 flex items-center gap-2 hover:bg-cyan-600 hover:text-cyan-50 duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer dark:bg-cyan-950 dark:hover:bg-cyan-800/70 dark:text-cyan-50 dark:hover:text-white"
+            className="group bg-cyan-800 text-cyan-50 flex items-center gap-2 hover:bg-cyan-600 hover:text-white duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer dark:bg-cyan-950 dark:hover:bg-cyan-800/70"
           >
             github link
             <BsGithub className="group-hover:text-cyan-50 group-hover:translate-x-1 transition dark:group-hover:text-white" />
