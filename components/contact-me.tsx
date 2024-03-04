@@ -7,7 +7,6 @@ import { sendEmailData } from "@/actions/sendEmailData";
 import toast from "react-hot-toast";
 import { motion } from "framer-motion";
 import SubmitBtn from "./submit-btn";
-import ProjectVideo from "./project-video";
 
 export default function ContactMe() {
   const { ref } = useSectionInView("Contact Me", 0.5);
@@ -107,7 +106,6 @@ export default function ContactMe() {
           <SubmitBtn />
         </motion.form>
       </section>
-      <ProjectVideo />
     </div>
   );
 }
