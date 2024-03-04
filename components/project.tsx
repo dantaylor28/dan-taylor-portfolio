@@ -62,6 +62,7 @@ export default function Project({
             href={liveUrl}
             target="_blank"
             className="group bg-cyan-50 text-cyan-800 flex items-center gap-2 hover:bg-cyan-600 hover:text-cyan-50 duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer dark:bg-cyan-100/90 dark:border-cyan-800 dark:hover:bg-cyan-800/70 dark:text-cyan-950 dark:hover:text-white"
+            
           >
             live site
             <BsBoxArrowUpRight className="group-hover:text-cyan-50 group-hover:-translate-y-1 group-hover:translate-x-1 transition dark:group-hover:text-white" />
