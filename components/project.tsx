@@ -44,6 +44,8 @@ export default function Project({
         width="1920"
         height="1080"
         src={image}
+        autoplay="on-scroll"
+        muted
       />
       </div>
 
