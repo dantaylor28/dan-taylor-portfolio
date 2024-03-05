@@ -41,17 +41,22 @@ export default function Project({
           className="md:w-[20.5rem] md:h-[24rem] lg:w-[28.5rem] lg:h-[32rem] rounded-sm shadow-2xl md:group-hover:scale-105 "
         /> */}
         <CldVideoPlayer
-        width="1920"
-        height="1080"
-        src={image}
-        autoplay="on-scroll"
-        muted
-        logo={{
-          imageUrl: "https://res.cloudinary.com/dritqckhd/image/upload/v1709644039/logo_zcdnwx.png",
-          onClickUrl: "https://github.com/dantaylor28"
-        }}
-        poster="https://res.cloudinary.com/dritqckhd/image/upload/v1709644039/logo_zcdnwx.png"
-      />
+          width="1920"
+          height="1080"
+          src={image}
+          autoplay="on-scroll"
+          muted
+          logo={{
+            imageUrl:
+              "https://res.cloudinary.com/dritqckhd/image/upload/v1709644039/logo_zcdnwx.png",
+            onClickUrl: "https://github.com/dantaylor28",
+          }}
+          poster="https://res.cloudinary.com/dritqckhd/image/upload/v1709644039/logo_zcdnwx.png"
+          colors={{
+            accent: "#0891b2",
+            base: "#0f172a",
+          }}
+        />
       </div>
 
       <div className="flex flex-col md:items-start justify-center text-left md:ml-10 lg:ml-32 md:w-1/2 mt-10 md:mt-0 md:border-y border-black/20 group-odd/margin:ml-0 md:group-odd/margin:mr-10 lg:group-odd/margin:mr-32 dark:border-cyan-50/20">
@@ -75,7 +80,6 @@ export default function Project({
             href={liveUrl}
             target="_blank"
             className="group bg-cyan-50 text-cyan-800 flex items-center gap-2 hover:bg-cyan-600 hover:text-cyan-50 duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer dark:bg-cyan-100/90 dark:border-cyan-800 dark:hover:bg-cyan-800/70 dark:text-cyan-950 dark:hover:text-white"
-            
           >
             live site
             <BsBoxArrowUpRight className="group-hover:text-cyan-50 group-hover:-translate-y-1 group-hover:translate-x-1 transition dark:group-hover:text-white" />
