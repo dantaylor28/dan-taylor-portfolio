@@ -7,7 +7,6 @@ import { Toaster } from "react-hot-toast";
 import ColorTheme from "@/components/color-theme";
 import ColorThemeContextProvider from "@/contexts/color-theme-context";
 import ScrollToTopContextProvider from "@/contexts/scroll-to-top-context";
-import BackgroundStyle from "@/components/background-style";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,8 +38,6 @@ export default function RootLayout({
           className="bg-[#f7fee7] absolute -z-10 top-[30rem] left-[-35rem] h-[31.25rem] w-[50rem]
         rounded-full blur-[10rem] sm:w-[79.25rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-slate-950"
         ></div>
-          {/* <BackgroundStyle /> */}
-
 
         <ScrollToTopContextProvider>
           <ColorThemeContextProvider>

@@ -46,6 +46,10 @@ export default function Project({
         src={image}
         autoplay="on-scroll"
         muted
+        logo={{
+          imageUrl: "https://res.cloudinary.com/dritqckhd/image/upload/v1709644039/logo_zcdnwx.png",
+          onClickUrl: "https://github.com/dantaylor28"
+        }}
       />
       </div>
 
