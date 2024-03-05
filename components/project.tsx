@@ -33,14 +33,9 @@ export default function Project({
       }}
       className="group/margin flex flex-col md:flex-row md:h-[35rem] overflow-hidden py-16 sm:p-0 border-b border-black/20 last:border-none sm:border-none sm:mt-16 sm:mb-32 sm:last:mb-24 md:odd:flex-row-reverse dark:border-cyan-50/20"
     >
-      <div className="group flex items-end justify-center bg-slate-200 rounded-md group md:w-1/2 md:h-[30rem] lg:h-[35rem] md:mt-10 lg:mt-0 hover:bg-slate-300 transition dark:bg-white/10 dark:hover:bg-white/20">
-        {/* <Image
-          src={image}
-          alt="project I coded"
-          quality={95}
-          className="md:w-[20.5rem] md:h-[24rem] lg:w-[28.5rem] lg:h-[32rem] rounded-sm shadow-2xl md:group-hover:scale-105 "
-        /> */}
+      <div className="group flex items-end justify-center group md:w-1/2 md:h-[30rem] lg:h-[35rem] md:mt-10 lg:mt-0">
         <CldVideoPlayer
+          className="rounded-md"
           width="1920"
           height="1080"
           src={image}
@@ -55,6 +50,10 @@ export default function Project({
           colors={{
             accent: "#0891b2",
             base: "#0f172a",
+          }}
+          transformation={{
+            height: 500,
+            width: 500,
           }}
         />
       </div>
