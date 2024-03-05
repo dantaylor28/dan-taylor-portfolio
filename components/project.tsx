@@ -50,6 +50,7 @@ export default function Project({
           imageUrl: "https://res.cloudinary.com/dritqckhd/image/upload/v1709644039/logo_zcdnwx.png",
           onClickUrl: "https://github.com/dantaylor28"
         }}
+        poster="https://res.cloudinary.com/dritqckhd/image/upload/v1709644039/logo_zcdnwx.png"
       />
       </div>
 
