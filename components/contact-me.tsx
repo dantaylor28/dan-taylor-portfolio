@@ -7,7 +7,6 @@ import { sendEmailData } from "@/actions/sendEmailData";
 import toast from "react-hot-toast";
 import { motion } from "framer-motion";
 import SubmitBtn from "./submit-btn";
-import { CldVideoPlayer } from "next-cloudinary";
 import "next-cloudinary/dist/cld-video-player.css";
 
 export default function ContactMe() {
@@ -108,11 +107,6 @@ export default function ContactMe() {
           <SubmitBtn />
         </motion.form>
       </section>
-      <CldVideoPlayer
-        width="1920"
-        height="1080"
-        src="HarryPotterMp3_pxytm5"
-      />
     </div>
   );
 }
