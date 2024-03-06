@@ -33,7 +33,7 @@ export default function Project({
       }}
       className="group/margin flex flex-col md:flex-row md:h-[35rem] overflow-hidden py-16 sm:p-0 border-b border-black/20 last:border-none sm:border-none sm:mt-16 sm:mb-32 sm:last:mb-24 md:odd:flex-row-reverse dark:border-cyan-50/20"
     >
-      <div className="group flex items-end justify-center group md:w-1/2 md:h-[30rem] lg:h-[35rem] md:mt-10 lg:mt-0">
+      <div className="group flex items-center justify-center group md:w-1/2 md:h-[30rem] lg:h-[35rem] md:mt-10 lg:mt-0">
         <CldVideoPlayer
           className="rounded-md"
           width="1920"
@@ -52,8 +52,8 @@ export default function Project({
             base: "#0f172a",
           }}
           transformation={{
-            height: 500,
-            width: 500,
+            height: 4000,
+            width: 5000,
           }}
         />
       </div>
