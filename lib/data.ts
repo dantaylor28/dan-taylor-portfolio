@@ -44,7 +44,7 @@ export const projectData = [
     title: "Polaroid",
     description:
       "An image sharing, social media site where users can explore, share and manage posts from their every day lives. Features include the ability to pin posts, leave comments and follow different users. The application is connected to a custom backend API which implements full CRUD capabilities and user authentication.",
-    image: "food-blog_w9rfm0",
+    image: "polaroid_fvzdkn",
     tags: ["ReactJS", "Django", "Rest API", "Bootstrap", "CSS", "PostgreSQL"],
     liveUrl: "https://pp5-frontend-social-app.herokuapp.com/",
     repoUrl: "https://github.com/dantaylor28/polaroid-social-media-frontend",
@@ -53,7 +53,7 @@ export const projectData = [
     title: "Harry Potter Quiz",
     description:
       "An interactive quiz game, developed using vanilla Javascript, HTML and custom CSS. Some of the game's main features include sound effects, a timeline counter and smooth page transitions while you answer 20 Harry Potter themed questions.",
-    image: "food-blog_w9rfm0",
+    image: "harry-potter_p4plq3",
     tags: ["Javascript", "HTML", "CSS"],
     liveUrl: "https://dantaylor28.github.io/harry_potter_quiz/",
     repoUrl: "https://github.com/dantaylor28/harry_potter_quiz.git",
