@@ -63,7 +63,9 @@ export default function Introduction() {
             </motion.div>
           </div>
         </div>
-        <h2 className="uppercase opacity-50 pt-5 tracking-[15px] dark:text-white dark:opacity-70">software engineer</h2>
+        <h2 className="uppercase opacity-50 pt-5 tracking-[15px] dark:text-white dark:opacity-70">
+          software engineer
+        </h2>
 
         <motion.h1
           className="mt-8 mb-5 px-4 text-[28px] z-10 sm:text-[36px] dark:text-cyan-800"
@@ -79,8 +81,7 @@ export default function Introduction() {
           <Cursor cursorStyle="_" cursorColor="#ecfeff" />
         </motion.h1>
 
-        <motion.h2
-          className="!leading-[1.5] text-[18px] font-light mb-7 z-10 sm:text-[20px] sm:max-w-xl"
+        <motion.div
           initial={{ opacity: 0, y: 200 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -88,11 +89,13 @@ export default function Introduction() {
             duration: 0.3,
           }}
         >
-          I&apos;m a{" "}
-          <span className="font-semibold">Full-Stack Software Developer</span>{" "}
-          with a passion for all things tech, based out of Gothenburg, Sweden.
-          🇸🇪
-        </motion.h2>
+          <h2 className="!leading-[1.5] text-[18px] font-light mb-7 z-10 sm:text-[20px] sm:max-w-xl tracking-wider opacity-80">
+            I&apos;m a{" "}
+            <span className="font-medium">Full-Stack Software Developer</span>{" "}
+            with a passion for all things tech, based out of Gothenburg, Sweden.
+            🇸🇪
+          </h2>
+        </motion.div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
           <motion.div
