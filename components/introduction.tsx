@@ -142,7 +142,7 @@ export default function Introduction() {
             </motion.a>
           </div>
 
-          <motion.div
+          {/* <motion.div
             className="z-10"
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
@@ -176,7 +176,7 @@ export default function Introduction() {
             >
               <FaLinkedin className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
             </a>
-          </motion.div>
+          </motion.div> */}
         </div>
         <motion.div
           className={`hidden sm:flex sm:justify-center sm:items-center mt-8 mb-10`}
