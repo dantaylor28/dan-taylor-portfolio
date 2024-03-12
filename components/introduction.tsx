@@ -63,7 +63,7 @@ export default function Introduction() {
             </motion.div>
           </div>
         </div>
-        <h2 className="uppercase opacity-50 pt-5 tracking-[15px] dark:text-white dark:opacity-70">
+        <h2 className="uppercase opacity-50 pt-5 text-sm tracking-[15px] dark:text-white dark:opacity-70">
           software engineer
         </h2>
 
