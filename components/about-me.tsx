@@ -17,7 +17,7 @@ export default function AboutMe() {
       <motion.section
         initial={{
           opacity: 0,
-          x: -300,
+          x: -200,
         }}
         whileInView={{
           opacity: 1,

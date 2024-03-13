@@ -6,11 +6,13 @@ import Logo from "@/components/logo";
 import Projects from "@/components/projects";
 import ScrollToTop from "@/components/scroll-to-top";
 import Skills from "@/components/skills";
+import SocialLinks from "@/components/social-links";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
       <Logo />
+      <SocialLinks />
       <Introduction />
       <AboutMe />
       <Projects />
