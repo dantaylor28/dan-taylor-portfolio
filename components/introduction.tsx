@@ -77,7 +77,7 @@ export default function Introduction() {
         </motion.h2>
 
         <motion.h1
-          className="mt-8 mb-5 px-4 text-[28px] z-10 sm:text-[36px] dark:text-cyan-800"
+          className="mt-8 mb-5 px-4 text-[28px] sm:text-[36px] dark:text-cyan-800"
           initial={{ opacity: 0, y: 200 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -98,7 +98,7 @@ export default function Introduction() {
             duration: 0.3,
           }}
         >
-          <h2 className="!leading-[1.5] text-[18px] font-light mb-7 z-10 sm:text-[20px] sm:max-w-xl tracking-wider opacity-80">
+          <h2 className="!leading-[1.5] text-[18px] font-light mb-7 sm:text-[20px] sm:max-w-xl tracking-wider opacity-80">
             I&apos;m a{" "}
             <span className="font-medium">Full-Stack Software Developer</span>{" "}
             with a passion for all things tech, based out of Gothenburg, Sweden.
@@ -107,7 +107,7 @@ export default function Introduction() {
         </motion.div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -129,7 +129,20 @@ export default function Introduction() {
               </span>
               <BsArrowRight className="group-hover:text-white group-hover:translate-x-1 transition" />
             </Link>
-          </motion.div>
+          </motion.div> */}
+
+          <div>
+            <Link
+              href="#contactme"
+              onClick={() => {
+                setActiveSection("Contact Me");
+                setLastHeaderClick(Date.now());
+              }}
+            >
+              Get In Touch
+              <BsArrowRight className="group-hover:text-white group-hover:translate-x-1 transition" />
+            </Link>
+          </div>
 
           <div className="active:scale-105">
             <motion.a
