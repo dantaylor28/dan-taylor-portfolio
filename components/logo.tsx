@@ -21,9 +21,9 @@ export default function Logo() {
       transition={{
         duration: 1.5,
       }}
-      className="hidden absolute top-5 left-8 lg:flex items-center justify-center font-mono z-[999] border border-cyan-950/20 dark:border-white/30 h-20 w-20"
+      className="hidden absolute top-5 left-8 lg:flex items-center justify-center font-mono z-[999] border border-cyan-950/20 dark:border-white/30 h-16 w-16"
     >
-      <Image src={LogoImg} alt="Dan Taylor Logo" height="60" width="60" />
+      <Image src={LogoImg} alt="Dan Taylor Logo" height="50" width="50" />
     </motion.div>
   );
 }
