@@ -14,12 +14,12 @@ export default function SocialLinks() {
         delay: 0.5,
         duration: 1,
       }}
-      className="fixed top-6 right-8 h-[3.25rem] w-[10rem] rounded-full border border-white border-opacity-40
-    bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] flex items-center justify-center 
-    z-[999] text-[28px] text-cyan-800 dark:bg-slate-950 dark:bg-opacity-80 dark:border-white/20 dark:text-cyan-50/80"
+      className="hidden xl:flex items-center justify-center fixed top-6 right-8 h-[3.25rem] w-[10rem] rounded-full border border-white border-opacity-40
+    bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] z-[999] text-[28px] text-cyan-800 dark:bg-slate-950 dark:bg-opacity-80
+    dark:border-white/20 dark:text-cyan-50/80"
     >
       <motion.div
-      className="flex items-center justify-center gap-4"
+        className="flex items-center justify-center gap-4"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
