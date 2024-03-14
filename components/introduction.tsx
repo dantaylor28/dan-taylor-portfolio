@@ -63,9 +63,18 @@ export default function Introduction() {
             </motion.div>
           </div>
         </div>
-        <h2 className="uppercase opacity-50 pt-5 text-sm tracking-[15px] dark:text-white dark:opacity-70">
+        <motion.h2
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "tween",
+            duration: 0.6,
+            delay: 1.5,
+          }}
+          className="uppercase opacity-50 pt-5 text-sm tracking-[15px] dark:text-white dark:opacity-70"
+        >
           software engineer
-        </h2>
+        </motion.h2>
 
         <motion.h1
           className="mt-8 mb-5 px-4 text-[28px] z-10 sm:text-[36px] dark:text-cyan-800"
