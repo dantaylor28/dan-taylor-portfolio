@@ -40,7 +40,7 @@ export default function ScrollToTopContextProvider({
 
   const scrollDown = () => {
     window.scrollTo({
-      top: 700,
+      top: 1075,
       behavior: "smooth",
     });
   };
