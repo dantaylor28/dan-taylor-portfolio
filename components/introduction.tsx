@@ -141,13 +141,13 @@ export default function Introduction() {
           >
             <Link
               href="#contactme"
-              className="px-5 py-2.5 relative rounded-full group overflow-hidden bg-transparent text-black flex items-center gap-2 active:scale-105 dark:bg-cyan-950 border border-black/20 hover:border-cyan-800"
+              className="px-5 py-2.5 relative rounded-full group overflow-hidden bg-slate-100 text-black flex items-center gap-2 active:scale-105 border border-black/20 hover:border-cyan-700 dark:bg-slate-950/80 dark:text-white/80 dark:border-white/20 dark:hover:border-cyan-950"
               onClick={() => {
                 setActiveSection("Contact Me");
                 setLastHeaderClick(Date.now());
               }}
             >
-              <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-800 group-hover:w-full opacity-90 dark:bg-cyan-800"></span>
+              <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-700 group-hover:w-full opacity-90 dark:bg-cyan-950"></span>
               <span className="relative group-hover:text-white group-hover:duration-500 tracking-wider font-normal">
                 Let's Talk
               </span>
