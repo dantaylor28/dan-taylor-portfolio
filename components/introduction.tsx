@@ -149,7 +149,7 @@ export default function Introduction() {
             >
               <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-700 group-hover:w-full opacity-90 dark:bg-cyan-950"></span>
               <span className="relative group-hover:text-white group-hover:duration-500 tracking-wider font-normal">
-                Let's Talk
+                Let&apos;s Talk
               </span>
               <BsArrowRight className="group-hover:text-white group-hover:translate-x-1 transition" />
             </Link>
