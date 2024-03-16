@@ -7,12 +7,12 @@ import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Link from "next/link";
 import { BsArrowRight, BsDownload } from "react-icons/bs";
-import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/contexts/active-section-context";
 import { HiChevronDown } from "react-icons/hi2";
 import { useScroll } from "@/contexts/scroll-to-top-context";
 import BackgroundStyle from "@/components/background-style";
+import qrCode from "@/public/qr-code.png"
 
 export default function Introduction() {
   const [text] = useTypewriter({
@@ -210,6 +210,8 @@ export default function Introduction() {
               <FaLinkedin className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
             </a>
           </motion.div> */}
+
+          {/* <Image src={qrCode} alt="QR code to download CV" height={100} width={100}/> */}
         </div>
         <motion.div
           className={`hidden sm:flex sm:justify-center sm:items-center mt-8 mb-10`}
