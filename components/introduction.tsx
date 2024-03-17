@@ -12,7 +12,7 @@ import { useActiveSectionContext } from "@/contexts/active-section-context";
 import { HiChevronDown } from "react-icons/hi2";
 import { useScroll } from "@/contexts/scroll-to-top-context";
 import BackgroundStyle from "@/components/background-style";
-import qrCode from "@/public/qr-code.png"
+import qrCode from "@/public/qr-code.png";
 
 export default function Introduction() {
   const [text] = useTypewriter({
@@ -155,25 +155,26 @@ export default function Introduction() {
             </Link>
           </motion.div>
 
-          <div className="active:scale-105">
-            <motion.a
-              className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-50 text-cyan-800 flex items-center gap-2 border border-black/10 cursor-pointer dark:bg-cyan-100/90 dark:border-cyan-800"
-              initial={{ opacity: 0, y: 200 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 2.075,
-                duration: 0.2,
-              }}
+          <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 2,
+              duration: 0.3,
+            }}
+          >
+            <a
               href="/Dan_Taylor_CV.pdf"
               target="_blank"
+              className="px-5 py-2.5 relative rounded-full group overflow-hidden bg-slate-100 text-black flex items-center gap-2 active:scale-105 border border-black/20 hover:border-cyan-700 dark:bg-slate-950/80 dark:text-white/80 dark:border-white/20 dark:hover:border-cyan-950"
             >
-              <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90 dark:bg-cyan-800"></span>
-              <span className="relative group-hover:text-white group-hover:duration-500">
+              <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-700 group-hover:w-full opacity-90 dark:bg-cyan-950"></span>
+              <span className="relative group-hover:text-white group-hover:duration-500 tracking-wider font-normal">
                 Download CV
               </span>
               <BsDownload className="group-hover:text-white group-hover:translate-y-1 transition" />
-            </motion.a>
-          </div>
+            </a>
+          </motion.div>
 
           {/* <motion.div
             className="z-10"
