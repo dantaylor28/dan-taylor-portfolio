@@ -17,7 +17,7 @@ function BackgroundStyle() {
       transition={{
         duration: 2.5,
       }}
-      className="relative top-52 sm:top-40 flex justify-center items-center -z-10"
+      className="relative top-52 sm:top-40 flex justify-center items-center"
     >
       <div className="absolute border border-cyan-900/20 dark:border-[#334155] h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] rounded-full mt-52 animate-ping" />
       <div className="absolute border border-slate-700/5 dark:border-[#0f172a] h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] rounded-full mt-52" />
