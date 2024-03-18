@@ -12,6 +12,7 @@ import { useActiveSectionContext } from "@/contexts/active-section-context";
 import { HiChevronDown } from "react-icons/hi2";
 import { useScroll } from "@/contexts/scroll-to-top-context";
 import BackgroundStyle from "@/components/background-style";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa6";
 import qrCode from "@/public/qr-code.png";
 
 export default function Introduction() {
@@ -191,10 +192,16 @@ export default function Introduction() {
           {/* <Image src={qrCode} alt="QR code to download CV" height={100} width={100}/> */}
         </div>
 
-        <div className="block xl:hidden z-10">
-          <a href="#">LinkedIn</a>
-          <a href="#">Github</a>
-          <a href="#">Instagram</a>
+        <div className="flex items-center justify-center xl:hidden z-10">
+          <a href="#">
+            <FaGithub />
+          </a>
+          <a href="#">
+            <FaLinkedin />
+          </a>
+          <a href="#">
+            <FaInstagram />
+          </a>
         </div>
 
         <motion.div
