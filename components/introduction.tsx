@@ -107,30 +107,6 @@ export default function Introduction() {
         </motion.div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
-          {/* <motion.div
-            initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 2,
-              duration: 0.3,
-            }}
-          >
-            <Link
-              href="#contactme"
-              className="px-5 py-2.5 relative rounded group overflow-hidden bg-cyan-800 text-cyan-50 flex items-center gap-2 active:scale-105 dark:bg-cyan-950 dark:border dark:border-white/20"
-              onClick={() => {
-                setActiveSection("Contact Me");
-                setLastHeaderClick(Date.now());
-              }}
-            >
-              <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-600 group-hover:w-full opacity-90 dark:bg-cyan-800"></span>
-              <span className="relative group-hover:text-white group-hover:duration-500">
-                Get In Touch
-              </span>
-              <BsArrowRight className="group-hover:text-white group-hover:translate-x-1 transition" />
-            </Link>
-          </motion.div> */}
-
           <motion.div
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
@@ -214,6 +190,13 @@ export default function Introduction() {
 
           {/* <Image src={qrCode} alt="QR code to download CV" height={100} width={100}/> */}
         </div>
+
+        <div className="block xl:hidden z-10">
+          <a href="#">LinkedIn</a>
+          <a href="#">Github</a>
+          <a href="#">Instagram</a>
+        </div>
+
         <motion.div
           className={`hidden sm:flex sm:justify-center sm:items-center mt-8 mb-10`}
           initial={{ opacity: 0 }}
