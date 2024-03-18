@@ -23,10 +23,10 @@ export default function ColorTheme() {
       transition={{
         duration: 1.5,
       }}
-      className="fixed bottom-5 left-5 overflow-hidden flex w-fit items-center rounded-full bg-white shadow-2xl"
+      className="fixed bottom-5 left-5 overflow-hidden flex w-fit items-center rounded-full bg-white shadow-2xl z-[100]"
     >
       <button
-        className={`text-xs sm:text-sm font-light flex items-center gap-2 px-3 transition-colors relative z-10 ${
+        className={`text-xs sm:text-sm font-light flex items-center gap-2 px-3 transition-colors relative ${
           theme === "dark" ? "text-white" : "text-slate-950"
         }`}
         onClick={switchTheme}
