@@ -193,13 +193,13 @@ export default function Introduction() {
         </div>
 
         <div className="flex items-center justify-center text-[28px] text-cyan-800/90 pt-5 gap-6 lg:hidden z-10">
-          <a href="#" className="border border-black/20 rounded-full p-2 bg-slate-100">
+          <a href="#" className="border border-black/10 rounded-full p-2 bg-slate-100 hover:text-cyan-700 hover:bg-slate-50">
             <FaGithub />
           </a>
-          <a href="#" className="border border-black/20 rounded-full p-2 bg-slate-100">
+          <a href="#" className="border border-black/10 rounded-full p-2 bg-slate-100 hover:text-cyan-700 hover:bg-slate-50">
             <FaLinkedin />
           </a>
-          <a href="#" className="border border-black/20 rounded-full p-2 bg-slate-100">
+          <a href="#" className="border border-black/10 rounded-full p-2 bg-slate-100 hover:text-cyan-700 hover:bg-slate-50">
             <FaInstagram />
           </a>
         </div>
