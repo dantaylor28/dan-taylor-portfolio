@@ -152,54 +152,28 @@ export default function Introduction() {
               <BsDownload className="group-hover:text-white group-hover:translate-y-1 transition" />
             </a>
           </motion.div>
-
-          {/* <motion.div
-            className="z-10"
-            initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 2.15,
-              duration: 0.2,
-            }}
-          >
-            <a
-              href="https://github.com/dantaylor28"
-              target="_blank"
-              className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] active:scale-110 hover:bg-cyan-600 duration-300 dark:bg-cyan-100/90 dark:border-cyan-800 dark:hover:bg-cyan-800"
-            >
-              <FaSquareGithub className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
-            </a>
-          </motion.div>
-
-          <motion.div
-            className="z-10"
-            initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 2.225,
-              duration: 0.2,
-            }}
-          >
-            <a
-              href="https://www.linkedin.com/in/dan-m-taylor/"
-              target="_blank"
-              className="group flex items-center bg-cyan-50 text-cyan-800 p-3 rounded-full border border-black/10 text-[1.5rem] active:scale-110 hover:bg-cyan-600 duration-300 dark:bg-cyan-100/90 dark:border-cyan-800 dark:hover:bg-cyan-800"
-            >
-              <FaLinkedin className="group-hover:text-cyan-50 duration-300 group-hover:scale-110" />
-            </a>
-          </motion.div> */}
-
-          {/* <Image src={qrCode} alt="QR code to download CV" height={100} width={100}/> */}
         </div>
 
         <div className="flex items-center justify-center text-[28px] text-cyan-800/90 pt-5 gap-6 lg:hidden z-10">
-          <a href="#" className="border border-black/10 rounded-full p-2 bg-slate-100 hover:text-cyan-700 hover:bg-slate-50">
+          <a
+            href="https://github.com/dantaylor28"
+            target="_blank"
+            className="border border-black/10 rounded-full p-2 bg-slate-100 hover:text-cyan-700 hover:bg-slate-50 dark:bg-slate-950 dark:border-white/20 dark:text-cyan-50/80 dark:hover:text-white"
+          >
             <FaGithub />
           </a>
-          <a href="#" className="border border-black/10 rounded-full p-2 bg-slate-100 hover:text-cyan-700 hover:bg-slate-50">
+          <a
+            href="https://www.linkedin.com/in/dan-m-taylor/"
+            target="_blank"
+            className="border border-black/10 rounded-full p-2 bg-slate-100 hover:text-cyan-700 hover:bg-slate-50 dark:bg-slate-950 dark:border-white/20 dark:text-cyan-50/80 dark:hover:text-white"
+          >
             <FaLinkedin />
           </a>
-          <a href="#" className="border border-black/10 rounded-full p-2 bg-slate-100 hover:text-cyan-700 hover:bg-slate-50">
+          <a
+            href="https://www.instagram.com/dantaylor93_/"
+            target="_blank"
+            className="border border-black/10 rounded-full p-2 bg-slate-100 hover:text-cyan-700 hover:bg-slate-50 dark:bg-slate-950 dark:border-white/20 dark:text-cyan-50/80 dark:hover:text-white"
+          >
             <FaInstagram />
           </a>
         </div>
