@@ -3,7 +3,6 @@
 import React from "react";
 import {
   FaLinkedin,
-  FaSquareGithub,
   FaInstagram,
   FaGithub,
 } from "react-icons/fa6";
@@ -52,7 +51,7 @@ export default function SocialLinks() {
             target="_blank"
             className="hover:text-cyan-700 dark:hover:text-white transition"
           >
-            <FaSquareGithub />
+            <FaGithub />
           </a>
           <a
             href="https://www.linkedin.com/in/dan-m-taylor/"
