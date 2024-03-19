@@ -192,14 +192,14 @@ export default function Introduction() {
           {/* <Image src={qrCode} alt="QR code to download CV" height={100} width={100}/> */}
         </div>
 
-        <div className="flex items-center justify-center text-[28px] text-cyan-800/90 pt-5 gap-8 lg:hidden z-10">
-          <a href="#">
+        <div className="flex items-center justify-center text-[28px] text-cyan-800/90 pt-5 gap-6 lg:hidden z-10">
+          <a href="#" className="border border-black/20 rounded-full p-2 bg-slate-100">
             <FaGithub />
           </a>
-          <a href="#">
+          <a href="#" className="border border-black/20 rounded-full p-2 bg-slate-100">
             <FaLinkedin />
           </a>
-          <a href="#">
+          <a href="#" className="border border-black/20 rounded-full p-2 bg-slate-100">
             <FaInstagram />
           </a>
         </div>
