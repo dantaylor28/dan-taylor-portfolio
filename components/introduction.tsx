@@ -136,7 +136,7 @@ export default function Introduction() {
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 2,
+              delay: 2.1,
               duration: 0.3,
             }}
           >
@@ -155,27 +155,45 @@ export default function Introduction() {
         </div>
 
         <div className="flex items-center justify-center text-[28px] text-cyan-800/90 pt-5 gap-6 lg:hidden z-10">
-          <a
+          <motion.a
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 2.2,
+              duration: 0.3,
+            }}
             href="https://github.com/dantaylor28"
             target="_blank"
             className="border border-black/10 rounded-full p-2 bg-slate-100 hover:text-cyan-700 hover:bg-slate-50 dark:bg-slate-950 dark:border-white/20 dark:text-cyan-50/80 dark:hover:text-white"
           >
             <FaGithub />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 2.3,
+              duration: 0.3,
+            }}
             href="https://www.linkedin.com/in/dan-m-taylor/"
             target="_blank"
             className="border border-black/10 rounded-full p-2 bg-slate-100 hover:text-cyan-700 hover:bg-slate-50 dark:bg-slate-950 dark:border-white/20 dark:text-cyan-50/80 dark:hover:text-white"
           >
             <FaLinkedin />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 2.4,
+              duration: 0.3,
+            }}
             href="https://www.instagram.com/dantaylor93_/"
             target="_blank"
             className="border border-black/10 rounded-full p-2 bg-slate-100 hover:text-cyan-700 hover:bg-slate-50 dark:bg-slate-950 dark:border-white/20 dark:text-cyan-50/80 dark:hover:text-white"
           >
             <FaInstagram />
-          </a>
+          </motion.a>
         </div>
 
         <motion.div
