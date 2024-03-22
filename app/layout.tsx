@@ -28,15 +28,15 @@ export default function RootLayout({
       >
         <div
           className="bg-[#ffedd5] absolute -z-10 top-[-6rem] right-[4rem] h-[31.25rem] w-[31.25rem]
-        rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-slate-950"
+        rounded-full blur-[7rem] sm:blur-[10rem] sm:w-[68.75rem] dark:bg-slate-950"
         ></div>
         <div
           className="bg-[#e5e5e5] absolute -z-10 top-[-1rem] left-[-35rem] h-[31.25rem] w-[50rem]
-        rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-slate-900"
+        rounded-full blur-[7rem] sm:blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-slate-900"
         ></div>
         <div
           className="bg-[#f7fee7] absolute -z-10 top-[30rem] left-[-35rem] h-[31.25rem] w-[50rem]
-        rounded-full blur-[10rem] sm:w-[79.25rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-slate-950"
+        rounded-full blur-[7rem] sm:blur-[10rem] sm:w-[79.25rem] md:right-[-33rem] lg:right-[-28rem] xl:right-[-15rem] 2xl:right-[-5rem] dark:bg-slate-950"
         ></div>
 
         <ScrollToTopContextProvider>
