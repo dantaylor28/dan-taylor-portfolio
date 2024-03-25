@@ -104,7 +104,7 @@ export default function Introduction() {
           </h2>
         </motion.div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-base sm:text-lg font-medium">
           <motion.div
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
@@ -115,7 +115,7 @@ export default function Introduction() {
           >
             <Link
               href="#contactme"
-              className="px-5 py-2.5 relative rounded-full group overflow-hidden bg-slate-100 text-black flex items-center gap-2 active:scale-105 border border-black/20 hover:border-cyan-700 dark:bg-slate-950/80 dark:text-white/80 dark:border-white/20 dark:hover:border-cyan-950"
+              className="px-4 py-1.5 sm:px-5 sm:py-2.5 relative rounded-full group overflow-hidden bg-slate-100 text-black flex items-center gap-2 active:scale-105 border border-black/20 hover:border-cyan-700 dark:bg-slate-950/80 dark:text-white/80 dark:border-white/20 dark:hover:border-cyan-950"
               onClick={() => {
                 setActiveSection("Contact Me");
                 setLastHeaderClick(Date.now());
@@ -140,7 +140,7 @@ export default function Introduction() {
             <a
               href="/Dan_Taylor_CV.pdf"
               target="_blank"
-              className="px-5 py-2.5 relative rounded-full group overflow-hidden bg-slate-100 text-black flex items-center gap-2 active:scale-105 border border-black/20 hover:border-cyan-700 dark:bg-slate-950/80 dark:text-white/80 dark:border-white/20 dark:hover:border-cyan-950"
+              className="px-4 py-1.5 sm:px-5 sm:py-2.5 relative rounded-full group overflow-hidden bg-slate-100 text-black flex items-center gap-2 active:scale-105 border border-black/20 hover:border-cyan-700 dark:bg-slate-950/80 dark:text-white/80 dark:border-white/20 dark:hover:border-cyan-950"
             >
               <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-cyan-700 group-hover:w-full opacity-90 dark:bg-cyan-950"></span>
               <span className="relative group-hover:text-white group-hover:duration-500 tracking-wider font-normal">
@@ -151,7 +151,7 @@ export default function Introduction() {
           </motion.div>
         </div>
 
-        <div className="flex items-center justify-center text-[28px] text-cyan-800/90 pt-5 gap-6 lg:hidden z-10">
+        <div className="flex items-center justify-center text-[26px] sm:text-[28px] text-cyan-800/90 pt-5 gap-6 lg:hidden z-10">
           <motion.a
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
