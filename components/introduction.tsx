@@ -18,13 +18,11 @@ import qrCode from "@/public/qr-code.png";
 export default function Introduction() {
   const [text] = useTypewriter({
     words: [
-      "Dan Taylor✌️",
-      "a Software Developer💻",
-      "an Adventurer🧳",
-      "a Foodie🍴",
-      "Dan Taylor✌️",
+      "Hey, I'm Dan Taylor",
+      "food-lover-and-world-traveller.js",
+      "<WithAPassionForCoding />",
     ],
-    loop: 1,
+    loop: true,
     typeSpeed: 115,
     deleteSpeed: 60,
   });
@@ -86,9 +84,12 @@ export default function Introduction() {
             duration: 0.3,
           }}
         >
-          Hi, I&apos;m{" "}
+          {/* Hi, I&apos;m{" "}
           <span className="text-cyan-800 dark:text-cyan-50">{text}</span>
-          <Cursor cursorStyle="_" cursorColor="#ecfeff" />
+          <Cursor cursorStyle="_" cursorColor="#ecfeff" /> */}
+
+          <span>{text}</span>
+          <Cursor />
         </motion.h1>
 
         <motion.div
