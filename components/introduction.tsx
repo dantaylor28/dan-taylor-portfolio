@@ -59,7 +59,7 @@ export default function Introduction() {
                 height="252"
                 quality={99}
                 priority={true}
-                className="h-56 w-56 rounded-full object-cover border-[0.05rem] border-white shadow-xl dark:border-cyan-800"
+                className="h-44 w-44 sm:h-56 sm:w-56 rounded-full object-cover border-[0.05rem] border-white shadow-xl dark:border-cyan-800"
               />
             </motion.div>
           </div>
