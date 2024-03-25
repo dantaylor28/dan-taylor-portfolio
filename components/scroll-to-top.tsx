@@ -8,7 +8,7 @@ export default function ScrollToTop() {
   const { isVisible, scrollUp } = useScroll();
   return (
     <button
-      className={`fixed bottom-5 right-8 text-white hover:animate-pulse ${
+      className={`fixed bottom-5 right-8 text-white hover:animate-pulse z-[100] ${
         isVisible ? "opacity-1" : "hidden cursor-none"
       }`}
       onClick={scrollUp}

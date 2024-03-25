@@ -11,7 +11,7 @@ export default function AboutMe() {
   return (
     <div
       id="aboutme"
-      className="flex w-[100%] justify-center items-center bg-cyan-800 mt-10 border-y-2 border-cyan-50 scroll-mt-20 dark:border-t dark:border-t-cyan-950 dark:border-b-slate-950 dark:bg-gradient-to-b from-cyan-950 to-slate-950"
+      className="flex w-[100%] justify-center items-center bg-cyan-800 mt-10 border-y-2 border-cyan-50 scroll-mt-20 dark:border-t dark:border-t-cyan-950 dark:border-b-slate-950 dark:bg-gradient-to-b from-cyan-950 to-slate-950 z-10"
       ref={ref}
     >
       <motion.section
