@@ -72,7 +72,7 @@ export default function Introduction() {
             duration: 0.6,
             delay: 1.5,
           }}
-          className="uppercase opacity-50 pt-5 text-sm tracking-[15px] dark:text-white dark:opacity-70 z-10"
+          className="uppercase opacity-50 pt-5 text-xs sm:text-sm tracking-[13px] sm:tracking-[15px] dark:text-white dark:opacity-70 z-10"
         >
           software engineer
         </motion.h2>
