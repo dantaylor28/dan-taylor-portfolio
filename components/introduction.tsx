@@ -76,7 +76,7 @@ export default function Introduction() {
         </motion.h2>
 
         <motion.h1
-          className="mt-8 mb-5 px-4 text-[28px] sm:text-[34px] text-cyan-800 dark:text-cyan-50 z-10"
+          className="mt-8 mb-5 px-4 text-[24px] sm:text-[34px] text-cyan-800 dark:text-cyan-50 z-10"
           initial={{ opacity: 0, y: 200 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -96,7 +96,7 @@ export default function Introduction() {
             duration: 0.3,
           }}
         >
-          <h2 className="!leading-[1.5] text-[18px] font-light mb-7 sm:text-[20px] sm:max-w-xl tracking-wider opacity-80 z-10">
+          <h2 className="!leading-[1.5] text-[16px] font-light mb-7 sm:text-[20px] sm:max-w-xl tracking-wider opacity-80 z-10">
             I&apos;m a{" "}
             <span className="font-medium">Full-Stack Software Developer</span>{" "}
             with a passion for all things tech, based out of Gothenburg, Sweden.
