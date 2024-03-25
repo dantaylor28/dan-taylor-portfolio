@@ -204,7 +204,7 @@ export default function Introduction() {
         >
           <a onClick={scrollDown}>
             <HiChevronDown
-              className={`fixed bottom-2 z-10 animate-bounce h-12 w-12 text-cyan-800 opacity-70 dark:text-cyan-50 dark:opacity-40 cursor-pointer ${
+              className={`fixed bottom-0 z-10 animate-bounce h-12 w-12 text-cyan-800 opacity-70 dark:text-cyan-50 dark:opacity-40 cursor-pointer ${
                 isVisible ? "!opacity-0 pointer-events-none" : ""
               }`}
             />
