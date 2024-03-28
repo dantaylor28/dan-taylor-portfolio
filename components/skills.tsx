@@ -155,7 +155,7 @@ const Skills = () => {
           whileInView="animate"
           viewport={{
             once: true,
-            margin: "-200px",
+            margin: "-150px",
           }}
           transition={{
             duration: 1,
@@ -202,7 +202,7 @@ const Skills = () => {
           whileInView="animate"
           viewport={{
             once: true,
-            margin: "-200px",
+            margin: "-150px",
           }}
           transition={{
             duration: 1,
