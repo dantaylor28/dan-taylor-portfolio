@@ -81,7 +81,7 @@ const fadeInAnimationVariants = {
 
 const Skills = () => {
   const [display, setDisplay] = useState(false);
-  const { ref } = useSectionInView("Skills", 0.6);
+  const { ref } = useSectionInView("Skills", 0.2);
   return (
     <section
       id="skills"
@@ -111,7 +111,7 @@ const Skills = () => {
       </motion.h2>
 
       <div className="flex flex-col md:flex-row justify-center items-center">
-        <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-10 md:mb-0 lg:min-w-[480px]">
+        <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-8 md:mb-0 lg:min-w-[480px]">
           {frontendSkills.map((skill, index) => (
             <motion.div
               className="relative flex flex-col items-center group"
@@ -224,7 +224,7 @@ const Skills = () => {
             changes to the codebase.
           </li>
         </motion.ul>
-        <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-10 md:mb-0">
+        <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-8 md:mb-0">
           {backendSkills.map((skill, index) => (
             <motion.div
               className="relative flex flex-col items-center group"

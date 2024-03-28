@@ -10,6 +10,7 @@ import { useActiveSectionContext } from "@/contexts/active-section-context";
 export default function Header() {
   const { activeSection, setActiveSection, setLastHeaderClick } =
     useActiveSectionContext();
+    console.log(activeSection)
 
   return (
     <header className="relative z-[999]">
