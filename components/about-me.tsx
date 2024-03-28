@@ -28,7 +28,7 @@ export default function AboutMe() {
         }}
         viewport={{
           once: true,
-          margin: "-200px",
+          margin: "-175px",
         }}
         className="my-28 max-w-[50rem] text-center text-cyan-50 px-4 leading-8"
       >
