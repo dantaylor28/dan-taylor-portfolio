@@ -15,8 +15,8 @@ export default function Home() {
       <SocialLinks />
       <Introduction />
       <AboutMe />
-      <Projects />
       <Skills />
+      <Projects />
       <Experience />
       <ContactMe />
       <ScrollToTop />

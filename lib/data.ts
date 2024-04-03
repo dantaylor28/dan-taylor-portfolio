@@ -22,12 +22,12 @@ export const links = [
     hashtag: "#aboutme",
   },
   {
-    name: "Projects",
-    hashtag: "#projects",
-  },
-  {
     name: "Skills",
     hashtag: "#skills",
+  },
+  {
+    name: "Projects",
+    hashtag: "#projects",
   },
   {
     name: "Experience",
@@ -142,7 +142,7 @@ export const experienceData = [
   },
   {
     title: "Moved to Sweden",
-    description: 
+    description:
       "The day I packed up my life in the UK and made the move to my new home in Gothenburg, Sweden.",
     location: "UK -> Sweden",
     date: "March 2017",
