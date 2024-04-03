@@ -10,8 +10,6 @@ import { useActiveSectionContext } from "@/contexts/active-section-context";
 export default function Header() {
   const { activeSection, setActiveSection, setLastHeaderClick } =
     useActiveSectionContext();
-    console.log(activeSection)
-
   return (
     <header className="relative z-[999]">
       <motion.div
@@ -55,7 +53,10 @@ export default function Header() {
                 }}
                 className={clsx(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:hover:text-white",
-                  { "text-gray-950 dark:text-white": activeSection === link.name }
+                  {
+                    "text-gray-950 dark:text-white":
+                      activeSection === link.name,
+                  }
                 )}
               >
                 {link.name}
