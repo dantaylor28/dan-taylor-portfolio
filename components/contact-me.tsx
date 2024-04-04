@@ -29,7 +29,7 @@ export default function ContactMe() {
           }}
           viewport={{
             once: true,
-            margin: "-200px",
+            margin: "-175px",
           }}
         >
           <PageHeading>get in touch</PageHeading>
@@ -46,7 +46,7 @@ export default function ContactMe() {
           }}
           viewport={{
             once: true,
-            margin: "-200px",
+            margin: "-175px",
           }}
         >
           You can reach me directly at{" "}
@@ -73,7 +73,7 @@ export default function ContactMe() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{
             once: true,
-            margin: "-200px",
+            margin: "-175px",
           }}
           transition={{
             duration: 0.3,

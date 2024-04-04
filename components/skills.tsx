@@ -88,10 +88,10 @@ const Skills = () => {
       className="scroll-mt-28 text-center max-w-[60rem] mb-10 px-4 md:p-0 overflow-x-hidden"
       ref={ref}
     >
-      <div className="flex items-center py-4 mb-8">
-        <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40"></div>
+      <div className="flex items-center py-4 mb-8 mt-12">
+        <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40 dark:bg-cyan-50"></div>
         <PageHeading>what i do</PageHeading>
-        <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40"></div>
+        <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40 dark:bg-cyan-50"></div>
       </div>
 
       <motion.h2
