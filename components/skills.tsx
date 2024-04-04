@@ -85,7 +85,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="scroll-mt-28 text-center max-w-[60rem] mb-10 px-4 md:p-0 overflow-x-hidden"
+      className="scroll-mt-28 text-center max-w-[63rem] mb-10 px-4 md:p-0 overflow-x-hidden"
       ref={ref}
     >
       <div className="flex items-center py-4 mb-8 mt-12">
@@ -110,7 +110,7 @@ const Skills = () => {
         frontend development
       </motion.h2>
 
-      <div className="flex flex-col md:flex-row justify-center items-center">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-12">
         <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-8 md:mb-0 lg:min-w-[480px]">
           {frontendSkills.map((skill, index) => (
             <motion.div
@@ -194,7 +194,7 @@ const Skills = () => {
       >
         backend development
       </motion.h2>
-      <div className="flex flex-col-reverse md:flex-row justify-center items-center mb-10 md:mb-28">
+      <div className="flex flex-col-reverse md:flex-row justify-center items-center mb-10 md:mb-28 gap-4 md:gap-12">
         <motion.ul
           className="border border-black/10 p-3 rounded-lg bg-cyan-50 text-cyan-800 text-left dark:bg-cyan-950 dark:text-white dark:border-white/10"
           variants={fadeInAnimationBeVariants}
