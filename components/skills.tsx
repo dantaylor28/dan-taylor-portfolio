@@ -88,11 +88,23 @@ const Skills = () => {
       className="scroll-mt-28 text-center max-w-[65rem] mb-10 px-4 overflow-x-hidden"
       ref={ref}
     >
-      <div className="flex items-center py-4 mb-8 mt-12">
+      <motion.div
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+          margin: "-100px",
+        }}
+        transition={{
+          duration: 0.5,
+        }}
+        className="flex items-center py-4 mb-8 mt-12"
+      >
         <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40 dark:bg-cyan-50"></div>
         <PageHeading>what i do</PageHeading>
         <div className="md:hidden flex-grow h-px bg-slate-950 opacity-40 dark:bg-cyan-50"></div>
-      </div>
+      </motion.div>
 
       <motion.h2
         className="text-lg capitalize font-light mt-10 mb-10"
