@@ -20,7 +20,7 @@ export default function SocialLinks() {
       }}
       className="items-center justify-center fixed top-6 right-0 z-[999]"
     >
-      <div className="hidden lg:flex items-center justify-center text-[28px] text-cyan-800 gap-4 pt-3 xl:hidden z-10 dark:text-cyan-50/80">
+      <div className="hidden lg:flex items-center justify-center text-[28px] text-cyan-800 gap-4 pt-3 xl:hidden z-[999] dark:text-cyan-50/80">
         <a href="https://github.com/dantaylor28" target="_blank">
           <FaGithub className="hover:text-cyan-700 dark:hover:text-white transition" />
         </a>
