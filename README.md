@@ -30,7 +30,11 @@
 - On hover/tap, the name of language/framework is shown for non-technical visitors
 - A few bullet points included for a summary of my skills/knowledge
 - Animate on scroll is also included here
-- I used a custom stacked animation on the icons, so they smoothly animate in one after another 
+- I used a custom stacked animation on the icons, so they smoothly animate in one after another
 
+### Projects Section
+- This section contains a number of portfolio projects that I have recently been working on.
+- Each project includes an image/video and a brief description of the project along with the technologies used to create it.
+- There are 2 clickable links, one of which takes you to the Github repo and the other to the live site.
 
 ## Future Features To Implement 
