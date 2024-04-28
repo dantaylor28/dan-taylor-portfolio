@@ -37,4 +37,8 @@
 - Each project includes an image/video and a brief description of the project along with the technologies used to create it.
 - There are 2 clickable links, one of which takes you to the Github repo and the other to the live site.
 
+### Experience Section
+- Lists out my work/life experience in chronological order.
+- Implemeted an external timeline component which contains a heading, a brief explanation, dates, location and an icon.
+
 ## Future Features To Implement 
