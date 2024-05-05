@@ -41,4 +41,10 @@
 - Lists out my work/life experience in chronological order.
 - Implemeted an external timeline component which contains a heading, a brief explanation, dates, location and an icon.
 
+### Contact Form
+- Opportunity for visitors of the site to reach out directly to me with any questions they may have.
+- Form is connected to my email so when a form is filled in and submitted correctly, an email is sent to my email address with the form contents along with the persons contact information making to easy to get back to them.
+- The form has error validation and a message toast pops up on screen when a form is submitted or an error has
+occurred along with the error description.
+
 ## Future Features To Implement 
