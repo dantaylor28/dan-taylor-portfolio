@@ -47,4 +47,7 @@
 - The form has error validation and a message toast pops up on screen when a form is submitted or an error has
 occurred along with the error description.
 
-## Future Features To Implement 
+## Future Features To Implement
+- Footer with links to my social accounts and copyright information.
+- 30 second video walkthrough for each portfolio project rather than a static image.
+- Link to Github API to create a section displaying what I am currently working on.
