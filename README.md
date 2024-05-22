@@ -51,3 +51,4 @@ occurred along with the error description.
 - Footer with links to my social accounts and copyright information.
 - 30 second video walkthrough for each portfolio project rather than a static image.
 - Link to Github API to create a section displaying what I am currently working on.
+- Updates to the projects section with new applications I have created.
