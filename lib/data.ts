@@ -10,6 +10,7 @@ import {
   PiAirplaneTiltLight,
   PiMapPinLineLight,
   PiShoppingCartLight,
+  PiChartLineUpLight
 } from "react-icons/pi";
 
 export const links = [
@@ -125,11 +126,19 @@ export const experienceData = [
     icon: React.createElement(PiGraduationCapLight),
   },
   {
+    title: "Floor Manager | Weekday",
+    description:
+      "Lead & inspire the store team, whilst having responsibility for the sales performance, customer service and overall profitability in the store.",
+    location: "Göteborg, Sweden",
+    date: "April 2024 - Current",
+    icon: React.createElement(PiChartLineUpLight),
+  },
+  {
     title: "Sales & Operational Keyholder | Superdry",
     description:
       "Here I am responsible for all operational duties in store, alongside providing great customer service & helping the team to achieve store sales targets and KPIs.",
     location: "Göteborg, Sweden",
-    date: "April 2017 - Current",
+    date: "April 2017 - April 2024",
     icon: React.createElement(PiCoatHangerLight),
   },
   {
