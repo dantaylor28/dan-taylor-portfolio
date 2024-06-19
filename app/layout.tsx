@@ -7,6 +7,7 @@ import { Toaster } from "react-hot-toast";
 import ColorTheme from "@/components/color-theme";
 import ColorThemeContextProvider from "@/contexts/color-theme-context";
 import ScrollToTopContextProvider from "@/contexts/scroll-to-top-context";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,6 +45,7 @@ export default function RootLayout({
             <ActiveSectionContextProvider>
               <Header />
               {children}
+              <Footer />
               <Toaster position="top-right" />
               <ColorTheme />
             </ActiveSectionContextProvider>
