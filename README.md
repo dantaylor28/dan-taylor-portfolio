@@ -53,3 +53,8 @@ occurred along with the error description.
 - Link to Github API to create a section displaying what I am currently working on.
 - Updates to the projects section with new applications I have created.
 - Update Experience timeline with up to date experience.
+
+## Languages & Libraries Used
+- NextJS
+- Typescript
+- TailwindCSS
