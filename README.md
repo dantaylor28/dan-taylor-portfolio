@@ -78,3 +78,5 @@ occurred along with the error description.
 ### Unfixed Bugs
 
 ### Fixed Bugs
+
+## Credits
