@@ -58,3 +58,7 @@ occurred along with the error description.
 - NextJS
 - Typescript
 - TailwindCSS
+
+## Local Deployment
+
+## Live Deployment
