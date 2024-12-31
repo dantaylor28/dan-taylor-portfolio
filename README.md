@@ -72,3 +72,9 @@ occurred along with the error description.
 ### Validator Testing
 
 ### Lighthouse Results
+
+## Bugs
+
+### Unfixed Bugs
+
+### Fixed Bugs
