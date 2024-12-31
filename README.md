@@ -62,3 +62,13 @@ occurred along with the error description.
 ## Local Deployment
 
 ## Live Deployment
+
+## Testing
+
+### Automatic Testing
+
+### Manual Testing
+
+### Validator Testing
+
+### Lighthouse Results
