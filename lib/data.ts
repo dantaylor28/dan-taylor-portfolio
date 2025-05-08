@@ -2,6 +2,7 @@ import React from "react";
 import ProjectImg from "../public/project_img.png";
 import FoodBlog from "../public/food_blog.png";
 import JsQuiz from "../public/js_quiz.png";
+import ChatApp from "../public/messenger_app.png"
 import {
   PiBriefcaseLight,
   PiCoatHangerLight,
@@ -41,6 +42,15 @@ export const links = [
 ] as const;
 
 export const projectData = [
+  {
+    title: "ChatApp",
+    description:
+      "A full-stack messenger application with users having the ability to send and receive text and images to friends and family in real time. Features include a Node.js backend with full CRUD capabilities to manage users and messages alongside a React frontend with user authentication and TailwindCSS for styling.",
+    image: ChatApp,
+    tags: ["ReactJS", "NodeJS", "MongoDB", "ExpressJS", "TailwindCSS", "Socket.io"],
+    liveUrl: "https://messenger-app-najg.onrender.com/",
+    repoUrl: "https://github.com/dantaylor28/messenger-app",
+  },
   {
     title: "Polaroid",
     description:
