@@ -34,13 +34,17 @@ export default function Project({
       }}
       className="group/margin flex flex-col md:flex-row md:h-[35rem] overflow-hidden py-16 sm:p-0 border-b border-black/20 last:border-none sm:border-none sm:mt-16 sm:mb-32 sm:last:mb-24 md:odd:flex-row-reverse dark:border-cyan-50/20"
     >
-      <div className="group flex items-center justify-center group md:w-1/2 md:h-[30rem] lg:h-[35rem] md:mt-10 lg:mt-0 rounded-md border border-black/10 dark:border-cyan-50/20 bg-slate-200/30 hover:bg-slate-200/50 dark:bg-white/5 hover:dark:bg-white/[0.065] lg:px-5 md:hover:border-black/25 md:hover:dark:border-cyan-50/30 transition">
-        <Image
-          src={image}
-          alt="project I coded"
-          quality={95}
-          className="md:w-[20.5rem] md:h-[24rem] lg:w-[28.5rem] lg:h-[32rem] rounded-sm shadow-2xl md:group-hover:scale-[1.02] transition"
-        />
+      <div className="group flex items-center justify-center group md:w-1/2 md:h-[30rem] lg:h-[35rem] md:mt-10 lg:mt-0 rounded-md border border-black/10 dark:border-cyan-50/20 bg-slate-200/30 hover:bg-slate-200/50 dark:bg-white/5 hover:dark:bg-white/[0.065] lg:px-5 md:hover:border-black/25 md:hover:dark:border-cyan-50/30 hover:cursor-pointer transition">
+        <a href={liveUrl} target="_blank">
+          <div>
+            <Image
+              src={image}
+              alt="project I coded"
+              quality={95}
+              className="md:w-[20.5rem] md:h-[24rem] lg:w-[28.5rem] lg:h-[32rem] rounded-sm shadow-2xl md:group-hover:scale-[1.02] transition"
+            />
+          </div>
+        </a>
       </div>
 
       <div className="flex flex-col md:items-start justify-center text-left md:ml-10 lg:ml-32 md:w-1/2 mt-10 md:mt-0 md:border-y border-black/20 group-odd/margin:ml-0 md:group-odd/margin:mr-10 lg:group-odd/margin:mr-32 dark:border-cyan-50/20">
