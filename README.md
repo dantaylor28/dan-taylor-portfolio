@@ -63,6 +63,9 @@ occurred along with the error description.
 
 ## Live Deployment
 
+- Deployed live using Vercel 
+- Live link : https://www.dan-m-taylor.com/
+
 ## Testing
 
 ### Automatic Testing
