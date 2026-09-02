@@ -14,7 +14,23 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Dan Taylor | Portfolio",
   description:
-    "Dan Taylor is a junior full-stack software developer, with knowledge in Javascript(React.js, Next.js, vanilla), Python(Django, Rest API), HTML and CSS.",
+    "Dan Taylor is a junior full-stack software developer, with knowledge in JavaScript, React.js, Next.js, Python, Django, HTML and CSS.",
+
+  openGraph: {
+    title: "Dan Taylor | Portfolio",
+    description:
+      "Dan Taylor is a junior full-stack software developer, with knowledge in JavaScript, React.js, Next.js, Python, Django, HTML and CSS.",
+    url: "https://www.dan-m-taylor.com",
+    siteName: "Dan Taylor | Portfolio",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Dan Taylor | Portfolio",
+    description:
+      "Dan Taylor is a junior full-stack software developer, with knowledge in JavaScript, React.js, Next.js, Python, Django, HTML and CSS.",
+  },
 };
 
 export default function RootLayout({
