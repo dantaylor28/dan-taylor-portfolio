@@ -38,24 +38,26 @@ export default function AboutMe() {
           <div className="flex-grow h-px bg-cyan-50 opacity-40"></div>
         </div>
         <p className="font-light mb-5">
-          Hey, I&apos;m Dan. I&apos;m a junior full-stack developer with a
-          passion for technological innovation and development. I enjoy creating
-          modern websites and applications.
+          Hey, I&apos;m Dan. I&apos;m a junior software developer with a
+          passion for building modern, user-focused websites and applications.
+          I&apos;m particularly interested in frontend development and enjoy creating
+          intuitive, responsive experiences with modern web technologies.
         </p>
         <p className="font-light mb-5">
-          After spending the last 10 years working in various customer service
-          and management roles, I decided to make a change and delve into the
-          world of software development. I joined a 12 month long coding
-          bootcamp where I began learning the fundamentals of full-stack
-          development, covering languages including Javascript, Python HTML &
-          CSS. I learnt version control systems including Git and Github, and
-          completed projects using Agile methodologies and practises.
+          After spending the last 10 years working in customer service and
+          management roles, I decided to make a career change and pursue my
+          interest in software development. I completed a 12-month coding
+          bootcamp, where I developed a foundation in full-stack development
+          using technologies including JavaScript, Python, HTML and CSS. I
+          also gained experience with version control using Git and GitHub,
+          and worked on projects using Agile methodologies and practices.
         </p>
         <p className="mb-3 font-light">
-          Since graduating I have continued on this learning journey, delving
-          deeper into frontend development. I am currently working alot with
-          React, Next.js and Typescript while attempting to take in as much
-          information as possible in this ever-changing technology sector.
+          Since graduating, I&apos;ve continued developing my skills through personal
+          projects and self-directed learning, with an increasing focus on
+          frontend development. I&apos;m currently working extensively with React,
+          Next.js and TypeScript, while continuing to expand my knowledge across
+          the wider JavaScript ecosystem and modern web development.
         </p>
       </motion.section>
     </div>
