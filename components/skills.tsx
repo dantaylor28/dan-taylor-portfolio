@@ -175,18 +175,18 @@ const Skills = () => {
         >
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Develop & maintain visually appealing, user-friendly applications
-            using clean, efficient code.
+            Develop visually appealing, user-friendly applications using clean,
+            maintainable code.
           </li>
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Build fully responsive designs to ensure optimal viewing experience
+            Build responsive interfaces that provide a consistent experience
             across different screen sizes and devices.
           </li>
           <li className="flex items-center ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Troubleshoot any problems with performance or user experience and
-            debug issues when they arise.
+            Debug and troubleshoot issues, improving application performance,
+            usability and overall user experience.
           </li>
         </motion.ul>
       </div>
@@ -222,18 +222,17 @@ const Skills = () => {
         >
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Create & maintain RESTful & GraphQL APIs to facilitate communication
-            between front and backend of applications.
+            Build and work with RESTful APIs to enable communication between
+            frontend and backend applications.
           </li>
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Write server-side code to build and maintain the functionality of
-            web applications, APIs & databases.
+            Develop server-side functionality for web applications, APIs and databases.
           </li>
           <li className="flex items-center ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Use version control systems such as Git to manage and track any
-            changes to the codebase.
+            Use Git and GitHub for version control, managing and tracking changes
+            throughout the development process.
           </li>
         </motion.ul>
         <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-8 md:mb-0">
