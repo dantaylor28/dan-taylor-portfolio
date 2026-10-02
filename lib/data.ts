@@ -2,7 +2,7 @@ import React from "react";
 import ProjectImg from "../public/project_img.png";
 import FoodBlog from "../public/food_blog.png";
 import JsQuiz from "../public/js_quiz.png";
-import ChatApp from "../public/messenger_app.png"
+import ChatApp from "../public/messenger_app.png";
 import {
   PiBriefcaseLight,
   PiCoatHangerLight,
@@ -11,7 +11,7 @@ import {
   PiAirplaneTiltLight,
   PiMapPinLineLight,
   PiShoppingCartLight,
-  PiChartLineUpLight
+  PiChartLineUpLight,
 } from "react-icons/pi";
 
 export const links = [
@@ -47,7 +47,14 @@ export const projectData = [
     description:
       "A full-stack messenger application with users having the ability to send and receive text and images to friends and family in real time. Features include a Node.js backend with full CRUD capabilities to manage users and messages alongside a React frontend with user authentication and TailwindCSS for styling.",
     image: ChatApp,
-    tags: ["ReactJS", "NodeJS", "MongoDB", "ExpressJS", "TailwindCSS", "Socket.io"],
+    tags: [
+      "ReactJS",
+      "NodeJS",
+      "MongoDB",
+      "ExpressJS",
+      "TailwindCSS",
+      "Socket.io",
+    ],
     liveUrl: "https://messenger-app-najg.onrender.com/",
     repoUrl: "https://github.com/dantaylor28/messenger-app",
   },
@@ -87,8 +94,6 @@ export const frontendSkills = [
   { icon: "icon-[logos--typescript-icon] text-[2rem]", language: "Typescript" },
   { icon: "icon-[logos--html-5] text-[2.3rem]", language: "HTML5" },
   { icon: "icon-[logos--css-3] text-[2.3rem]", language: "CSS3" },
-  { icon: "icon-[logos--python] text-[2.3rem]", language: "Python" },
-  { icon: "icon-[logos--django-icon] text-[2rem]", language: "Django" },
   { icon: "icon-[logos--bootstrap] text-[2rem]", language: "Bootstrap" },
   {
     icon: "icon-[logos--tailwindcss-icon] text-[1.7rem]",
@@ -98,9 +103,14 @@ export const frontendSkills = [
 
 export const backendSkills = [
   { icon: "icon-[logos--nodejs-icon] text-[2.4rem]", language: "Node.js" },
+  { icon: "icon-[logos--python] text-[2.3rem]", language: "Python" },
+  { icon: "icon-[logos--django-icon] text-[2rem]", language: "Django" },
   { icon: "icon-[logos--postgresql] text-[2.2rem]", language: "PostgreSQL" },
   { icon: "icon-[logos--mysql-icon] text-[2.1rem]", language: "MySQL" },
   { icon: "icon-[logos--mongodb-icon] text-[2.5rem]", language: "MongoDB" },
+] as const;
+
+export const toolsAndTestingSkills = [
   { icon: "icon-[logos--docker-icon] text-[2rem]", language: "Docker" },
   { icon: "icon-[logos--git-icon] text-[2.5rem]", language: "Git" },
   { icon: "icon-[logos--github-icon] text-[2.4rem]", language: "Github" },
@@ -112,7 +122,11 @@ export const backendSkills = [
   { icon: "icon-[logos--vercel-icon] text-[1.8rem]", language: "Vercel" },
   { icon: "icon-[logos--prettier] text-[2rem]", language: "Prettier" },
   { icon: "icon-[logos--eslint] text-[2.2rem]", language: "ESLint" },
-  { icon: "icon-[logos--xcode] text-[2.3rem]", language: "Xcode" },
+  { icon: "icon-[logos--jest] text-[2.2rem]", language: "Jest", },
+  // { icon: "icon-[devicon--pytest] text-[2.2rem]", language: "pytest", }, // SVG icon for PyTest does not exist, and don't want to download seperate devicon pack for 1 icon
+  { icon: "icon-[logos--testing-library] text-[2.2rem]",
+    language: "React Testing Library", },
+  { icon: "icon-[logos--postman-icon] text-[2.2rem]", language: "Postman", },
 ] as const;
 
 export const experienceData = [

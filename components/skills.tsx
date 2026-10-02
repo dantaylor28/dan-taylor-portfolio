@@ -2,7 +2,11 @@
 
 import React, { useState } from "react";
 import PageHeading from "./page-heading";
-import { frontendSkills, backendSkills } from "@/lib/data";
+import {
+  frontendSkills,
+  backendSkills,
+  toolsAndTestingSkills,
+} from "@/lib/data";
 import { IoMdCheckboxOutline } from "react-icons/io";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
@@ -10,7 +14,7 @@ import { motion } from "framer-motion";
 const fadeInAnimationIconVariants = {
   initial: {
     opacity: 0,
-    y: 100,
+    y: 30,
   },
   animate: (index: number) => ({
     opacity: 1,
@@ -60,7 +64,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="scroll-mt-28 text-center max-w-[65rem] mb-10 px-4 overflow-x-hidden"
+      className="scroll-mt-28 text-center max-w-[65rem] mb-10 px-4 overflow-x-clip"
       ref={ref}
     >
       <motion.div
@@ -213,6 +217,61 @@ const Skills = () => {
         </motion.ul>
         <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-8 md:mb-0">
           {backendSkills.map((skill, index) => (
+            <motion.div
+              className="relative flex flex-col items-center group"
+              key={index}
+              variants={fadeInAnimationIconVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+                margin: "-100px",
+              }}
+              custom={index}
+            >
+              <span
+                className="flex justify-center"
+                onMouseEnter={() => setDisplay(true)}
+                onMouseLeave={() => setDisplay(false)}
+              >
+                <div className="flex items-center justify-center h-14 w-14 border border-black/10 rounded-full shadow-lg hover:scale-105 dark:bg-cyan-50/20 dark:border-white/10 dark:shadow-cyan-300/20 dark:shadow-lg">
+                  <span className={skill.icon}></span>
+                </div>
+              </span>
+              <div
+                className={`absolute bottom-full flex flex-col items-center group-hover:flex ${
+                  !display ? "hidden" : "hidden"
+                }`}
+              >
+                <span className="relative z-10 p-3 text-s leading-none text-white bg-cyan-800 shadow-lg rounded-md transition dark:bg-cyan-950 dark:border dark:border-white/10">
+                  {skill.language}
+                </span>
+                <div className="w-3 h-3 -mt-2 rotate-45 bg-cyan-800 dark:bg-cyan-950" />
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      <motion.h2
+        className="text-lg capitalize font-light mt-10 mb-10"
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+          margin: "-100px",
+        }}
+        transition={{
+          duration: 0.5,
+        }}
+      >
+        tools & testing
+      </motion.h2>
+
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-12">
+        <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-8 md:mb-0 lg:min-w-[480px]">
+          {toolsAndTestingSkills.map((skill, index) => (
             <motion.div
               className="relative flex flex-col items-center group"
               key={index}
