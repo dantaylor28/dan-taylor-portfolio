@@ -1,28 +1,3 @@
-// The only way iconify icons render on my skills section is listing them here, albeit commented out
-// icon-[logos--react] text-[2.2rem]
-// icon-[logos--nextjs-icon] text-[2.4rem]
-// icon-[logos--javascript] text-[2rem]
-// icon-[logos--typescript-icon] text-[2rem]
-// icon-[logos--html-5] text-[2.3rem]
-// icon-[logos--css-3] text-[2.3rem]
-// icon-[logos--python] text-[2.3rem]
-// icon-[logos--django-icon] text-[2rem]
-// icon-[logos--bootstrap] text-[2rem]
-// icon-[logos--tailwindcss-icon] text-[1.7rem]
-// icon-[logos--nodejs-icon] text-[2.4rem]
-// icon-[logos--postgresql] text-[2.2rem]
-// icon-[logos--mysql-icon] text-[2.1rem]
-// icon-[logos--mongodb-icon] text-[2.5rem]
-// icon-[logos--docker-icon] text-[2rem]
-// icon-[logos--git-icon] text-[2.5rem]
-// icon-[logos--github-icon] text-[2.4rem]
-// icon-[logos--visual-studio-code] text-[2.2rem]
-// icon-[logos--heroku-icon] text-[2rem]
-// icon-[logos--vercel-icon] text-[1.8rem]
-// icon-[logos--prettier] text-[2rem]
-// icon-[logos--eslint] text-[2.2rem]
-// icon-[logos--xcode] text-[2.3rem]
-
 "use client";
 
 import React, { useState } from "react";
@@ -227,12 +202,13 @@ const Skills = () => {
           </li>
           <li className="flex items-center mb-5 ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Develop server-side functionality for web applications, APIs and databases.
+            Develop server-side functionality for web applications, APIs and
+            databases.
           </li>
           <li className="flex items-center ml-3">
             <IoMdCheckboxOutline className="mr-3 min-h-[1.1rem] min-w-[1.1rem]" />
-            Use Git and GitHub for version control, managing and tracking changes
-            throughout the development process.
+            Use Git and GitHub for version control, managing and tracking
+            changes throughout the development process.
           </li>
         </motion.ul>
         <div className="flex flex-wrap min-[340px]:gap-4 min-[390px]:gap-6 min-[400px]:gap-8 sm:gap-8 justify-center max-w-[30rem] mb-8 md:mb-0">
