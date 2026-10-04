@@ -45,7 +45,7 @@ export const projectData = [
   {
     title: "ChatApp",
     description:
-      "A full-stack messenger application with users having the ability to send and receive text and images to friends and family in real time. Features include a Node.js backend with full CRUD capabilities to manage users and messages alongside a React frontend with user authentication and TailwindCSS for styling.",
+      "A full-stack messenger application that allows users to send and receive text messages and images with friends and family in real time. Built with a Node.js backend providing CRUD functionality for users and messages, alongside a React frontend with user authentication and Tailwind CSS styling.",
     image: ChatApp,
     tags: [
       "ReactJS",
@@ -61,7 +61,7 @@ export const projectData = [
   {
     title: "Polaroid",
     description:
-      "An image sharing, social media site where users can explore, share and manage posts from their every day lives. Features include the ability to pin posts, leave comments and follow different users. The application is connected to a custom backend API which implements full CRUD capabilities and user authentication.",
+      "An image-sharing social media application where users can explore, share and manage posts from their everyday lives. Features include pinning posts, leaving comments and following other users, with a custom backend API providing CRUD functionality and user authentication.",
     image: ProjectImg,
     tags: ["ReactJS", "Django", "Rest API", "Bootstrap", "CSS", "PostgreSQL"],
     liveUrl: "https://pp5-frontend-social-app.herokuapp.com/",
@@ -70,7 +70,7 @@ export const projectData = [
   {
     title: "Harry Potter Quiz",
     description:
-      "An interactive quiz game, developed using vanilla Javascript, HTML and custom CSS. Some of the game's main features include sound effects, a timeline counter and smooth page transitions while you answer 20 Harry Potter themed questions.",
+      "An interactive quiz game built with vanilla JavaScript, HTML and custom CSS. Features include sound effects, a countdown timer and smooth page transitions across 20 Harry Potter-themed questions.",
     image: JsQuiz,
     tags: ["Javascript", "HTML", "CSS"],
     liveUrl: "https://dantaylor28.github.io/harry_potter_quiz/",
@@ -79,7 +79,7 @@ export const projectData = [
   {
     title: "The Food Blog",
     description:
-      "The Food Blog is a Django full-stack application where users can discover and share recipes along with other general culinary posts. Features include the capability to filter through posts by category, the ability to like posts and leave comments and a fully integrated admin panel where blog data can be managed and monitored.",
+      "A full-stack Django application where users can discover and share recipes along with other culinary posts. Features include filtering posts by category, liking and commenting on posts, and an integrated admin panel for managing blog content and data.",
     image: FoodBlog,
     tags: ["Python", "Django", "Bootstrap", "HTML", "CSS", "PostgreSQL"],
     liveUrl: "https://pp4-food-blog.herokuapp.com/",
@@ -122,11 +122,12 @@ export const toolsAndTestingSkills = [
   { icon: "icon-[logos--vercel-icon] text-[1.8rem]", language: "Vercel" },
   { icon: "icon-[logos--prettier] text-[2rem]", language: "Prettier" },
   { icon: "icon-[logos--eslint] text-[2.2rem]", language: "ESLint" },
-  { icon: "icon-[logos--jest] text-[2.2rem]", language: "Jest", },
-  // { icon: "icon-[devicon--pytest] text-[2.2rem]", language: "pytest", }, // SVG icon for PyTest does not exist, and don't want to download seperate devicon pack for 1 icon
-  { icon: "icon-[logos--testing-library] text-[2.2rem]",
-    language: "React Testing Library", },
-  { icon: "icon-[logos--postman-icon] text-[2.2rem]", language: "Postman", },
+  { icon: "icon-[logos--jest] text-[2.2rem]", language: "Jest" },
+  {
+    icon: "icon-[logos--testing-library] text-[2.2rem]",
+    language: "React Testing Library",
+  },
+  { icon: "icon-[logos--postman-icon] text-[2.2rem]", language: "Postman" },
 ] as const;
 
 export const experienceData = [
