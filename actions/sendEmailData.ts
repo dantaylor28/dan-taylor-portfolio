@@ -1,6 +1,7 @@
 "use server";
 
 import React from "react";
+import { render } from "@react-email/render";
 import { Resend } from "resend";
 import { validateString, getError } from "@/lib/utilities";
 import EmailForm from "@/email/emailForm";
@@ -29,23 +30,57 @@ export const sendEmailData = async (formData: FormData) => {
   }
 
   let data;
+  // try {
+  //   data = await resend.emails.send({
+  //     from: "Contact Form <onboarding@resend.dev>",
+  //     to: "dan.taylor1493@gmail.com",
+  //     subject: "Message from portfolio site",
+  //     replyTo: email as string,
+  //     react: React.createElement(EmailForm, {
+  //       name: name as string,
+  //       message: message as string,
+  //       email: email as string,
+  //     }),
+  //   });
+  // } catch (error) {
+  //   return {
+  //     error: getError(error),
+  //   };
+  // }
+  // return {
+  //   data,
+  // };
+
   try {
-    data = await resend.emails.send({
+    const emailHtml = await render(
+      React.createElement(EmailForm, {
+        name,
+        message,
+        email,
+      }),
+    );
+
+    const result = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       to: "dan.taylor1493@gmail.com",
       subject: "Message from portfolio site",
-      replyTo: email as string,
-      react: React.createElement(EmailForm, {
-        name: name as string,
-        message: message as string,
-        email: email as string,
-      }),
+      replyTo: email,
+      html: emailHtml,
     });
+
+    if (result.error) {
+      return {
+        error: result.error.message,
+      };
+    }
+
+    data = result.data;
   } catch (error) {
     return {
       error: getError(error),
     };
   }
+
   return {
     data,
   };
