@@ -136,7 +136,7 @@ export const experienceData = [
     description:
       "I am now looking to join an exciting development team to work alongside, and gain more real world experience.",
     location: "Göteborg, Sweden",
-    date: "2025",
+    date: "2026",
     icon: React.createElement(PiBriefcaseLight),
   },
   {

@@ -30,26 +30,6 @@ export const sendEmailData = async (formData: FormData) => {
   }
 
   let data;
-  // try {
-  //   data = await resend.emails.send({
-  //     from: "Contact Form <onboarding@resend.dev>",
-  //     to: "dan.taylor1493@gmail.com",
-  //     subject: "Message from portfolio site",
-  //     replyTo: email as string,
-  //     react: React.createElement(EmailForm, {
-  //       name: name as string,
-  //       message: message as string,
-  //       email: email as string,
-  //     }),
-  //   });
-  // } catch (error) {
-  //   return {
-  //     error: getError(error),
-  //   };
-  // }
-  // return {
-  //   data,
-  // };
 
   try {
     const emailHtml = await render(
