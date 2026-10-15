@@ -5,13 +5,14 @@ import JsQuiz from "../public/js_quiz.png";
 import ChatApp from "../public/messenger_app.png";
 import {
   PiBriefcaseLight,
-  PiCoatHangerLight,
   PiGraduationCapLight,
   PiCodeLight,
   PiAirplaneTiltLight,
-  PiMapPinLineLight,
-  PiShoppingCartLight,
   PiChartLineUpLight,
+  PiSuitcaseRollingLight,
+  PiCodeBlockLight,
+  PiUsersLight,
+  PiTShirtLight,
 } from "react-icons/pi";
 
 export const links = [
@@ -134,23 +135,31 @@ export const experienceData = [
   {
     title: "Open For Opportunities",
     description:
-      "I am now looking to join an exciting development team to work alongside, and gain more real world experience.",
+      "Actively seeking my first software development role, where I can contribute to a development team, apply my technical skills and continue growing as a developer.",
     location: "Göteborg, Sweden",
     date: "2026",
     icon: React.createElement(PiBriefcaseLight),
   },
   {
-    title: "Graduated From Bootcamp",
+    title: "Building My Development Portfolio",
     description:
-      "After a year of study, I graduated from Code Institute with a certificate in Full-Stack Web Development.",
-    location: "Dublin, Ireland",
+      "Building practical experience through personal projects using React, Next.js, TypeScript and backend APIs.",
+    location: "Personal Projects",
+    date: "2023-2026",
+    icon: React.createElement(PiCodeBlockLight),
+  },
+  {
+    title: "Graduated From Code Institute",
+    description:
+      "Completed a year of study covering full-stack web development, building applications and developing skills across frontend and backend technologies.",
+    location: "Full Stack Software Development",
     date: "2023",
     icon: React.createElement(PiGraduationCapLight),
   },
   {
     title: "Floor Manager | Weekday",
     description:
-      "Lead & inspire the store team, whilst having responsibility for the sales performance, customer service and overall profitability in the store.",
+      "Lead and support the store team, with responsibility for sales performance, customer experience and daily operations.",
     location: "Göteborg, Sweden",
     date: "April 2024 - Current",
     icon: React.createElement(PiChartLineUpLight),
@@ -158,15 +167,15 @@ export const experienceData = [
   {
     title: "Sales & Operational Keyholder | Superdry",
     description:
-      "Here I am responsible for all operational duties in store, alongside providing great customer service & helping the team to achieve store sales targets and KPIs.",
+      "Managed store operations, supported team performance and delivered customer service in a fast-paced retail environment.",
     location: "Göteborg, Sweden",
     date: "April 2017 - April 2024",
-    icon: React.createElement(PiCoatHangerLight),
+    icon: React.createElement(PiTShirtLight),
   },
   {
     title: "Hello, World!",
     description:
-      "After discovering the wealth of online learning material, this is when I wrote my first ever line of HTML code.",
+      "Wrote my first line of HTML and discovered a new interest in building for the web, sparking my journey into software development.",
     location: "Stockholm, Sweden",
     date: "September 2021",
     icon: React.createElement(PiCodeLight),
@@ -174,25 +183,25 @@ export const experienceData = [
   {
     title: "Moved to Sweden",
     description:
-      "The day I packed up my life in the UK and made the move to my new home in Gothenburg, Sweden.",
+      "Made the move from the UK to Gothenburg, Sweden, where I've continued to build my life and career.",
     location: "UK -> Sweden",
     date: "March 2017",
-    icon: React.createElement(PiAirplaneTiltLight),
+    icon: React.createElement(PiSuitcaseRollingLight),
   },
   {
     title: "Career Break To Travel",
     description:
-      "Backpacked my way through 19 countries, starting in Thailand and ending 9 months later in the Caribbean.",
+      "Backpacked my way through 19 countries solo, starting in Thailand and ending 9 months later in the Caribbean.",
     location: "SE Asia -> Europe -> Central America",
     date: "2016",
-    icon: React.createElement(PiMapPinLineLight),
+    icon: React.createElement(PiAirplaneTiltLight),
   },
   {
     title: "Team Leader | Co-Operative",
     description:
-      "Led the team responsible for store & delivery logistics, while helping to create an inspiring work environment & encouraging open communication with my positive attitude & passion.",
+      "Developed my leadership, teamwork and operational management skills while coordinating store and delivery operations.",
     location: "Wolverhampton, England",
     date: "2012 - 2017",
-    icon: React.createElement(PiShoppingCartLight),
+    icon: React.createElement(PiUsersLight),
   },
 ] as const;
