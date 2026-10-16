@@ -44,18 +44,35 @@ export const links = [
 
 export const projectData = [
   {
+    title: "Polaroid 2.0 (In Development)",
+    status: "Deployed live on Vercel",
+    description:
+      "An evolving image-sharing social media application where users can create and explore posts, follow profiles, and interact through likes, pins and comments. Currently being migrated to TypeScript while refining the React frontend and integrating with a Django REST Framework API.",
+    image: ProjectImg,
+    tags: [
+      "React.js",
+      "TypeScript",
+      "Django Rest Framework",
+      "Rest API",
+      "PostgreSQL",
+      "Tailwind CSS",
+    ],
+    liveUrl: "https://polaroid-frontend.vercel.app/",
+    repoUrl: "https://github.com/dantaylor28/polaroid-frontend",
+  },
+  {
     title: "ChatApp",
     status: "Deployed live on Render",
     description:
-      "A full-stack messenger application that allows users to send and receive text messages and images with friends and family in real time. Built with a Node.js backend providing CRUD functionality for users and messages, alongside a React frontend with user authentication and Tailwind CSS styling.",
+      "A full-stack messaging application that allows users to exchange text messages and images in real time. Features include user authentication, a Node.js and Express backend, MongoDB data storage and Socket.io for real-time communication.",
     image: ChatApp,
     tags: [
-      "ReactJS",
-      "NodeJS",
+      "React.js",
+      "Node.js",
       "MongoDB",
-      "ExpressJS",
-      "TailwindCSS",
-      "Socket.io",
+      "Express.js",
+      "Tailwind CSS",
+      "Socket.IO",
     ],
     liveUrl: "https://messenger-app-najg.onrender.com/",
     repoUrl: "https://github.com/dantaylor28/messenger-app",
@@ -64,31 +81,31 @@ export const projectData = [
     title: "Polaroid",
     status: "Deployed live on Heroku",
     description:
-      "An image-sharing social media application where users can explore, share and manage posts from their everyday lives. Features include pinning posts, leaving comments and following other users, with a custom backend API providing CRUD functionality and user authentication.",
+      "An image-sharing social media application where users can discover posts, follow other profiles, pin images and leave comments. Built with React and Django REST Framework, featuring user authentication and a PostgreSQL database.",
     image: ProjectImg,
-    tags: ["ReactJS", "Django", "Rest API", "Bootstrap", "CSS", "PostgreSQL"],
+    tags: ["React.js", "Django", "Rest API", "Bootstrap", "CSS", "PostgreSQL"],
     liveUrl: "https://pp5-frontend-social-app.herokuapp.com/",
     repoUrl: "https://github.com/dantaylor28/polaroid-social-media-frontend",
-  },
-  {
-    title: "Harry Potter Quiz",
-    status: "Deployed live on GitHub Pages",
-    description:
-      "An interactive quiz game built with vanilla JavaScript, HTML and custom CSS. Features include sound effects, a countdown timer and smooth page transitions across 20 Harry Potter-themed questions.",
-    image: JsQuiz,
-    tags: ["Javascript", "HTML", "CSS"],
-    liveUrl: "https://dantaylor28.github.io/harry_potter_quiz/",
-    repoUrl: "https://github.com/dantaylor28/harry_potter_quiz.git",
   },
   {
     title: "The Food Blog",
     status: "Deployed live on Heroku",
     description:
-      "A full-stack Django application where users can discover and share recipes along with other culinary posts. Features include filtering posts by category, liking and commenting on posts, and an integrated admin panel for managing blog content and data.",
+      "A full-stack recipe and food blog built with Django, where users can explore posts, filter content by category, and interact through likes and comments. Includes a PostgreSQL database and an admin panel for managing blog content.",
     image: FoodBlog,
     tags: ["Python", "Django", "Bootstrap", "HTML", "CSS", "PostgreSQL"],
     liveUrl: "https://pp4-food-blog.herokuapp.com/",
     repoUrl: "https://github.com/dantaylor28/the-food-blog",
+  },
+  {
+    title: "Harry Potter Quiz",
+    status: "Deployed live on GitHub Pages",
+    description:
+      "An interactive Harry Potter quiz built with vanilla JavaScript, HTML and CSS. Includes 20 themed questions, a countdown timer, sound effects and dynamic page transitions for an engaging quiz experience.",
+    image: JsQuiz,
+    tags: ["JavaScript", "HTML", "CSS"],
+    liveUrl: "https://dantaylor28.github.io/harry_potter_quiz/",
+    repoUrl: "https://github.com/dantaylor28/harry_potter_quiz.git",
   },
 ] as const;
 
