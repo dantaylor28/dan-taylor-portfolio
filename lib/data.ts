@@ -45,6 +45,7 @@ export const links = [
 export const projectData = [
   {
     title: "ChatApp",
+    status: "Deployed live on Render",
     description:
       "A full-stack messenger application that allows users to send and receive text messages and images with friends and family in real time. Built with a Node.js backend providing CRUD functionality for users and messages, alongside a React frontend with user authentication and Tailwind CSS styling.",
     image: ChatApp,
@@ -61,6 +62,7 @@ export const projectData = [
   },
   {
     title: "Polaroid",
+    status: "Deployed live on Heroku",
     description:
       "An image-sharing social media application where users can explore, share and manage posts from their everyday lives. Features include pinning posts, leaving comments and following other users, with a custom backend API providing CRUD functionality and user authentication.",
     image: ProjectImg,
@@ -70,6 +72,7 @@ export const projectData = [
   },
   {
     title: "Harry Potter Quiz",
+    status: "Deployed live on GitHub Pages",
     description:
       "An interactive quiz game built with vanilla JavaScript, HTML and custom CSS. Features include sound effects, a countdown timer and smooth page transitions across 20 Harry Potter-themed questions.",
     image: JsQuiz,
@@ -79,6 +82,7 @@ export const projectData = [
   },
   {
     title: "The Food Blog",
+    status: "Deployed live on Heroku",
     description:
       "A full-stack Django application where users can discover and share recipes along with other culinary posts. Features include filtering posts by category, liking and commenting on posts, and an integrated admin panel for managing blog content and data.",
     image: FoodBlog,

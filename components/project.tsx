@@ -10,6 +10,7 @@ type ProjectProps = (typeof projectData)[number];
 
 export default function Project({
   title,
+  status,
   description,
   image,
   tags,
@@ -39,7 +40,7 @@ export default function Project({
           <div>
             <Image
               src={image}
-              alt="project I coded"
+              alt={`project titled: ${title} that I developed`}
               quality={95}
               className="md:w-[20.5rem] md:h-[24rem] lg:w-[28.5rem] lg:h-[32rem] rounded-sm shadow-2xl md:group-hover:scale-[1.02] transition"
             />
@@ -78,10 +79,11 @@ export default function Project({
             target="_blank"
             className="group bg-cyan-800 text-cyan-50 flex items-center gap-2 hover:bg-cyan-600 hover:text-white duration-300 border border-black/10 py-2 px-6 rounded cursor-pointer dark:bg-cyan-950 dark:hover:bg-cyan-800/70"
           >
-            github link
+            gitHub link
             <BsGithub className="group-hover:text-cyan-50 group-hover:translate-x-1 transition dark:group-hover:text-white" />
           </a>
         </div>
+        <div className="mt-3 font-light text-xs opacity-70">{status}</div>
       </div>
     </motion.div>
   );
