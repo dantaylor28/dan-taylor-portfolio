@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectImg from "../public/project_img.png";
+import Polaroid from "../public/polaroid.png"
 import FoodBlog from "../public/food_blog.png";
 import JsQuiz from "../public/js_quiz.png";
 import ChatApp from "../public/messenger_app.png";
@@ -48,7 +49,7 @@ export const projectData = [
     status: "Deployed live on Vercel",
     description:
       "An evolving image-sharing social media application where users can create and explore posts, follow profiles, and interact through likes, pins and comments. Currently being migrated to TypeScript while refining the React frontend and integrating with a Django REST Framework API.",
-    image: ProjectImg,
+    image: Polaroid,
     tags: [
       "React.js",
       "TypeScript",
