@@ -7,7 +7,6 @@ import { sendEmailData } from "@/actions/sendEmailData";
 import toast from "react-hot-toast";
 import { motion } from "framer-motion";
 import SubmitBtn from "./submit-btn";
-import "next-cloudinary/dist/cld-video-player.css";
 
 export default function ContactMe() {
   const { ref } = useSectionInView("Contact Me", 0.5);
