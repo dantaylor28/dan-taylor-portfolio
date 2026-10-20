@@ -50,6 +50,7 @@ export const projectData = [
     description:
       "An evolving image-sharing social media application where users can create and explore posts, follow profiles, and interact through likes, pins and comments. Currently being migrated to TypeScript while refining the React frontend and integrating with a Django REST Framework API.",
     image: Polaroid,
+    movie: "/chatapp.mp4",
     tags: [
       "React.js",
       "TypeScript",
@@ -67,6 +68,7 @@ export const projectData = [
     description:
       "A full-stack messaging application that allows users to exchange text messages and images in real time. Features include user authentication, a Node.js and Express backend, MongoDB data storage and Socket.io for real-time communication.",
     image: ChatApp,
+    movie: "/chatapp.mp4",
     tags: [
       "React.js",
       "Node.js",
@@ -84,6 +86,7 @@ export const projectData = [
     description:
       "An image-sharing social media application where users can discover posts, follow other profiles, pin images and leave comments. Built with React and Django REST Framework, featuring user authentication and a PostgreSQL database.",
     image: ProjectImg,
+    movie: "/chatapp.mp4",
     tags: ["React.js", "Django", "Rest API", "Bootstrap", "CSS", "PostgreSQL"],
     liveUrl: "https://pp5-frontend-social-app.herokuapp.com/",
     repoUrl: "https://github.com/dantaylor28/polaroid-social-media-frontend",
@@ -94,6 +97,7 @@ export const projectData = [
     description:
       "A full-stack recipe and food blog built with Django, where users can explore posts, filter content by category, and interact through likes and comments. Includes a PostgreSQL database and an admin panel for managing blog content.",
     image: FoodBlog,
+    movie: "/chatapp.mp4",
     tags: ["Python", "Django", "Bootstrap", "HTML", "CSS", "PostgreSQL"],
     liveUrl: "https://pp4-food-blog.herokuapp.com/",
     repoUrl: "https://github.com/dantaylor28/the-food-blog",
@@ -104,6 +108,7 @@ export const projectData = [
     description:
       "An interactive Harry Potter quiz built with vanilla JavaScript, HTML and CSS. Includes 20 themed questions, a countdown timer, sound effects and dynamic page transitions for an engaging quiz experience.",
     image: JsQuiz,
+    movie: "/chatapp.mp4",
     tags: ["JavaScript", "HTML", "CSS"],
     liveUrl: "https://dantaylor28.github.io/harry_potter_quiz/",
     repoUrl: "https://github.com/dantaylor28/harry_potter_quiz.git",

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import { projectData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
+import ProjectVideo from "./project-video";
 
 type ProjectProps = (typeof projectData)[number];
 
@@ -13,6 +14,7 @@ export default function Project({
   status,
   description,
   image,
+  movie,
   tags,
   liveUrl,
   repoUrl,
@@ -38,12 +40,13 @@ export default function Project({
       <div className="group flex items-center justify-center group md:w-1/2 md:h-[30rem] lg:h-[35rem] md:mt-10 lg:mt-0 rounded-md border border-black/10 dark:border-cyan-50/20 bg-slate-200/30 hover:bg-slate-200/50 dark:bg-white/5 hover:dark:bg-white/[0.065] lg:px-5 md:hover:border-black/25 md:hover:dark:border-cyan-50/30 transition">
         <a href={liveUrl} target="_blank" className="hover:cursor-pointer">
           <div>
-            <Image
+            {/* <Image
               src={image}
               alt={`project titled: ${title} that I developed`}
               quality={95}
               className="md:w-[20.5rem] md:h-[24rem] lg:w-[28.5rem] lg:h-[32rem] rounded-sm shadow-2xl md:group-hover:scale-[1.02] transition"
-            />
+            /> */}
+            <ProjectVideo src={movie} poster={image} title={title}/>
           </div>
         </a>
       </div>

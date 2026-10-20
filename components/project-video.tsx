@@ -1,10 +1,11 @@
 "use client";
 
+import { StaticImageData } from "next/image";
 import { useEffect, useRef } from "react";
 
 type ProjectVideoProps = {
   src: string;
-  poster: string;
+  poster: any;
   title: string;
 };
 
