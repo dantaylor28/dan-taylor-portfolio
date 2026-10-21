@@ -1,7 +1,7 @@
 "use client";
 
 import type { StaticImageData } from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type ProjectVideoProps = {
   src: string;
@@ -15,6 +15,7 @@ export default function ProjectVideo({
   title,
 }: ProjectVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [showPoster, setShowPoster] = useState(true);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -32,9 +33,10 @@ export default function ProjectVideo({
         } else {
           video.pause();
           video.currentTime = 0;
+          setShowPoster(true);
         }
       },
-      { threshold: 0.7 },
+      { threshold: 0.9 },
     );
 
     observer.observe(video);
@@ -43,18 +45,29 @@ export default function ProjectVideo({
   }, []);
 
   return (
-    <video
-      ref={videoRef}
-      muted
-      playsInline
-      loop
-      preload="none"
-      poster={typeof poster === "string" ? poster : poster.src}
-      width={1280}
-      height={720}
-      className="aspect-video block w-full h-full rounded-lg object-contain"
-    >
-      <source src={src} type="video/mp4" />
-    </video>
+    <div className="relative w-full aspect-video overflow-hidden rounded-lg">
+      <video
+        ref={videoRef}
+        muted
+        playsInline
+        loop
+        preload="none"
+        poster={typeof poster === "string" ? poster : poster.src}
+        width={1280}
+        height={720}
+        onPlay={() => setShowPoster(false)}
+        className="absolute inset-0 block w-full h-full rounded-lg object-contain"
+      >
+        <source src={src} type="video/mp4" />
+      </video>
+
+      {showPoster && (
+        <img
+          src={typeof poster === "string" ? poster : poster.src}
+          alt={`${title} video preview`}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      )}
+    </div>
   );
 }
