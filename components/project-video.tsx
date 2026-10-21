@@ -1,11 +1,11 @@
 "use client";
 
-import { StaticImageData } from "next/image";
+import type { StaticImageData } from "next/image";
 import { useEffect, useRef } from "react";
 
 type ProjectVideoProps = {
   src: string;
-  poster: any;
+  poster: StaticImageData | string;
   title: string;
 };
 
@@ -34,7 +34,7 @@ export default function ProjectVideo({
           video.currentTime = 0;
         }
       },
-      { threshold: 0.5 },
+      { threshold: 0.7 },
     );
 
     observer.observe(video);
@@ -49,10 +49,10 @@ export default function ProjectVideo({
       playsInline
       loop
       preload="none"
-      poster={poster}
+      poster={typeof poster === "string" ? poster : poster.src}
       width={1280}
       height={720}
-      className="aspect-video w-full rounded-lg object-cover"
+      className="aspect-video block w-full h-full rounded-lg object-contain"
     >
       <source src={src} type="video/mp4" />
     </video>
