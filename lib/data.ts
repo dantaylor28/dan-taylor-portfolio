@@ -3,7 +3,7 @@ import ProjectImg from "../public/project_img.png";
 import Polaroid from "../public/polaroid.png"
 import FoodBlog from "../public/food_blog.png";
 import JsQuiz from "../public/js_quiz.png";
-import ChatApp from "../public/messenger_app.png";
+import ChatApp from "../public/chatapp.png";
 import {
   PiBriefcaseLight,
   PiGraduationCapLight,

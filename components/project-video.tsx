@@ -45,7 +45,7 @@ export default function ProjectVideo({
   }, []);
 
   return (
-    <div className="relative w-full aspect-video overflow-hidden rounded-lg">
+    <div className="relative w-full aspect-video overflow-hidden rounded-sm">
       <video
         ref={videoRef}
         muted
@@ -65,7 +65,7 @@ export default function ProjectVideo({
         <img
           src={typeof poster === "string" ? poster : poster.src}
           alt={`${title} video preview`}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-contain"
         />
       )}
     </div>
