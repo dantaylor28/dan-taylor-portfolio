@@ -1,8 +1,8 @@
 import React from "react";
-import ProjectImg from "../public/project_img.png";
+import PolaroidOld from "../public/polaroid-1.0.png";
 import Polaroid from "../public/polaroid.png"
-import FoodBlog from "../public/food_blog.png";
-import JsQuiz from "../public/js_quiz.png";
+import FoodBlog from "../public/food-blog.png";
+import JsQuiz from "../public/js-quiz.png";
 import ChatApp from "../public/chatapp.png";
 import {
   PiBriefcaseLight,
@@ -85,7 +85,7 @@ export const projectData = [
     status: "Deployed live on Heroku",
     description:
       "An image-sharing social media application where users can discover posts, follow other profiles, pin images and leave comments. Built with React and Django REST Framework, featuring user authentication and a PostgreSQL database.",
-    image: ProjectImg,
+    image: PolaroidOld,
     movie: "/chatapp.mp4",
     tags: ["React.js", "Django", "Rest API", "Bootstrap", "CSS", "PostgreSQL"],
     liveUrl: "https://pp5-frontend-social-app.herokuapp.com/",
