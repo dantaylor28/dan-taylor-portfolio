@@ -108,7 +108,7 @@ export const projectData = [
     description:
       "An interactive Harry Potter quiz built with vanilla JavaScript, HTML and CSS. Includes 20 themed questions, a countdown timer, sound effects and dynamic page transitions for an engaging quiz experience.",
     image: JsQuiz,
-    movie: "/chatapp.mp4",
+    movie: "/js-quiz.mp4",
     tags: ["JavaScript", "HTML", "CSS"],
     liveUrl: "https://dantaylor28.github.io/harry_potter_quiz/",
     repoUrl: "https://github.com/dantaylor28/harry_potter_quiz.git",
